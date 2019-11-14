@@ -1,6 +1,8 @@
 # ERBB2
 ## Reactome Pathway diagram
 
+
+<!--
 {% include js.html %}
 
 <div id="diagramHolder"></div>
@@ -37,3 +39,4 @@
 */
      }
 </script>
+-->
