@@ -28,15 +28,6 @@
             if (loaded == "R-HSA-5673001") diagram.selectItem("R-HSA-5673001");
         });
 
-/*
-     diagram.onObjectHovered(function (hovered){
-            console.info("Hovered ", hovered);
-        });
-
-        diagram.onObjectSelected(function (selected){
-            console.info("Selected ", selected);
-        });
-*/
      }
 </script>
 
