@@ -1,6 +1,6 @@
 # hello cruel world
 
-{% include something.html %}
+{% include js.html %}
 
 <script>
     //Creating the Reactome Diagram widget
