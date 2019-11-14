@@ -2,6 +2,8 @@
 
 {% include js.html %}
 
+<div id="diagramHolder"></div>
+
 <script>
     //Creating the Reactome Diagram widget
     //Take into account a proxy needs to be set up in your server side pointing to www.reactome.org
