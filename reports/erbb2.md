@@ -1,8 +1,8 @@
-# ERBB2
-## Reactome Pathway diagram
-
 {% include js.html %}
 
+<h1>ERBB2<?h1>
+
+<h2>Reactome Pathway diagram</h2>
 <div id="diagramHolder"></div>
 
 <script>
@@ -31,20 +31,8 @@
 
 
 <h2>Depmap overview</h2>
-
-<iframe src="https://depmap.org/portal/gene/ERBB2?tab=overview" style="border:none;width:100%;height:800px"></iframe>
-
-
-
-<h2>A collapsible section with markdown</h2>
-
 <details>
-  <summary>Click to expand!</summary>
-  
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
-</details>
+  <summary>Click to view the depmap.org summary for ERBB2</summary>
 
+  <iframe src="https://depmap.org/portal/gene/ERBB2?tab=overview" style="border:none;width:100%;height:800px"></iframe>
+</details>
