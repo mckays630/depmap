@@ -13,14 +13,14 @@
         });
 
         //Initialising it to the "Hemostasis" pathway
-        diagram.loadDiagram("R-HSA-5673001");
+        diagram.loadDiagram("R-HSA-111447");
 
         //Adding different listeners
 
         diagram.onDiagramLoaded(function (loaded) {
             console.info("Loaded ", loaded);
             diagram.flagItems("FYN");
-            if (loaded == "R-HSA-5673001") diagram.selectItem("R-HSA-5673001");
+            if (loaded == "R-HSA-111447") diagram.selectItem("R-HSA-111447");
         });
 
      }
