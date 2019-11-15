@@ -1,6 +1,6 @@
 {% include js.html %}
 
-<h1>ERBB2<?h1>
+<h1>ERBB2</h1>
 
 <h2>Reactome Pathway diagram</h2>
 <div id="diagramHolder"></div>
