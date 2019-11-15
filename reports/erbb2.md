@@ -1,7 +1,4 @@
-{% include js.html %}
-
 <h1>ERBB2</h1>
-
 <h2>Reactome Pathway diagram</h2>
 <div id="diagramHolder"></div>
 
@@ -36,3 +33,9 @@
 
   <iframe src="https://depmap.org/portal/gene/ERBB2?tab=overview" style="border:none;width:100%;height:800px"></iframe>
 </details>
+
+
+
+
+
+{% include js.html %}
