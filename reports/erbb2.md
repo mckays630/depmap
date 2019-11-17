@@ -19,7 +19,8 @@
 
         diagram.onDiagramLoaded(function (loaded) {
             console.info("Loaded ", loaded);
-            diagram.flagItems("FYN");
+            diagram.flagItems("BAD");
+	    diagram.flagItems("Q92934");
             if (loaded == "R-HSA-111447") diagram.selectItem("R-HSA-111447");
         });
 

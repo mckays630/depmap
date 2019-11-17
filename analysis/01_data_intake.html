@@ -13076,12 +13076,12 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">pickle</span><span class="o">,</span> <span class="nn">wget</span><span class="o">,</span> <span class="nn">shutil</span>
 <span class="kn">from</span> <span class="nn">intermine.webservice</span> <span class="k">import</span> <span class="n">Service</span>
 
 <span class="c1"># Load data direct from source</span>
@@ -13095,7 +13095,7 @@ div#notebook {
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;achilles_rnai&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/11489669&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;sensitivity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/17008628&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;mfr&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;http://bmbl.sdstate.edu/MFR/data/resource</span><span class="si">%20d</span><span class="s1">ata/tr_dv_ts.dataset.zip&#39;</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">url</span><span class="p">[</span><span class="s1">&#39;reactome&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://reactome.org/download/current/NCBI2Reactome.txt&#39;</span>
     
 <span class="k">def</span> <span class="nf">get_gene_descriptions</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Load gene names and descriptions from humanmine (http://www.humanmine.org),</span>
@@ -13130,22 +13130,16 @@ div#notebook {
 <span class="k">def</span> <span class="nf">get_data</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Load input data.</span>
 <span class="sd">    Arguments: key for the data source (eg: expression, sample_info...)</span>
-<span class="sd">    1) If the data is in memory, return the dataframe</span>
-<span class="sd">    2) If the data is cached on the filesystem, load and return the dataframe</span>
-<span class="sd">    3) Otherwise, load the data from the source URL, cache, return the dataframe</span>
+<span class="sd">    1) If the data is cached on the filesystem, load and return the dataframe</span>
+<span class="sd">    2) Otherwise, load the data from the source URL, cache, return the dataframe</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="k">if</span> <span class="n">A</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">A</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
-    
     <span class="n">data_cache</span> <span class="o">=</span> <span class="s1">&#39;data/&#39;</span><span class="o">+</span><span class="n">key</span><span class="o">+</span><span class="s1">&#39;.p&#39;</span>
     <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">data_cache</span><span class="p">):</span>
-        <span class="n">A</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="n">data_cache</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">A</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
-    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">url</span><span class="p">[</span><span class="n">key</span><span class="p">],</span><span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">df</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="n">data_cache</span><span class="p">)</span>
-    <span class="n">A</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span>
-    <span class="k">return</span> <span class="n">A</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="n">data_cache</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">url</span><span class="p">[</span><span class="n">key</span><span class="p">],</span><span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="n">data_cache</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
 
 <span class="k">def</span> <span class="nf">ncbi_gene_ids</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Converts gene name &quot;symbol (ncbi_id)&quot;</span>
@@ -13160,9 +13154,53 @@ div#notebook {
 
     <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">ncbi_cols</span>
     <span class="k">return</span> <span class="n">df</span>
+
+<span class="k">def</span> <span class="nf">get_pathway_info</span><span class="p">():</span>
+    <span class="c1"># Map NCBI IDs to reactome pathways</span>
+    <span class="c1"># File downloaded from https://reactome.org/download/current/NCBI2Reactome.txt</span>
+    <span class="n">archive</span> <span class="o">=</span> <span class="s1">&#39;data/pathway_info.p&#39;</span>
+    
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">archive</span><span class="p">):</span>
+        <span class="n">pathway_info</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">archive</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">pathway_info</span>
+    
+    <span class="n">pathway_info</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;data/NCBI2Reactome.txt&#39;</span><span class="p">):</span>
+        <span class="n">wget</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">url</span><span class="p">[</span><span class="s1">&#39;reactome&#39;</span><span class="p">],</span><span class="n">out</span><span class="o">=</span><span class="s1">&#39;data/NCBI2Reactome.txt&#39;</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data/NCBI2Reactome.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">n2r</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">n2r</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+            <span class="n">ncbi</span><span class="p">,</span> <span class="n">pathway_id</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">pathway_name</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">species</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="c1"># only human pathways</span>
+            <span class="k">if</span> <span class="n">species</span> <span class="o">!=</span> <span class="s1">&#39;Homo sapiens&#39;</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="c1"># only curated pathways</span>
+            <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">&#39;IEA&#39;</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="n">pathway_info</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">pathway_id</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">pathway_name</span><span class="p">]</span>
+
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">pathway_info</span><span class="p">,</span><span class="nb">open</span><span class="p">(</span><span class="n">archive</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">pathway_info</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Have pathway info for 10241 human NCBI IDs
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13172,21 +13210,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Map ncbi IDs to reactome pathways</span>
-<span class="c1"># File downloaded from https://reactome.org/download/current/NCBI2Reactome.txt</span>
-<span class="n">pathway_info</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data/NCBI2Reactome.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">n2r</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">n2r</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
-        <span class="n">ncbi</span><span class="p">,</span> <span class="n">pathway_id</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">pathway_name</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">species</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
-        <span class="c1"># only human pathways</span>
-        <span class="k">if</span> <span class="n">species</span> <span class="o">!=</span> <span class="s1">&#39;Homo sapiens&#39;</span><span class="p">:</span>
-            <span class="k">continue</span>
-        <span class="c1"># only curated pathways</span>
-        <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">&#39;IEA&#39;</span><span class="p">:</span>
-            <span class="k">continue</span>
-        <span class="n">pathway_info</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">pathway_id</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">pathway_name</span><span class="p">]</span>
-        
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Have pathway info for&quot;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">pathway_info</span><span class="p">),</span><span class="s2">&quot;human NCBI IDs&quot;</span><span class="p">)</span>   
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
@@ -13225,14 +13249,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sample_info</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;sample_info&#39;</span><span class="p">)</span>
 <span class="n">lineages</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">sample_info</span><span class="o">.</span><span class="n">lineage</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
 <span class="n">lineage</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lineages</span><span class="p">:</span>
-    <span class="n">ldf</span> <span class="o">=</span> <span class="n">sd</span><span class="p">[</span><span class="n">sd</span><span class="o">.</span><span class="n">lineage</span> <span class="o">==</span> <span class="n">l</span><span class="p">]</span>
+    <span class="n">ldf</span> <span class="o">=</span> <span class="n">sample_info</span><span class="p">[</span><span class="n">sample_info</span><span class="o">.</span><span class="n">lineage</span> <span class="o">==</span> <span class="n">l</span><span class="p">]</span>
     <span class="n">subtypes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">ldf</span><span class="o">.</span><span class="n">lineage_subtype</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
     <span class="c1"># cell lines for sublineage</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">subtypes</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
@@ -13248,11 +13272,122 @@ div#notebook {
     <span class="c1"># all cell lines</span>
     <span class="n">lineage</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ldf</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
         
-<span class="c1"># for l in sorted(lineage.keys()):</span>
-<span class="c1">#      print(l,len(lineage[l]))</span>
+<span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">lineage</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+     <span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">lineage</span><span class="p">[</span><span class="n">l</span><span class="p">]))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>adrenal_cortex 1
+bile_duct 29
+bile_duct_cholangiocarcinoma 26
+bile_duct_gallbladder 3
+bone 48
+bone_Ewing_sarcoma 28
+bone_chondrosarcoma 4
+bone_chordoma 4
+bone_osteosarcoma 12
+breast 68
+breast_ERneg 1
+breast_ERpos 12
+breast_HER2Amp 13
+breast_TNBC 29
+breast_TPBC 5
+breast_breast_immortalized 2
+central_nervous_system 91
+central_nervous_system_PNET 1
+central_nervous_system_central_nervous_system_immortalized 1
+central_nervous_system_glioma 73
+central_nervous_system_medulloblastoma 11
+central_nervous_system_meningioma 3
+cervix 18
+colorectal 73
+embryo 3
+esophagus 33
+esophagus_esophagus_adenocarcinoma 7
+esophagus_esophagus_squamous 25
+eye 7
+eye_retinoblastoma 2
+eye_uveal_melanoma 5
+fibroblast 43
+gastric 41
+gastric_gastric_adenocarcinoma 33
+gastric_gastric_adenosquamous 1
+gastric_gastric_small 2
+kidney 39
+leukemia 103
+leukemia_AML 42
+leukemia_B-cell_ALL 20
+leukemia_B-cell_lymphoma_other 1
+leukemia_CML 15
+leukemia_T-cell_ALL 20
+liver 26
+lung 218
+lung_lung_NSC 149
+lung_lung_immortalized 1
+lung_lung_small 66
+lymphoma 91
+lymphoma_ALCL 5
+lymphoma_B-cell_ALL 2
+lymphoma_B-cell_lymphoma_other 21
+lymphoma_Burkitt_lymphoma 13
+lymphoma_DLBCL 17
+lymphoma_Hodgkin_lymphoma 9
+lymphoma_T-cell_lymphoma_other 13
+lymphoma_lymphoblastic_lymphoma 1
+mesothelioma 17
+multiple_myeloma 34
+other 1
+ovary 62
+ovary_ovary_adenocarcinoma 57
+ovary_ovary_immortalized 1
+ovary_ovary_non_epithelial 2
+pancreas 55
+peripheral_nervous_system 33
+peripheral_nervous_system_PNET 1
+peripheral_nervous_system_neuroblastoma 32
+prostate 11
+rhabdoid 23
+rhabdomyosarcoma 19
+skin 80
+skin_Merkel 7
+skin_epidermoid_carcinoma 1
+skin_melanoma 69
+skin_skin_squamous 3
+small_intestine 2
+soft_tissue 22
+soft_tissue_epitheliod_sarcoma 2
+soft_tissue_fibrosarcoma 1
+soft_tissue_leiomyosarcoma 3
+soft_tissue_liposarcoma 5
+soft_tissue_pleomorphic_sarcoma 1
+soft_tissue_sarcoma_undifferentiated 2
+soft_tissue_synovial_sarcoma 8
+thyroid 18
+upper_aerodigestive 48
+upper_aerodigestive_buccal_mucosa 1
+upper_aerodigestive_upper_aerodigestive_squamous 44
+urinary_tract 37
+uterus 35
+uterus_choriocarcinoma 2
+uterus_uterine_sarcoma 1
+uterus_uterus_endometrium 32
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
