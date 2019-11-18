@@ -545,8 +545,7 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
 <img src="plots/soft_tissue_sarcoma_undifferentiated.png" style="float:left">
 
 
-
-## Candidate target genes
+<h2>Candidate target genes</h2>
 
 * All genes in this table have copy number > 2 and Achilles gene dependency < 0 for at least 80% of the cell lines in 1 cell lineage'
 * Other data for cross-validation:
