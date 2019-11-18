@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-163125">Post-translational modification: synthesis of GPI-anchored proteins</a>
-END_HIDE
+
 
 

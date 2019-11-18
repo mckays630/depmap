@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-3134975">Regulation of innate immune responses to cytosolic DNA</a>
-END_HIDE
+
 
 

@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-2028269">Signaling by Hippo</a>
-END_HIDE
+
 
 

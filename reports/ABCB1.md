@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-382556">ABC-family proteins mediated transport</a>
-END_HIDE
+
 
 

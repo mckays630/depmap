@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-937041">IKK complex recruitment mediated by RIP1</a>
-END_HIDE
+
 
 

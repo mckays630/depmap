@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-9617828">FOXO-mediated transcription of cell cycle genes</a>
-END_HIDE
+
 
 

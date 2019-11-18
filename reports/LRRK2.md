@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-8857538">PTK6 promotes HIF1A stabilization</a>
-END_HIDE
+
 
 

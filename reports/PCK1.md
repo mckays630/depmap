@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-9632974">NR1H2 & NR1H3 regulate gene expression linked to gluconeogenesis </a>
-END_HIDE
+
 
 

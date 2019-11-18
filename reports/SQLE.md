@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-2426168">Activation of gene expression by SREBF (SREBP)</a>
-END_HIDE
+
 
 

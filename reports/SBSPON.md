@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-5173214">O-glycosylation of TSR domain-containing proteins</a>
-END_HIDE
+
 
 

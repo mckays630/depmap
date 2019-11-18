@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-4719377">Defective DPM2 causes DPM2-CDG (CDG-1u)</a>
-END_HIDE
+
 
 

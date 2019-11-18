@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-5620912">Anchoring of the basal body to the plasma membrane</a>
-END_HIDE
+
 
 

@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-76042">RNA Polymerase II Transcription Initiation And Promoter Clearance</a>
-END_HIDE
+
 
 

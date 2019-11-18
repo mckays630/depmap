@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-5579010">Defective CYP24A1 causes Hypercalcemia, infantile (HCAI)</a>
-END_HIDE
+
 
 

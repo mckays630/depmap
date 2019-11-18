@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-975957">Nonsense Mediated Decay (NMD) enhanced by the Exon Junction Complex (EJC)</a>
-END_HIDE
+
 
 

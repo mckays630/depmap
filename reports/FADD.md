@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-933543">NF-kB activation through FADD/RIP-1 pathway mediated by caspase-8 and -10</a>
-END_HIDE
+
 
 

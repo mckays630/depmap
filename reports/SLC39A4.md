@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-5619088">Defective SLC39A4 causes acrodermatitis enteropathica, zinc-deficiency type (AEZ)</a>
-END_HIDE
+
 
 

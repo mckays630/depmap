@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-983231">Factors involved in megakaryocyte development and platelet production</a>
-END_HIDE
+
 
 

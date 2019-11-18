@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-168276">NS1 Mediated Effects on Host Pathways</a>
-END_HIDE
+
 
 

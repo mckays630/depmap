@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-5659735">Defective SLC6A19 causes Hartnup disorder (HND)</a>
-END_HIDE
+
 
 

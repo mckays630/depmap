@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-76071">RNA Polymerase III Transcription Initiation From Type 3 Promoter</a>
-END_HIDE
+
 
 

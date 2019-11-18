@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-2173788">Downregulation of TGF-beta receptor signaling</a>
-END_HIDE
+
 
 

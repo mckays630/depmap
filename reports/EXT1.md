@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-3656253">Defective EXT1 causes exostoses 1, TRPS2 and CHDS</a>
-END_HIDE
+
 
 

@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-5357956">TNFR1-induced NFkappaB signaling pathway</a>
-END_HIDE
+
 
 

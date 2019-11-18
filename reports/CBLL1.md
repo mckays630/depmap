@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-8876493">InlA-mediated entry of Listeria monocytogenes into host cells</a>
-END_HIDE
+
 
 

@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-9614399">Regulation of localization of FOXO transcription factors</a>
-END_HIDE
+
 
 

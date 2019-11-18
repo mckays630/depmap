@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-1650814">Collagen biosynthesis and modifying enzymes</a>
-END_HIDE
+
 
 

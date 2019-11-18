@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-202427">Phosphorylation of CD3 and TCR zeta chains</a>
-END_HIDE
+
 
 

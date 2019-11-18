@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-9634638">Estrogen-dependent nuclear events downstream of ESR-membrane signaling</a>
-END_HIDE
+
 
 

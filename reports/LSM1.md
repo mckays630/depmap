@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-430039">mRNA decay by 5' to 3' exoribonuclease</a>
-END_HIDE
+
 
 

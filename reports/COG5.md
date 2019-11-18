@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-6811440">Retrograde transport at the Trans-Golgi-Network</a>
-END_HIDE
+
 
 

@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-8876198">RAB GEFs exchange GTP for GDP on RABs</a>
-END_HIDE
+
 
 

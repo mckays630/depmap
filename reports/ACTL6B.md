@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-8939243">RUNX1 interacts with co-factors whose precise effect on RUNX1 targets is not known</a>
-END_HIDE
+
 
 

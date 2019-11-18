@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-8853338">Signaling by FGFR3 point mutants in cancer</a>
-END_HIDE
+
 
 

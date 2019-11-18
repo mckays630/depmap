@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-6791226">Major pathway of rRNA processing in the nucleolus and cytosol</a>
-END_HIDE
+
 
 

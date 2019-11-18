@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-8866910">TFAP2 (AP-2) family regulates transcription of growth factors and their receptors</a>
-END_HIDE
+
 
 

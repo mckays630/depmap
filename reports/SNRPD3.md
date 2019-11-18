@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-77588">SLBP Dependent Processing of Replication-Dependent Histone Pre-mRNAs</a>
-END_HIDE
+
 
 

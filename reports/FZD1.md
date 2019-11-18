@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-4641262">Disassembly of the destruction complex and recruitment of AXIN to the membrane</a>
-END_HIDE
+
 
 

@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-9027276">Erythropoietin activates Phosphoinositide-3-kinase (PI3K)</a>
-END_HIDE
+
 
 

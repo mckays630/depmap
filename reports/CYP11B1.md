@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-5579017">Defective CYP11B1 causes Adrenal hyperplasia 4 (AH4)</a>
-END_HIDE
+
 
 

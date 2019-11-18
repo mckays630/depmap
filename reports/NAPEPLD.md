@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-2466712">Biosynthesis of A2E, implicated in retinal degradation</a>
-END_HIDE
+
 
 

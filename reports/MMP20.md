@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-2022090">Assembly of collagen fibrils and other multimeric structures</a>
-END_HIDE
+
 
 

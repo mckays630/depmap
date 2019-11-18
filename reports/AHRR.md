@@ -19,9 +19,9 @@
 </details>
 
 
-START_HIDE
+
 <h2>Reactome Pathway diagram</h2>
 <a href="https://reactome.org/PathwayBrowser/#/R-HSA-8937144">Aryl hydrocarbon receptor signalling</a>
-END_HIDE
+
 
 
