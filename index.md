@@ -1,5 +1,3 @@
-
-
 # Sample analysis of Cancer Dependency Map (DepMap) data 
 ## Request
 * Identify the most frequent genetic alterations (could be mutations or copy number variations) in the cancer cell lines
@@ -130,7 +128,7 @@ CERES data with principle components strongly related to known batch effects rem
 423 cell lines are shared
 16052 genes are shared
 </pre>
-<img src="plots/gene_dependency.png" style="float:left">
+<img src="plots/gene_dependency.png"">
 * significant p-value means reject H0 that slope == 0
 * We will use the Achilles (Crispr) gene dependency score and check for positive agreement with RNAi later
 
@@ -160,16 +158,16 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
 
 ### Copy number vs gene dependency
 
-<img src="plots/bone_chordoma.png" style="float:left">
-<img src="plots/skin_epidermoid_carcinoma.png" style="float:left">
-<img src="plots/skin_squamous.png" style="float:left">
-<img src="plots/soft_tissue_fibrosarcoma.png" style="float:left">
-<img src="plots/upper_aerodigestive_buccal_mucosa.png" style="float:left">
-<img src="plots/eye_uveal_melanoma.png" style="float:left">
-<img src="plots/breast_HER2Amp.png" style="float:left">
-<img src="plots/soft_tissue_sarcoma_undifferentiated.png" style="float:left">
-<img src="plots/soft_tissue_epitheliod_sarcoma.png" style="float:left">
-<img src="plots/esophagus_adenocarcinoma.png" style="float:left">
+<img src="plots/bone_chordoma.png">
+<img src="plots/skin_epidermoid_carcinoma.png">
+<img src="plots/skin_squamous.png">
+<img src="plots/soft_tissue_fibrosarcoma.png">
+<img src="plots/upper_aerodigestive_buccal_mucosa.png">
+<img src="plots/eye_uveal_melanoma.png">
+<img src="plots/breast_HER2Amp.png">
+<img src="plots/soft_tissue_sarcoma_undifferentiated.png">
+<img src="plots/soft_tissue_epitheliod_sarcoma.png">
+<img src="plots/esophagus_adenocarcinoma.png">
 ## Candidate target genes
 
 * All genes in this table have copy number > 2 and Achilles gene dependency < 0 for at least 80% of the cell lines in 1 cell lineage'

@@ -13310,6 +13310,7 @@ div#notebook {
 </ul>
 <h3 id="MFR-(http://bmbl.sdstate.edu/MFR)">MFR (<a href="http://bmbl.sdstate.edu/MFR">http://bmbl.sdstate.edu/MFR</a>)<a class="anchor-link" href="#MFR-(http://bmbl.sdstate.edu/MFR)">&#182;</a></h3><ul>
 <li>A Machine Learning Model for measuring relatedness between a pair of genes</li>
+<li>Not currently used in analysis</li>
 </ul>
 <h3 id="Jupyter-(https://jupyter.org/)">Jupyter (<a href="https://jupyter.org/">https://jupyter.org/</a>)<a class="anchor-link" href="#Jupyter-(https://jupyter.org/)">&#182;</a></h3><ul>
 <li>Python programming framework for analysis prototyping and reporting</li>
@@ -13329,7 +13330,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">printmd</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -13365,7 +13366,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gd</span> <span class="o">=</span> <span class="n">get_gene_descriptions</span><span class="p">()</span>
@@ -13701,7 +13702,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -13746,7 +13747,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">exp</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;expression&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
@@ -13959,7 +13960,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -14131,28 +14132,10 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Done mapping deleterious mutations
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -14197,7 +14180,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cn</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;copy_number&#39;</span><span class="p">)</span>
@@ -14709,46 +14692,7 @@ div#notebook {
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<p>esophagus_adenocarcinoma; 7 cell lines; 7 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
 <p>bone_chordoma; 4 cell lines; 11 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>skin_epidermoid_carcinoma; 1 cell lines; 234 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>skin_squamous; 3 cell lines; 251 high copy number genes</p>
 
 </div>
 
@@ -14774,137 +14718,7 @@ div#notebook {
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<p>upper_aerodigestive_buccal_mucosa; 1 cell lines; 592 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>peripheral_nervous_system_PNET; 1 cell lines; 22 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>lung_immortalized; 1 cell lines; 6 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>gastric_adenosquamous; 1 cell lines; 508 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>soft_tissue_sarcoma_undifferentiated; 2 cell lines; 164 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>soft_tissue_fibrosarcoma; 1 cell lines; 2 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>soft_tissue_liposarcoma; 5 cell lines; 44 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>soft_tissue_epitheliod_sarcoma; 2 cell lines; 2 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
 <p>lymphoblastic_lymphoma; 1 cell lines; 311 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>eye_uveal_melanoma; 5 cell lines; 1016 high copy number genes</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p>ovary_immortalized; 1 cell lines; 9 high copy number genes</p>
 
 </div>
 
@@ -14943,7 +14757,124 @@ div#notebook {
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<p>breast_HER2Amp; 13 cell lines; 11 high copy number genes</p>
+<p>gastric_adenosquamous; 1 cell lines; 508 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>skin_epidermoid_carcinoma; 1 cell lines; 234 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>skin_squamous; 3 cell lines; 251 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>soft_tissue_liposarcoma; 5 cell lines; 44 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>soft_tissue_fibrosarcoma; 1 cell lines; 2 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>soft_tissue_epitheliod_sarcoma; 2 cell lines; 2 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>soft_tissue_sarcoma_undifferentiated; 2 cell lines; 164 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>ovary_immortalized; 1 cell lines; 9 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>peripheral_nervous_system_PNET; 1 cell lines; 22 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>esophagus_adenocarcinoma; 7 cell lines; 7 high copy number genes</p>
 
 </div>
 
@@ -14982,6 +14913,58 @@ div#notebook {
 
 
 <div class="output_markdown rendered_html output_subarea ">
+<p>breast_HER2Amp; 13 cell lines; 11 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>eye_uveal_melanoma; 5 cell lines; 1016 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>lung_immortalized; 1 cell lines; 6 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>upper_aerodigestive_buccal_mucosa; 1 cell lines; 592 high copy number genes</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
 <p>&lt;/pre&gt;</p>
 
 </div>
@@ -14994,7 +14977,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -15042,7 +15025,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Ingest data</span>
@@ -15097,7 +15080,7 @@ Final number of rows in dataframe: 17731
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Map cell line names to IDs</span>
@@ -15139,7 +15122,7 @@ Final number of rows in dataframe: 17731
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[48]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -15320,7 +15303,7 @@ Final number of rows in dataframe: 17731
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -15366,7 +15349,7 @@ Final number of rows in dataframe: 17731
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">achilles</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;achilles_crispr&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
@@ -15413,7 +15396,7 @@ Final number of rows in dataframe: 17731
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[50]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -16400,19 +16383,6 @@ Final number of rows in dataframe: 17731
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<p>ERBB2 mean copy number for breast_HER2Amp (11 cell lines): 14.84</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
 <p>ERBB2 mean copy number for breast_TPBC (5 cell lines): 9.59</p>
 
 </div>
@@ -16427,6 +16397,19 @@ Final number of rows in dataframe: 17731
 
 <div class="output_markdown rendered_html output_subarea ">
 <p>ERBB2 mean copy number for breast_TNBC (27 cell lines): 1.89</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>ERBB2 mean copy number for breast_HER2Amp (11 cell lines): 14.84</p>
 
 </div>
 
@@ -16535,7 +16518,7 @@ Final number of rows in dataframe: 17731
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sublin</span> <span class="ow">in</span> <span class="n">keep_lineage</span><span class="p">:</span>
@@ -16684,32 +16667,6 @@ Final number of rows in dataframe: 17731
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<p><img src="plots/eye_uveal_melanoma.png" style="float:left"></p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<p><img src="plots/soft_tissue_epitheliod_sarcoma.png" style="float:left"></p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
 <p><img src="plots/upper_aerodigestive_buccal_mucosa.png" style="float:left"></p>
 
 </div>
@@ -16723,7 +16680,7 @@ Final number of rows in dataframe: 17731
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<p><img src="plots/soft_tissue_sarcoma_undifferentiated.png" style="float:left"></p>
+<p><img src="plots/eye_uveal_melanoma.png" style="float:left"></p>
 
 </div>
 
@@ -16749,6 +16706,32 @@ Final number of rows in dataframe: 17731
 
 
 <div class="output_markdown rendered_html output_subarea ">
+<p><img src="plots/soft_tissue_sarcoma_undifferentiated.png" style="float:left"></p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><img src="plots/soft_tissue_epitheliod_sarcoma.png" style="float:left"></p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
 <p><img src="plots/esophagus_adenocarcinoma.png" style="float:left"></p>
 
 </div>
@@ -16761,7 +16744,7 @@ Final number of rows in dataframe: 17731
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save the table of candidates to an HTML file</span>
@@ -16785,7 +16768,7 @@ Final number of rows in dataframe: 17731
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;## Candidate target genes&#39;</span><span class="p">)</span>
