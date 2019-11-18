@@ -67,7 +67,7 @@ Use data from humanmine (http://www.humanmine.org/) to map NCBI gene IDs to name
       <td>E9PBZ2</td>
     </tr>
   </tbody>
-</table>
+</table>-->
 -->
 
 ## Aggregate CCLE cell lines by lineage
@@ -91,7 +91,7 @@ RNAseq TPM gene expression data for just protein coding genes using RSEM. Log2 t
 * Apply BOOLEAN mask to accept log2 tpm > 0 as positive for expression
 
 Sample expression data: 
-<table border="1" class="dataframe">
+<!--<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -148,9 +148,9 @@ Sample expression data:
       <td>7.294896</td>
     </tr>
   </tbody>
-</table>
+</table>-->
 <br>Sample masked expression: 
-<table border="1" class="dataframe">
+<!--<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -207,7 +207,7 @@ Sample expression data:
       <td>True</td>
     </tr>
   </tbody>
-</table>
+</table>-->
 
 ## Mutation Data 
 <b>DepMap source file:</b> CCLE_mutations.csv
@@ -225,7 +225,7 @@ Gene level copy number data, log2 transformed with a pseudo count of 1. This is 
 * Translate gene names to NCBI gene IDs
 
 Sample copy number data: 
-<table border="1" class="dataframe">
+<!--<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -282,10 +282,10 @@ Sample copy number data:
       <td>1.254932</td>
     </tr>
   </tbody>
-</table>
+</table>-->
 
 Sample copy number data descritive stats: 
-<table border="1" class="dataframe">
+<!--<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -407,7 +407,7 @@ Sample copy number data descritive stats:
       <td>3.354475</td>
     </tr>
   </tbody>
-</table>
+</table>-->
 
 ## Search for high copy number genes in each of the lineages
 * Seleting genes with copy number > 2 in <b><i>all</i></b> cell lines is a lineage is a bit too stringent
@@ -457,7 +457,7 @@ CERES data with principle components strongly related to known batch effects rem
 * Transpose rows and columns so each cell line is a column label with vertivally stacked gene data
 
 Sample Achilles data:
-<table border="1" class="dataframe">
+<!--<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -501,7 +501,7 @@ Sample Achilles data:
       <td>0.106952</td>
     </tr>
   </tbody>
-</table>
+</table>-->
 
 ### How many cell lines and genes are shared between D2 (RNAi) and Achilles (Crispr) gene dependency data sets?
 
@@ -562,7 +562,7 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
   * Whether the gene is a TCGA or COSMIC mutation hotspot
   * Whether the gene has > 0 TPM RNASeq expression
 
-<table style="width:100%" id="candidates" border="1">
+ style="width:100%" id="candidates" border="1">
   <thead>
     <tr style="text-align: right;">
       <th>DepMap_ID</th>
