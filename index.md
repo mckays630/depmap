@@ -89,7 +89,7 @@ Gene level copy number data, log2 transformed with a pseudo count of 1. This is 
 
 
 ## Search for high copy number genes in each of the lineages
-* Filtering only genes with copy number > 2 in <b><i>all</i></b> cell lines is a lineage is a bit too stringent
+* Filtering only genes with copy number > 2 in <b><i>all</i></b> cell lines in a lineage is a bit too stringent
 * Retain genes that have copy number >= 2 in 80% or more cell lines in a lineage
 * Extract the data for any cell lines with high copy number genes to use as plotting baseline
 
