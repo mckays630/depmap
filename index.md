@@ -1,3 +1,5 @@
+
+
 # Sample analysis of Cancer Dependency Map (DepMap) data 
 ## Request
 * Identify the most frequent genetic alterations (could be mutations or copy number variations) in the cancer cell lines
@@ -80,27 +82,27 @@ Copy number data descritive stats:
 * Extract the data for any cell lines with high copy number genes to use as plotting baseline
 
 <pre>
-bone_chordoma; 4 cell lines; 11 high copy number genes
-adrenal_cortex; 1 cell lines; 200 high copy number genes
-lymphoblastic_lymphoma; 1 cell lines; 311 high copy number genes
-central_nervous_system_PNET; 1 cell lines; 2 high copy number genes
+lung_immortalized; 1 cell lines; 6 high copy number genes
 central_nervous_system_immortalized; 1 cell lines; 26 high copy number genes
+central_nervous_system_PNET; 1 cell lines; 2 high copy number genes
+ovary_immortalized; 1 cell lines; 9 high copy number genes
 gastric_adenosquamous; 1 cell lines; 508 high copy number genes
-skin_epidermoid_carcinoma; 1 cell lines; 234 high copy number genes
-skin_squamous; 3 cell lines; 251 high copy number genes
-soft_tissue_liposarcoma; 5 cell lines; 44 high copy number genes
-soft_tissue_fibrosarcoma; 1 cell lines; 2 high copy number genes
+bone_chordoma; 4 cell lines; 11 high copy number genes
+peripheral_nervous_system_PNET; 1 cell lines; 22 high copy number genes
+adrenal_cortex; 1 cell lines; 200 high copy number genes
+upper_aerodigestive_buccal_mucosa; 1 cell lines; 592 high copy number genes
+eye_uveal_melanoma; 5 cell lines; 1016 high copy number genes
 soft_tissue_epitheliod_sarcoma; 2 cell lines; 2 high copy number genes
 soft_tissue_sarcoma_undifferentiated; 2 cell lines; 164 high copy number genes
-ovary_immortalized; 1 cell lines; 9 high copy number genes
-peripheral_nervous_system_PNET; 1 cell lines; 22 high copy number genes
+soft_tissue_liposarcoma; 5 cell lines; 44 high copy number genes
+soft_tissue_fibrosarcoma; 1 cell lines; 2 high copy number genes
+lymphoblastic_lymphoma; 1 cell lines; 311 high copy number genes
 esophagus_adenocarcinoma; 7 cell lines; 7 high copy number genes
-breast_ERneg; 1 cell lines; 960 high copy number genes
+skin_squamous; 3 cell lines; 251 high copy number genes
+skin_epidermoid_carcinoma; 1 cell lines; 234 high copy number genes
 breast_immortalized; 2 cell lines; 8 high copy number genes
 breast_HER2Amp; 13 cell lines; 11 high copy number genes
-eye_uveal_melanoma; 5 cell lines; 1016 high copy number genes
-lung_immortalized; 1 cell lines; 6 high copy number genes
-upper_aerodigestive_buccal_mucosa; 1 cell lines; 592 high copy number genes
+breast_ERneg; 1 cell lines; 960 high copy number genes
 </pre>
 
 ## DEMETER2 RNAi gene dependency data
@@ -128,7 +130,7 @@ CERES data with principle components strongly related to known batch effects rem
 423 cell lines are shared
 16052 genes are shared
 </pre>
-<img src="plots/gene_dependency.png"">
+<img src="plots/gene_dependency.png" style="float:left">
 * significant p-value means reject H0 that slope == 0
 * We will use the Achilles (Crispr) gene dependency score and check for positive agreement with RNAi later
 
@@ -142,8 +144,8 @@ Evaluating breast cancer lineages where at least one cell line had copy number >
 
 ERBB2 is in hotspot gene set? <b>TRUE</b>
 <pre>
-ERBB2 mean copy number for breast_TPBC (5 cell lines): 9.59
 ERBB2 mean copy number for breast_TNBC (27 cell lines): 1.89
+ERBB2 mean copy number for breast_TPBC (5 cell lines): 9.59
 ERBB2 mean copy number for breast_HER2Amp (11 cell lines): 14.84
 ERBB2 mean gene dependency for breast_HER2Amp (6 cell lines): -0.83
 ERBB2 mean gene dependency for breast_ERpos (7 cell lines): -0.27
@@ -158,16 +160,16 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
 
 ### Copy number vs gene dependency
 
-<img src="plots/bone_chordoma.png">
-<img src="plots/skin_epidermoid_carcinoma.png">
-<img src="plots/skin_squamous.png">
-<img src="plots/soft_tissue_fibrosarcoma.png">
-<img src="plots/upper_aerodigestive_buccal_mucosa.png">
-<img src="plots/eye_uveal_melanoma.png">
-<img src="plots/breast_HER2Amp.png">
-<img src="plots/soft_tissue_sarcoma_undifferentiated.png">
-<img src="plots/soft_tissue_epitheliod_sarcoma.png">
-<img src="plots/esophagus_adenocarcinoma.png">
+<img src="plots/esophagus_adenocarcinoma.png" style="float:left">
+<img src="plots/bone_chordoma.png" style="float:left">
+<img src="plots/soft_tissue_fibrosarcoma.png" style="float:left">
+<img src="plots/eye_uveal_melanoma.png" style="float:left">
+<img src="plots/soft_tissue_epitheliod_sarcoma.png" style="float:left">
+<img src="plots/breast_HER2Amp.png" style="float:left">
+<img src="plots/soft_tissue_sarcoma_undifferentiated.png" style="float:left">
+<img src="plots/upper_aerodigestive_buccal_mucosa.png" style="float:left">
+<img src="plots/skin_epidermoid_carcinoma.png" style="float:left">
+<img src="plots/skin_squamous.png" style="float:left">
 ## Candidate target genes
 
 * All genes in this table have copy number > 2 and Achilles gene dependency < 0 for at least 80% of the cell lines in 1 cell lineage'
@@ -178,95 +180,609 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
   
 {% include candidates.html %}
 
-<pre>
-bone_chordoma; 4 cell lines; 11 high copy number genes
-adrenal_cortex; 1 cell lines; 200 high copy number genes
-lymphoblastic_lymphoma; 1 cell lines; 311 high copy number genes
-central_nervous_system_PNET; 1 cell lines; 2 high copy number genes
-central_nervous_system_immortalized; 1 cell lines; 26 high copy number genes
-gastric_adenosquamous; 1 cell lines; 508 high copy number genes
-skin_epidermoid_carcinoma; 1 cell lines; 234 high copy number genes
-skin_squamous; 3 cell lines; 251 high copy number genes
-soft_tissue_liposarcoma; 5 cell lines; 44 high copy number genes
-soft_tissue_fibrosarcoma; 1 cell lines; 2 high copy number genes
-soft_tissue_epitheliod_sarcoma; 2 cell lines; 2 high copy number genes
-soft_tissue_sarcoma_undifferentiated; 2 cell lines; 164 high copy number genes
-ovary_immortalized; 1 cell lines; 9 high copy number genes
-peripheral_nervous_system_PNET; 1 cell lines; 22 high copy number genes
-esophagus_adenocarcinoma; 7 cell lines; 7 high copy number genes
-breast_ERneg; 1 cell lines; 960 high copy number genes
-breast_immortalized; 2 cell lines; 8 high copy number genes
-breast_HER2Amp; 13 cell lines; 11 high copy number genes
-eye_uveal_melanoma; 5 cell lines; 1016 high copy number genes
-lung_immortalized; 1 cell lines; 6 high copy number genes
-upper_aerodigestive_buccal_mucosa; 1 cell lines; 592 high copy number genes
-</pre>
-<pre>
-bone_chordoma; 4 cell lines; 11 high copy number genes
-adrenal_cortex; 1 cell lines; 200 high copy number genes
-lymphoblastic_lymphoma; 1 cell lines; 311 high copy number genes
-central_nervous_system_PNET; 1 cell lines; 2 high copy number genes
-central_nervous_system_immortalized; 1 cell lines; 26 high copy number genes
-gastric_adenosquamous; 1 cell lines; 508 high copy number genes
-skin_epidermoid_carcinoma; 1 cell lines; 234 high copy number genes
-skin_squamous; 3 cell lines; 251 high copy number genes
-soft_tissue_liposarcoma; 5 cell lines; 44 high copy number genes
-soft_tissue_fibrosarcoma; 1 cell lines; 2 high copy number genes
-soft_tissue_epitheliod_sarcoma; 2 cell lines; 2 high copy number genes
-soft_tissue_sarcoma_undifferentiated; 2 cell lines; 164 high copy number genes
-ovary_immortalized; 1 cell lines; 9 high copy number genes
-peripheral_nervous_system_PNET; 1 cell lines; 22 high copy number genes
-esophagus_adenocarcinoma; 7 cell lines; 7 high copy number genes
-breast_ERneg; 1 cell lines; 960 high copy number genes
-breast_immortalized; 2 cell lines; 8 high copy number genes
-breast_HER2Amp; 13 cell lines; 11 high copy number genes
-eye_uveal_melanoma; 5 cell lines; 1016 high copy number genes
-lung_immortalized; 1 cell lines; 6 high copy number genes
-upper_aerodigestive_buccal_mucosa; 1 cell lines; 592 high copy number genes
-</pre>
-<pre>
-bone_chordoma; 4 cell lines; 11 high copy number genes
-adrenal_cortex; 1 cell lines; 200 high copy number genes
-lymphoblastic_lymphoma; 1 cell lines; 311 high copy number genes
-central_nervous_system_PNET; 1 cell lines; 2 high copy number genes
-central_nervous_system_immortalized; 1 cell lines; 26 high copy number genes
-gastric_adenosquamous; 1 cell lines; 508 high copy number genes
-skin_epidermoid_carcinoma; 1 cell lines; 234 high copy number genes
-skin_squamous; 3 cell lines; 251 high copy number genes
-soft_tissue_liposarcoma; 5 cell lines; 44 high copy number genes
-soft_tissue_fibrosarcoma; 1 cell lines; 2 high copy number genes
-soft_tissue_epitheliod_sarcoma; 2 cell lines; 2 high copy number genes
-soft_tissue_sarcoma_undifferentiated; 2 cell lines; 164 high copy number genes
-ovary_immortalized; 1 cell lines; 9 high copy number genes
-peripheral_nervous_system_PNET; 1 cell lines; 22 high copy number genes
-esophagus_adenocarcinoma; 7 cell lines; 7 high copy number genes
-breast_ERneg; 1 cell lines; 960 high copy number genes
-breast_immortalized; 2 cell lines; 8 high copy number genes
-breast_HER2Amp; 13 cell lines; 11 high copy number genes
-eye_uveal_melanoma; 5 cell lines; 1016 high copy number genes
-lung_immortalized; 1 cell lines; 6 high copy number genes
-upper_aerodigestive_buccal_mucosa; 1 cell lines; 592 high copy number genes
-</pre>
-<pre>
-bone_chordoma; 4 cell lines; 11 high copy number genes
-adrenal_cortex; 1 cell lines; 200 high copy number genes
-lymphoblastic_lymphoma; 1 cell lines; 311 high copy number genes
-central_nervous_system_PNET; 1 cell lines; 2 high copy number genes
-central_nervous_system_immortalized; 1 cell lines; 26 high copy number genes
-gastric_adenosquamous; 1 cell lines; 508 high copy number genes
-skin_epidermoid_carcinoma; 1 cell lines; 234 high copy number genes
-skin_squamous; 3 cell lines; 251 high copy number genes
-soft_tissue_liposarcoma; 5 cell lines; 44 high copy number genes
-soft_tissue_fibrosarcoma; 1 cell lines; 2 high copy number genes
-soft_tissue_epitheliod_sarcoma; 2 cell lines; 2 high copy number genes
-soft_tissue_sarcoma_undifferentiated; 2 cell lines; 164 high copy number genes
-ovary_immortalized; 1 cell lines; 9 high copy number genes
-peripheral_nervous_system_PNET; 1 cell lines; 22 high copy number genes
-esophagus_adenocarcinoma; 7 cell lines; 7 high copy number genes
-breast_ERneg; 1 cell lines; 960 high copy number genes
-breast_immortalized; 2 cell lines; 8 high copy number genes
-breast_HER2Amp; 13 cell lines; 11 high copy number genes
-eye_uveal_melanoma; 5 cell lines; 1016 high copy number genes
-lung_immortalized; 1 cell lines; 6 high copy number genes
-upper_aerodigestive_buccal_mucosa; 1 cell lines; 592 high copy number genes
-</pre>
+## Gene information
+* <a href="reports/NSD3.html">NSD3</a>
+* <a href="reports/CBLL1.html">CBLL1</a>
+* <a href="reports/MRPS28.html">MRPS28</a>
+* <a href="reports/RBM38.html">RBM38</a>
+* <a href="reports/SQLE.html">SQLE</a>
+* <a href="reports/TSPYL5.html">TSPYL5</a>
+* <a href="reports/PHF12.html">PHF12</a>
+* <a href="reports/EIF4A2.html">EIF4A2</a>
+* <a href="reports/PTK2.html">PTK2</a>
+* <a href="reports/TACC1.html">TACC1</a>
+* <a href="reports/DDHD2.html">DDHD2</a>
+* <a href="reports/DSCC1.html">DSCC1</a>
+* <a href="reports/PRKAR2B.html">PRKAR2B</a>
+* <a href="reports/TRIP6.html">TRIP6</a>
+* <a href="reports/KSR1.html">KSR1</a>
+* <a href="reports/BCAP29.html">BCAP29</a>
+* <a href="reports/ANKRD49.html">ANKRD49</a>
+* <a href="reports/GEM.html">GEM</a>
+* <a href="reports/PTP4A3.html">PTP4A3</a>
+* <a href="reports/CCL26.html">CCL26</a>
+* <a href="reports/POU5F1B.html">POU5F1B</a>
+* <a href="reports/CPNE3.html">CPNE3</a>
+* <a href="reports/ZHX2.html">ZHX2</a>
+* <a href="reports/PIWIL3.html">PIWIL3</a>
+* <a href="reports/PPP1R3A.html">PPP1R3A</a>
+* <a href="reports/ASAP1.html">ASAP1</a>
+* <a href="reports/DLX6.html">DLX6</a>
+* <a href="reports/PABPC1.html">PABPC1</a>
+* <a href="reports/PHACTR3.html">PHACTR3</a>
+* <a href="reports/ADNP.html">ADNP</a>
+* <a href="reports/PAG1.html">PAG1</a>
+* <a href="reports/CAV1.html">CAV1</a>
+* <a href="reports/STAR.html">STAR</a>
+* <a href="reports/ERVW-1.html">ERVW-1</a>
+* <a href="reports/XKR9.html">XKR9</a>
+* <a href="reports/SNX16.html">SNX16</a>
+* <a href="reports/FZD1.html">FZD1</a>
+* <a href="reports/PIGS.html">PIGS</a>
+* <a href="reports/PTPN1.html">PTPN1</a>
+* <a href="reports/DLX5.html">DLX5</a>
+* <a href="reports/TRIM4.html">TRIM4</a>
+* <a href="reports/LGALS9.html">LGALS9</a>
+* <a href="reports/ADGRB1.html">ADGRB1</a>
+* <a href="reports/SSC4D.html">SSC4D</a>
+* <a href="reports/FAM210B.html">FAM210B</a>
+* <a href="reports/NEK8.html">NEK8</a>
+* <a href="reports/SULT1A1.html">SULT1A1</a>
+* <a href="reports/MCM7.html">MCM7</a>
+* <a href="reports/SLC7A13.html">SLC7A13</a>
+* <a href="reports/TFPI2.html">TFPI2</a>
+* <a href="reports/TMEM189.html">TMEM189</a>
+* <a href="reports/BRI3.html">BRI3</a>
+* <a href="reports/FAM91A1.html">FAM91A1</a>
+* <a href="reports/ZP3.html">ZP3</a>
+* <a href="reports/RASA4.html">RASA4</a>
+* <a href="reports/MMP10.html">MMP10</a>
+* <a href="reports/CA2.html">CA2</a>
+* <a href="reports/PNMT.html">PNMT</a>
+* <a href="reports/PPP1R16A.html">PPP1R16A</a>
+* <a href="reports/SPAG5.html">SPAG5</a>
+* <a href="reports/MYO18A.html">MYO18A</a>
+* <a href="reports/ECM1.html">ECM1</a>
+* <a href="reports/EEF1AKMT3.html">EEF1AKMT3</a>
+* <a href="reports/MMP7.html">MMP7</a>
+* <a href="reports/ATP9A.html">ATP9A</a>
+* <a href="reports/TSPAN31.html">TSPAN31</a>
+* <a href="reports/PI15.html">PI15</a>
+* <a href="reports/MED30.html">MED30</a>
+* <a href="reports/GNB2.html">GNB2</a>
+* <a href="reports/PRKRIP1.html">PRKRIP1</a>
+* <a href="reports/RALYL.html">RALYL</a>
+* <a href="reports/C8orf33.html">C8orf33</a>
+* <a href="reports/PMEPA1.html">PMEPA1</a>
+* <a href="reports/LRRC75B.html">LRRC75B</a>
+* <a href="reports/FLOT2.html">FLOT2</a>
+* <a href="reports/CCN3.html">CCN3</a>
+* <a href="reports/SEMA3C.html">SEMA3C</a>
+* <a href="reports/GAL3ST4.html">GAL3ST4</a>
+* <a href="reports/DGAT1.html">DGAT1</a>
+* <a href="reports/PKIA.html">PKIA</a>
+* <a href="reports/LETM2.html">LETM2</a>
+* <a href="reports/TFIP11.html">TFIP11</a>
+* <a href="reports/ADAM9.html">ADAM9</a>
+* <a href="reports/FBXO32.html">FBXO32</a>
+* <a href="reports/TP53INP1.html">TP53INP1</a>
+* <a href="reports/UNC119.html">UNC119</a>
+* <a href="reports/MIEN1.html">MIEN1</a>
+* <a href="reports/UBR5.html">UBR5</a>
+* <a href="reports/TMEM67.html">TMEM67</a>
+* <a href="reports/OXR1.html">OXR1</a>
+* <a href="reports/PPP1R14A.html">PPP1R14A</a>
+* <a href="reports/MAP11.html">MAP11</a>
+* <a href="reports/COL14A1.html">COL14A1</a>
+* <a href="reports/PON2.html">PON2</a>
+* <a href="reports/CHMP4C.html">CHMP4C</a>
+* <a href="reports/SLC13A2.html">SLC13A2</a>
+* <a href="reports/JPH1.html">JPH1</a>
+* <a href="reports/PDCD6.html">PDCD6</a>
+* <a href="reports/RBM48.html">RBM48</a>
+* <a href="reports/HSF1.html">HSF1</a>
+* <a href="reports/LTO1.html">LTO1</a>
+* <a href="reports/FADD.html">FADD</a>
+* <a href="reports/FBXL6.html">FBXL6</a>
+* <a href="reports/ADRB3.html">ADRB3</a>
+* <a href="reports/SLC12A7.html">SLC12A7</a>
+* <a href="reports/ZSCAN25.html">ZSCAN25</a>
+* <a href="reports/CYP3A43.html">CYP3A43</a>
+* <a href="reports/TERF1.html">TERF1</a>
+* <a href="reports/ABHD11.html">ABHD11</a>
+* <a href="reports/LPCAT1.html">LPCAT1</a>
+* <a href="reports/TRIM50.html">TRIM50</a>
+* <a href="reports/NCOA3.html">NCOA3</a>
+* <a href="reports/RFC4.html">RFC4</a>
+* <a href="reports/SLC6A5.html">SLC6A5</a>
+* <a href="reports/TMEM243.html">TMEM243</a>
+* <a href="reports/DECR1.html">DECR1</a>
+* <a href="reports/PCOLCE.html">PCOLCE</a>
+* <a href="reports/ACTL6B.html">ACTL6B</a>
+* <a href="reports/ABCB4.html">ABCB4</a>
+* <a href="reports/DPF1.html">DPF1</a>
+* <a href="reports/CDHR3.html">CDHR3</a>
+* <a href="reports/PREX1.html">PREX1</a>
+* <a href="reports/IMPA1.html">IMPA1</a>
+* <a href="reports/EMC2.html">EMC2</a>
+* <a href="reports/AGFG2.html">AGFG2</a>
+* <a href="reports/MARCH9.html">MARCH9</a>
+* <a href="reports/NDUFB9.html">NDUFB9</a>
+* <a href="reports/NIPAL2.html">NIPAL2</a>
+* <a href="reports/CCND1.html">CCND1</a>
+* <a href="reports/HNF4G.html">HNF4G</a>
+* <a href="reports/SESN3.html">SESN3</a>
+* <a href="reports/EXT1.html">EXT1</a>
+* <a href="reports/PEX2.html">PEX2</a>
+* <a href="reports/MATN2.html">MATN2</a>
+* <a href="reports/ZNF3.html">ZNF3</a>
+* <a href="reports/CTSZ.html">CTSZ</a>
+* <a href="reports/MTBP.html">MTBP</a>
+* <a href="reports/ZMYND8.html">ZMYND8</a>
+* <a href="reports/RAE1.html">RAE1</a>
+* <a href="reports/C8orf37.html">C8orf37</a>
+* <a href="reports/TMEM64.html">TMEM64</a>
+* <a href="reports/IRX2.html">IRX2</a>
+* <a href="reports/FIS1.html">FIS1</a>
+* <a href="reports/DNAJB9.html">DNAJB9</a>
+* <a href="reports/GTPBP10.html">GTPBP10</a>
+* <a href="reports/SDC2.html">SDC2</a>
+* <a href="reports/GGT1.html">GGT1</a>
+* <a href="reports/EIF3E.html">EIF3E</a>
+* <a href="reports/B4GALT5.html">B4GALT5</a>
+* <a href="reports/TRIP13.html">TRIP13</a>
+* <a href="reports/GDAP1.html">GDAP1</a>
+* <a href="reports/WNT2.html">WNT2</a>
+* <a href="reports/SNAI1.html">SNAI1</a>
+* <a href="reports/LY6K.html">LY6K</a>
+* <a href="reports/CLPTM1L.html">CLPTM1L</a>
+* <a href="reports/MTDH.html">MTDH</a>
+* <a href="reports/RAB34.html">RAB34</a>
+* <a href="reports/DOK5.html">DOK5</a>
+* <a href="reports/TBC1D31.html">TBC1D31</a>
+* <a href="reports/KMT2E.html">KMT2E</a>
+* <a href="reports/GDF6.html">GDF6</a>
+* <a href="reports/DUS4L.html">DUS4L</a>
+* <a href="reports/SYPL1.html">SYPL1</a>
+* <a href="reports/DENND3.html">DENND3</a>
+* <a href="reports/BUD31.html">BUD31</a>
+* <a href="reports/SCRT1.html">SCRT1</a>
+* <a href="reports/NPEPL1.html">NPEPL1</a>
+* <a href="reports/WWP1.html">WWP1</a>
+* <a href="reports/SEMA3A.html">SEMA3A</a>
+* <a href="reports/SPINT2.html">SPINT2</a>
+* <a href="reports/IFT22.html">IFT22</a>
+* <a href="reports/SYCP2.html">SYCP2</a>
+* <a href="reports/RBM12B.html">RBM12B</a>
+* <a href="reports/CDK4.html">CDK4</a>
+* <a href="reports/YAP1.html">YAP1</a>
+* <a href="reports/RNF114.html">RNF114</a>
+* <a href="reports/INTS8.html">INTS8</a>
+* <a href="reports/LRCH4.html">LRCH4</a>
+* <a href="reports/RTF2.html">RTF2</a>
+* <a href="reports/GOLPH3L.html">GOLPH3L</a>
+* <a href="reports/PSKH2.html">PSKH2</a>
+* <a href="reports/EPO.html">EPO</a>
+* <a href="reports/FOXN1.html">FOXN1</a>
+* <a href="reports/BAALC.html">BAALC</a>
+* <a href="reports/HORMAD1.html">HORMAD1</a>
+* <a href="reports/PPP1R9A.html">PPP1R9A</a>
+* <a href="reports/DCAF13.html">DCAF13</a>
+* <a href="reports/MMP20.html">MMP20</a>
+* <a href="reports/CALN1.html">CALN1</a>
+* <a href="reports/PCK1.html">PCK1</a>
+* <a href="reports/UPB1.html">UPB1</a>
+* <a href="reports/ZNF607.html">ZNF607</a>
+* <a href="reports/UPK3BL2.html">UPK3BL2</a>
+* <a href="reports/ARC.html">ARC</a>
+* <a href="reports/RRM2B.html">RRM2B</a>
+* <a href="reports/BAIAP2L1.html">BAIAP2L1</a>
+* <a href="reports/LAPTM4B.html">LAPTM4B</a>
+* <a href="reports/WDR87.html">WDR87</a>
+* <a href="reports/SUSD2.html">SUSD2</a>
+* <a href="reports/STX16.html">STX16</a>
+* <a href="reports/NECAB1.html">NECAB1</a>
+* <a href="reports/PLPBP.html">PLPBP</a>
+* <a href="reports/RIMS2.html">RIMS2</a>
+* <a href="reports/PSCA.html">PSCA</a>
+* <a href="reports/OSR2.html">OSR2</a>
+* <a href="reports/TRRAP.html">TRRAP</a>
+* <a href="reports/ZNF277.html">ZNF277</a>
+* <a href="reports/RPL7.html">RPL7</a>
+* <a href="reports/TMEM74.html">TMEM74</a>
+* <a href="reports/FETUB.html">FETUB</a>
+* <a href="reports/GRHL2.html">GRHL2</a>
+* <a href="reports/ERBB2.html">ERBB2</a>
+* <a href="reports/KCNG1.html">KCNG1</a>
+* <a href="reports/KCNS2.html">KCNS2</a>
+* <a href="reports/CA1.html">CA1</a>
+* <a href="reports/HTRA4.html">HTRA4</a>
+* <a href="reports/MLXIPL.html">MLXIPL</a>
+* <a href="reports/SRI.html">SRI</a>
+* <a href="reports/TSHZ2.html">TSHZ2</a>
+* <a href="reports/PIPOX.html">PIPOX</a>
+* <a href="reports/GPR83.html">GPR83</a>
+* <a href="reports/PTGIS.html">PTGIS</a>
+* <a href="reports/ARHGAP39.html">ARHGAP39</a>
+* <a href="reports/CLDN15.html">CLDN15</a>
+* <a href="reports/YWHAZ.html">YWHAZ</a>
+* <a href="reports/PON3.html">PON3</a>
+* <a href="reports/UQCRB.html">UQCRB</a>
+* <a href="reports/CSE1L.html">CSE1L</a>
+* <a href="reports/DYNC2H1.html">DYNC2H1</a>
+* <a href="reports/HIP1.html">HIP1</a>
+* <a href="reports/CYHR1.html">CYHR1</a>
+* <a href="reports/FAM217B.html">FAM217B</a>
+* <a href="reports/C8orf82.html">C8orf82</a>
+* <a href="reports/SBSPON.html">SBSPON</a>
+* <a href="reports/ZNF217.html">ZNF217</a>
+* <a href="reports/DMTF1.html">DMTF1</a>
+* <a href="reports/FABP12.html">FABP12</a>
+* <a href="reports/NBN.html">NBN</a>
+* <a href="reports/GPT.html">GPT</a>
+* <a href="reports/CDK6.html">CDK6</a>
+* <a href="reports/PDAP1.html">PDAP1</a>
+* <a href="reports/SPDYE3.html">SPDYE3</a>
+* <a href="reports/CROT.html">CROT</a>
+* <a href="reports/MC3R.html">MC3R</a>
+* <a href="reports/CA3.html">CA3</a>
+* <a href="reports/GSDMC.html">GSDMC</a>
+* <a href="reports/SLC39A4.html">SLC39A4</a>
+* <a href="reports/NELFCD.html">NELFCD</a>
+* <a href="reports/HBP1.html">HBP1</a>
+* <a href="reports/IFRD1.html">IFRD1</a>
+* <a href="reports/RMDN1.html">RMDN1</a>
+* <a href="reports/ADCK5.html">ADCK5</a>
+* <a href="reports/TRPS1.html">TRPS1</a>
+* <a href="reports/ETV5.html">ETV5</a>
+* <a href="reports/AURKA.html">AURKA</a>
+* <a href="reports/B4GALNT1.html">B4GALNT1</a>
+* <a href="reports/BHLHA15.html">BHLHA15</a>
+* <a href="reports/DCAF4L2.html">DCAF4L2</a>
+* <a href="reports/SNRPD3.html">SNRPD3</a>
+* <a href="reports/ODF1.html">ODF1</a>
+* <a href="reports/SUPT6H.html">SUPT6H</a>
+* <a href="reports/SNAI2.html">SNAI2</a>
+* <a href="reports/ZBTB10.html">ZBTB10</a>
+* <a href="reports/ZNHIT1.html">ZNHIT1</a>
+* <a href="reports/KCNB1.html">KCNB1</a>
+* <a href="reports/ELOC.html">ELOC</a>
+* <a href="reports/FABP5.html">FABP5</a>
+* <a href="reports/GRB7.html">GRB7</a>
+* <a href="reports/CTDSP2.html">CTDSP2</a>
+* <a href="reports/PDK4.html">PDK4</a>
+* <a href="reports/RPL8.html">RPL8</a>
+* <a href="reports/SLC12A9.html">SLC12A9</a>
+* <a href="reports/TONSL.html">TONSL</a>
+* <a href="reports/ORC5.html">ORC5</a>
+* <a href="reports/CACNA2D1.html">CACNA2D1</a>
+* <a href="reports/TIAF1.html">TIAF1</a>
+* <a href="reports/ADORA2A.html">ADORA2A</a>
+* <a href="reports/TES.html">TES</a>
+* <a href="reports/CDH26.html">CDH26</a>
+* <a href="reports/POP7.html">POP7</a>
+* <a href="reports/FAM222B.html">FAM222B</a>
+* <a href="reports/NEUROD2.html">NEUROD2</a>
+* <a href="reports/SHARPIN.html">SHARPIN</a>
+* <a href="reports/BRD9.html">BRD9</a>
+* <a href="reports/ZNF655.html">ZNF655</a>
+* <a href="reports/BAZ1B.html">BAZ1B</a>
+* <a href="reports/DPY19L4.html">DPY19L4</a>
+* <a href="reports/MOGAT3.html">MOGAT3</a>
+* <a href="reports/MDFIC.html">MDFIC</a>
+* <a href="reports/PGAP3.html">PGAP3</a>
+* <a href="reports/TRMT12.html">TRMT12</a>
+* <a href="reports/RCC1L.html">RCC1L</a>
+* <a href="reports/FABP4.html">FABP4</a>
+* <a href="reports/GRINA.html">GRINA</a>
+* <a href="reports/DHRS13.html">DHRS13</a>
+* <a href="reports/RAD21.html">RAD21</a>
+* <a href="reports/PILRA.html">PILRA</a>
+* <a href="reports/SEMA3E.html">SEMA3E</a>
+* <a href="reports/RUNX1T1.html">RUNX1T1</a>
+* <a href="reports/KCNK9.html">KCNK9</a>
+* <a href="reports/CDH17.html">CDH17</a>
+* <a href="reports/SLC52A2.html">SLC52A2</a>
+* <a href="reports/SLC26A5.html">SLC26A5</a>
+* <a href="reports/NAPEPLD.html">NAPEPLD</a>
+* <a href="reports/FGF19.html">FGF19</a>
+* <a href="reports/RNF19A.html">RNF19A</a>
+* <a href="reports/AZGP1.html">AZGP1</a>
+* <a href="reports/TAF2.html">TAF2</a>
+* <a href="reports/BRF2.html">BRF2</a>
+* <a href="reports/SRRT.html">SRRT</a>
+* <a href="reports/DERL1.html">DERL1</a>
+* <a href="reports/CSTF1.html">CSTF1</a>
+* <a href="reports/LRRC14.html">LRRC14</a>
+* <a href="reports/WASHC5.html">WASHC5</a>
+* <a href="reports/RAD54B.html">RAD54B</a>
+* <a href="reports/FAM200A.html">FAM200A</a>
+* <a href="reports/NOS2.html">NOS2</a>
+* <a href="reports/RPL30.html">RPL30</a>
+* <a href="reports/TRIM56.html">TRIM56</a>
+* <a href="reports/STMN2.html">STMN2</a>
+* <a href="reports/PIP4P2.html">PIP4P2</a>
+* <a href="reports/VAPB.html">VAPB</a>
+* <a href="reports/POP1.html">POP1</a>
+* <a href="reports/FGFR1.html">FGFR1</a>
+* <a href="reports/CRYGS.html">CRYGS</a>
+* <a href="reports/SLC6A19.html">SLC6A19</a>
+* <a href="reports/LAMB1.html">LAMB1</a>
+* <a href="reports/CYP11B1.html">CYP11B1</a>
+* <a href="reports/RAB22A.html">RAB22A</a>
+* <a href="reports/NCALD.html">NCALD</a>
+* <a href="reports/FER1L6.html">FER1L6</a>
+* <a href="reports/DCSTAMP.html">DCSTAMP</a>
+* <a href="reports/ZNFX1.html">ZNFX1</a>
+* <a href="reports/TMEM199.html">TMEM199</a>
+* <a href="reports/TMEM130.html">TMEM130</a>
+* <a href="reports/COLEC10.html">COLEC10</a>
+* <a href="reports/AHRR.html">AHRR</a>
+* <a href="reports/PARD6B.html">PARD6B</a>
+* <a href="reports/MAF1.html">MAF1</a>
+* <a href="reports/ZNF804B.html">ZNF804B</a>
+* <a href="reports/OSGIN2.html">OSGIN2</a>
+* <a href="reports/BCAS1.html">BCAS1</a>
+* <a href="reports/COG5.html">COG5</a>
+* <a href="reports/SPECC1L.html">SPECC1L</a>
+* <a href="reports/RIDA.html">RIDA</a>
+* <a href="reports/CAPZA2.html">CAPZA2</a>
+* <a href="reports/SGCA.html">SGCA</a>
+* <a href="reports/ZFHX4.html">ZFHX4</a>
+* <a href="reports/SNTB1.html">SNTB1</a>
+* <a href="reports/FOXH1.html">FOXH1</a>
+* <a href="reports/GNAI1.html">GNAI1</a>
+* <a href="reports/DBF4.html">DBF4</a>
+* <a href="reports/FAM133B.html">FAM133B</a>
+* <a href="reports/AGAP2.html">AGAP2</a>
+* <a href="reports/LSM1.html">LSM1</a>
+* <a href="reports/ACHE.html">ACHE</a>
+* <a href="reports/TMEM70.html">TMEM70</a>
+* <a href="reports/TMEM65.html">TMEM65</a>
+* <a href="reports/VPS13B.html">VPS13B</a>
+* <a href="reports/RIPK2.html">RIPK2</a>
+* <a href="reports/EIF3H.html">EIF3H</a>
+* <a href="reports/ATP5MF.html">ATP5MF</a>
+* <a href="reports/TSNARE1.html">TSNARE1</a>
+* <a href="reports/MET.html">MET</a>
+* <a href="reports/ZFAND1.html">ZFAND1</a>
+* <a href="reports/KLHL38.html">KLHL38</a>
+* <a href="reports/METTL1.html">METTL1</a>
+* <a href="reports/MYC.html">MYC</a>
+* <a href="reports/SLC9A8.html">SLC9A8</a>
+* <a href="reports/POLR2K.html">POLR2K</a>
+* <a href="reports/PLEKHG4B.html">PLEKHG4B</a>
+* <a href="reports/ABCB1.html">ABCB1</a>
+* <a href="reports/NAMPT.html">NAMPT</a>
+* <a href="reports/FGF4.html">FGF4</a>
+* <a href="reports/CFAP300.html">CFAP300</a>
+* <a href="reports/VPS50.html">VPS50</a>
+* <a href="reports/NDUFS6.html">NDUFS6</a>
+* <a href="reports/RINT1.html">RINT1</a>
+* <a href="reports/ENPP2.html">ENPP2</a>
+* <a href="reports/NYAP1.html">NYAP1</a>
+* <a href="reports/CYP24A1.html">CYP24A1</a>
+* <a href="reports/ABRA.html">ABRA</a>
+* <a href="reports/ANKIB1.html">ANKIB1</a>
+* <a href="reports/ALKBH4.html">ALKBH4</a>
+* <a href="reports/VPS28.html">VPS28</a>
+* <a href="reports/KIAA0100.html">KIAA0100</a>
+* <a href="reports/ANXA13.html">ANXA13</a>
+* <a href="reports/CHRAC1.html">CHRAC1</a>
+* <a href="reports/LY96.html">LY96</a>
+* <a href="reports/IRX4.html">IRX4</a>
+* <a href="reports/ZCWPW1.html">ZCWPW1</a>
+* <a href="reports/CDKAL1.html">CDKAL1</a>
+* <a href="reports/PTDSS1.html">PTDSS1</a>
+* <a href="reports/SMURF1.html">SMURF1</a>
+* <a href="reports/MSC.html">MSC</a>
+* <a href="reports/DNAJC30.html">DNAJC30</a>
+* <a href="reports/VTN.html">VTN</a>
+* <a href="reports/CASTOR3.html">CASTOR3</a>
+* <a href="reports/HEY1.html">HEY1</a>
+* <a href="reports/CD36.html">CD36</a>
+* <a href="reports/WDYHV1.html">WDYHV1</a>
+* <a href="reports/AGO2.html">AGO2</a>
+* <a href="reports/ADAMTSL4.html">ADAMTSL4</a>
+* <a href="reports/CBLN4.html">CBLN4</a>
+* <a href="reports/CTTN.html">CTTN</a>
+* <a href="reports/MOCS3.html">MOCS3</a>
+* <a href="reports/SDF2.html">SDF2</a>
+* <a href="reports/FGF3.html">FGF3</a>
+* <a href="reports/TERT.html">TERT</a>
+* <a href="reports/MRPL36.html">MRPL36</a>
+* <a href="reports/CPQ.html">CPQ</a>
+* <a href="reports/STK3.html">STK3</a>
+* <a href="reports/SALL4.html">SALL4</a>
+* <a href="reports/ESRP1.html">ESRP1</a>
+* <a href="reports/THAP5.html">THAP5</a>
+* <a href="reports/ATXN7L1.html">ATXN7L1</a>
+* <a href="reports/KPNA7.html">KPNA7</a>
+* <a href="reports/TRA2B.html">TRA2B</a>
+* <a href="reports/MTSS1.html">MTSS1</a>
+* <a href="reports/POLR2J.html">POLR2J</a>
+* <a href="reports/ATP6V1C1.html">ATP6V1C1</a>
+* <a href="reports/MUC17.html">MUC17</a>
+* <a href="reports/ZNF517.html">ZNF517</a>
+* <a href="reports/SLC25A32.html">SLC25A32</a>
+* <a href="reports/SLC25A13.html">SLC25A13</a>
+* <a href="reports/ERAL1.html">ERAL1</a>
+* <a href="reports/WSB1.html">WSB1</a>
+* <a href="reports/EXOSC4.html">EXOSC4</a>
+* <a href="reports/ST7.html">ST7</a>
+* <a href="reports/CAV2.html">CAV2</a>
+* <a href="reports/MRE11.html">MRE11</a>
+* <a href="reports/SEZ6.html">SEZ6</a>
+* <a href="reports/DCUN1D5.html">DCUN1D5</a>
+* <a href="reports/PFDN4.html">PFDN4</a>
+* <a href="reports/FZD9.html">FZD9</a>
+* <a href="reports/PPP1R3D.html">PPP1R3D</a>
+* <a href="reports/CCNE2.html">CCNE2</a>
+* <a href="reports/ZNF34.html">ZNF34</a>
+* <a href="reports/IMMP2L.html">IMMP2L</a>
+* <a href="reports/PIWIL4.html">PIWIL4</a>
+* <a href="reports/SLC6A18.html">SLC6A18</a>
+* <a href="reports/LRWD1.html">LRWD1</a>
+* <a href="reports/KLF10.html">KLF10</a>
+* <a href="reports/LRRCC1.html">LRRCC1</a>
+* <a href="reports/SLC9A3.html">SLC9A3</a>
+* <a href="reports/IGFBP4.html">IGFBP4</a>
+* <a href="reports/CPSF4.html">CPSF4</a>
+* <a href="reports/SDHA.html">SDHA</a>
+* <a href="reports/PILRB.html">PILRB</a>
+* <a href="reports/ZNF572.html">ZNF572</a>
+* <a href="reports/IKZF3.html">IKZF3</a>
+* <a href="reports/STAU1.html">STAU1</a>
+* <a href="reports/KNG1.html">KNG1</a>
+* <a href="reports/LY6E.html">LY6E</a>
+* <a href="reports/SAMD12.html">SAMD12</a>
+* <a href="reports/GPR20.html">GPR20</a>
+* <a href="reports/MCL1.html">MCL1</a>
+* <a href="reports/KCNB2.html">KCNB2</a>
+* <a href="reports/CTHRC1.html">CTHRC1</a>
+* <a href="reports/ASH2L.html">ASH2L</a>
+* <a href="reports/ATP5F1E.html">ATP5F1E</a>
+* <a href="reports/COMMD5.html">COMMD5</a>
+* <a href="reports/ADGRA2.html">ADGRA2</a>
+* <a href="reports/TRAF4.html">TRAF4</a>
+* <a href="reports/NDUFAF6.html">NDUFAF6</a>
+* <a href="reports/CFTR.html">CFTR</a>
+* <a href="reports/ZKSCAN5.html">ZKSCAN5</a>
+* <a href="reports/PON1.html">PON1</a>
+* <a href="reports/ANO1.html">ANO1</a>
+* <a href="reports/HAS2.html">HAS2</a>
+* <a href="reports/GUCD1.html">GUCD1</a>
+* <a href="reports/PMPCB.html">PMPCB</a>
+* <a href="reports/PDP1.html">PDP1</a>
+* <a href="reports/CCL24.html">CCL24</a>
+* <a href="reports/CPSF1.html">CPSF1</a>
+* <a href="reports/PPP1R1B.html">PPP1R1B</a>
+* <a href="reports/ASNS.html">ASNS</a>
+* <a href="reports/RELN.html">RELN</a>
+* <a href="reports/SERPINE1.html">SERPINE1</a>
+* <a href="reports/SEM1.html">SEM1</a>
+* <a href="reports/PPFIA1.html">PPFIA1</a>
+* <a href="reports/GNAS.html">GNAS</a>
+* <a href="reports/YWHAG.html">YWHAG</a>
+* <a href="reports/SLC30A8.html">SLC30A8</a>
+* <a href="reports/SULF2.html">SULF2</a>
+* <a href="reports/TFR2.html">TFR2</a>
+* <a href="reports/TSFM.html">TSFM</a>
+* <a href="reports/STARD3.html">STARD3</a>
+* <a href="reports/PNPLA8.html">PNPLA8</a>
+* <a href="reports/ZNF703.html">ZNF703</a>
+* <a href="reports/TRIB1.html">TRIB1</a>
+* <a href="reports/GPAA1.html">GPAA1</a>
+* <a href="reports/SIPA1L3.html">SIPA1L3</a>
+* <a href="reports/ALDOC.html">ALDOC</a>
+* <a href="reports/CEP72.html">CEP72</a>
+* <a href="reports/TCAP.html">TCAP</a>
+* <a href="reports/PROCA1.html">PROCA1</a>
+* <a href="reports/SLC26A10.html">SLC26A10</a>
+* <a href="reports/ZNF789.html">ZNF789</a>
+* <a href="reports/SNX31.html">SNX31</a>
+* <a href="reports/ASZ1.html">ASZ1</a>
+* <a href="reports/OS9.html">OS9</a>
+* <a href="reports/SPAG1.html">SPAG1</a>
+* <a href="reports/RPL23A.html">RPL23A</a>
+* <a href="reports/CYC1.html">CYC1</a>
+* <a href="reports/KDM4E.html">KDM4E</a>
+* <a href="reports/TFAP2C.html">TFAP2C</a>
+* <a href="reports/LMTK2.html">LMTK2</a>
+* <a href="reports/FSBP.html">FSBP</a>
+* <a href="reports/PRELID3B.html">PRELID3B</a>
+* <a href="reports/BIRC2.html">BIRC2</a>
+* <a href="reports/ZFP64.html">ZFP64</a>
+* <a href="reports/LRRK2.html">LRRK2</a>
+* <a href="reports/CYP27B1.html">CYP27B1</a>
+* <a href="reports/YIF1B.html">YIF1B</a>
+* <a href="reports/PLOD3.html">PLOD3</a>
+* <a href="reports/ENSA.html">ENSA</a>
+* <a href="reports/FUT4.html">FUT4</a>
+* <a href="reports/CEBPB.html">CEBPB</a>
+* <a href="reports/NKD2.html">NKD2</a>
+* <a href="reports/ZNF704.html">ZNF704</a>
+* <a href="reports/MRPL13.html">MRPL13</a>
+* <a href="reports/AVIL.html">AVIL</a>
+* <a href="reports/GML.html">GML</a>
+* <a href="reports/STEAP2.html">STEAP2</a>
+* <a href="reports/TRPA1.html">TRPA1</a>
+* <a href="reports/DPYS.html">DPYS</a>
+* <a href="reports/PSMC2.html">PSMC2</a>
+* <a href="reports/AARD.html">AARD</a>
+* <a href="reports/OTUD6B.html">OTUD6B</a>
+* <a href="reports/TUBB1.html">TUBB1</a>
+* <a href="reports/NAT16.html">NAT16</a>
+* <a href="reports/CTCFL.html">CTCFL</a>
+* <a href="reports/TLCD1.html">TLCD1</a>
+* <a href="reports/RNF139.html">RNF139</a>
+* <a href="reports/EFR3A.html">EFR3A</a>
+* <a href="reports/KIFC2.html">KIFC2</a>
+* <a href="reports/GATAD1.html">GATAD1</a>
+* <a href="reports/AZIN1.html">AZIN1</a>
+* <a href="reports/COX6C.html">COX6C</a>
+* <a href="reports/DPM1.html">DPM1</a>
+* <a href="reports/AMOTL1.html">AMOTL1</a>
+* <a href="reports/MMP16.html">MMP16</a>
+* <a href="reports/HEPACAM2.html">HEPACAM2</a>
+* <a href="reports/LRP12.html">LRP12</a>
+* <a href="reports/VIRMA.html">VIRMA</a>
+* <a href="reports/FBXO24.html">FBXO24</a>
+* <a href="reports/TNFAIP1.html">TNFAIP1</a>
+* <a href="reports/DDI1.html">DDI1</a>
+* <a href="reports/ZDHHC11B.html">ZDHHC11B</a>
+* <a href="reports/RASA4B.html">RASA4B</a>
+* <a href="reports/GTF2I.html">GTF2I</a>
+* <a href="reports/FAM185A.html">FAM185A</a>
+* <a href="reports/BUD23.html">BUD23</a>
+* <a href="reports/BCAS4.html">BCAS4</a>
+* <a href="reports/LRATD2.html">LRATD2</a>
+* <a href="reports/TAF6.html">TAF6</a>
+* <a href="reports/GGT5.html">GGT5</a>
+* <a href="reports/ATAD2.html">ATAD2</a>
+* <a href="reports/CNGB3.html">CNGB3</a>
+* <a href="reports/PARP10.html">PARP10</a>
+* <a href="reports/SLC26A3.html">SLC26A3</a>
+* <a href="reports/SPDYE2.html">SPDYE2</a>
+* <a href="reports/RIPOR3.html">RIPOR3</a>
+* <a href="reports/ZNF16.html">ZNF16</a>
+* <a href="reports/UBE2W.html">UBE2W</a>
+* <a href="reports/DLD.html">DLD</a>
+* <a href="reports/EIF4H.html">EIF4H</a>
+* <a href="reports/MEPCE.html">MEPCE</a>
+* <a href="reports/ZNF394.html">ZNF394</a>
+* <a href="reports/MFSD3.html">MFSD3</a>
+* <a href="reports/C20orf85.html">C20orf85</a>
+* <a href="reports/COPS6.html">COPS6</a>
+* <a href="reports/CSMD3.html">CSMD3</a>
+* <a href="reports/PLPP5.html">PLPP5</a>
+* <a href="reports/LRRD1.html">LRRD1</a>
+* <a href="reports/BOP1.html">BOP1</a>
+* <a href="reports/BAG4.html">BAG4</a>
+* <a href="reports/PTCD1.html">PTCD1</a>
+* <a href="reports/CATSPERG.html">CATSPERG</a>
+* <a href="reports/TM2D2.html">TM2D2</a>
+* <a href="reports/CNPY4.html">CNPY4</a>
+* <a href="reports/FBXL13.html">FBXL13</a>
+* <a href="reports/PEX1.html">PEX1</a>
+* <a href="reports/TMEM97.html">TMEM97</a>
+* <a href="reports/ATP6V0D2.html">ATP6V0D2</a>
+* <a href="reports/ARMC10.html">ARMC10</a>
+* <a href="reports/KDM4D.html">KDM4D</a>
+* <a href="reports/BET1.html">BET1</a>
+* <a href="reports/DDX27.html">DDX27</a>
+* <a href="reports/MUC12.html">MUC12</a>
+* <a href="reports/SPATA2.html">SPATA2</a>
+* <a href="reports/KIAA1324L.html">KIAA1324L</a>
+* <a href="reports/CABIN1.html">CABIN1</a>
+* <a href="reports/TATDN1.html">TATDN1</a>
+* <a href="reports/ORAI2.html">ORAI2</a>
+* <a href="reports/TPD52.html">TPD52</a>
+* <a href="reports/RFC2.html">RFC2</a>
+* <a href="reports/PIK3CG.html">PIK3CG</a>
+* <a href="reports/ERLIN2.html">ERLIN2</a>
+* <a href="reports/ZKSCAN1.html">ZKSCAN1</a>
+* <a href="reports/LAMB4.html">LAMB4</a>
+* <a href="reports/AP1S1.html">AP1S1</a>
+* <a href="reports/ZNF250.html">ZNF250</a>
+* <a href="reports/ZHX1.html">ZHX1</a>
