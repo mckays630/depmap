@@ -3402,7 +3402,7 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
       <td>5105</td>
       <td>2.621912</td>
       <td>-0.006034</td>
-      <td>-0.140234</td>
+v      <td>-0.140234</td>
       <td>False</td>
       <td>True</td>
     </tr>
@@ -12530,9 +12530,9 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
 {% include js.html %}
 
 <script>
-  $("#candidates").dataTable(
+  $("#candidates").dataTable( {
         orderCellsTop: true,
         fixedHeader: true
-  );
+  } );
 </script>
 
