@@ -1,5 +1,24 @@
 <h1>ERBB2</h1>
+
+<h2>Gene information</h2>
+<iframe src="https://depmap.org/portal/gene/ERBB2?tab=about" style="border:none;width:100%;height:800px"></iframe>
+
+<h2>Depmap overview</h2>
+<details>
+  <summary>Click to view the depmap.org summary for ERBB2</summary>
+  <iframe src="https://depmap.org/portal/gene/ERBB2?tab=overview" style="border:none;width:100%;height:800px"></iframe>
+</details>
+
+<h2>Depmap expression</h2>
+<details>
+  <summary>Click to view the depmap.org expression data for ERBB2</summary>
+  <iframe src="https://depmap.org/portal/gene/ERBB2?tab=characterization" style="border:none;width:100%;height:800px"></iframe>
+</details>
+
+
+
 <h2>Reactome Pathway diagram</h2>
+TFAP2 (AP-2) family regulates transcription of growth factors and their receptors
 <div id="diagramHolder"></div>
 
 <script>
@@ -13,7 +32,7 @@
         });
 
         //Initialising it to the "Hemostasis" pathway
-        diagram.loadDiagram("R-HSA-111447");
+        diagram.loadDiagram("R-HSA-8866910");
 
         //Adding different listeners
 
@@ -21,22 +40,11 @@
             console.info("Loaded ", loaded);
             diagram.flagItems("BAD");
 	    diagram.flagItems("Q92934");
-            if (loaded == "R-HSA-111447") diagram.selectItem("R-HSA-111447");
+            if (loaded == "R-HSA-8866910") diagram.selectItem("R-HSA-8866910");
         });
 
      }
 </script>
 
 
-<h2>Depmap overview</h2>
-<details>
-  <summary>Click to view the depmap.org summary for ERBB2</summary>
 
-  <iframe src="https://depmap.org/portal/gene/ERBB2?tab=overview" style="border:none;width:100%;height:800px"></iframe>
-</details>
-
-
-
-
-
-{% include js.html %}

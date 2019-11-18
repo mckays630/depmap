@@ -178,3 +178,26 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
   
 {% include candidates.html %}
 
+<pre>
+bone_chordoma; 4 cell lines; 11 high copy number genes
+adrenal_cortex; 1 cell lines; 200 high copy number genes
+lymphoblastic_lymphoma; 1 cell lines; 311 high copy number genes
+central_nervous_system_PNET; 1 cell lines; 2 high copy number genes
+central_nervous_system_immortalized; 1 cell lines; 26 high copy number genes
+gastric_adenosquamous; 1 cell lines; 508 high copy number genes
+skin_epidermoid_carcinoma; 1 cell lines; 234 high copy number genes
+skin_squamous; 3 cell lines; 251 high copy number genes
+soft_tissue_liposarcoma; 5 cell lines; 44 high copy number genes
+soft_tissue_fibrosarcoma; 1 cell lines; 2 high copy number genes
+soft_tissue_epitheliod_sarcoma; 2 cell lines; 2 high copy number genes
+soft_tissue_sarcoma_undifferentiated; 2 cell lines; 164 high copy number genes
+ovary_immortalized; 1 cell lines; 9 high copy number genes
+peripheral_nervous_system_PNET; 1 cell lines; 22 high copy number genes
+esophagus_adenocarcinoma; 7 cell lines; 7 high copy number genes
+breast_ERneg; 1 cell lines; 960 high copy number genes
+breast_immortalized; 2 cell lines; 8 high copy number genes
+breast_HER2Amp; 13 cell lines; 11 high copy number genes
+eye_uveal_melanoma; 5 cell lines; 1016 high copy number genes
+lung_immortalized; 1 cell lines; 6 high copy number genes
+upper_aerodigestive_buccal_mucosa; 1 cell lines; 592 high copy number genes
+</pre>
