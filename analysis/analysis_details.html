@@ -13076,7 +13076,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
@@ -13214,7 +13214,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -13227,14 +13227,12 @@ div#notebook {
 <span class="s1">## Resources</span>
 <span class="s1">### DepMap (https://depmap.org/portal) Data </span>
 <span class="s1">* Cell line metadata</span>
-<span class="s1">* Expression</span>
-<span class="s1"> * RNAseq</span>
-<span class="s1"> * Protein</span>
+<span class="s1">* Expression (RNASeq)</span>
 <span class="s1">* Copy number variation</span>
 <span class="s1">* Mutations</span>
 <span class="s1">* Genetic dependency</span>
-<span class="s1"> * Crispr (Achilles)</span>
-<span class="s1"> * RNAi (DEMETER2)</span>
+<span class="s1">** Crispr (Achilles)</span>
+<span class="s1">** RNAi (DEMETER2)</span>
 
 <span class="s1">### NCBI (via https://humanmine.org)</span>
 <span class="s1">* Entrez gene IDs mapped to symbol, name, descrion, uniprot</span>
@@ -14301,218 +14299,6 @@ Splitting multigene rows...
   </tbody>
 </table></p>
 
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Protein-expression-data">Protein expression data<a class="anchor-link" href="#Protein-expression-data">&#182;</a></h2><p>CCLE Reverse Phase Protein Array (RPPA) data</p>
-<p><b>DepMap source file:</b> CCLE_RPPA_20181003.csv</p>
-<ul>
-<li>Transpose columns (gene names) and rows (CCLE cell line IDs)</li>
-<li>Translate gene names to NCBI gene IDs</li>
-<li>Apply BOOLEAN mask to accept log2 tpm &gt; 0 as positive for expression</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">prot</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;protein&#39;</span><span class="p">)</span>
-<span class="n">prot</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[36]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>14-3-3_beta</th>
-      <th>14-3-3_epsilon_Caution</th>
-      <th>14-3-3_zeta</th>
-      <th>4E-BP1</th>
-      <th>4E-BP1_pS65</th>
-      <th>4E-BP1_pT37_T46</th>
-      <th>4E-BP1_pT70</th>
-      <th>53BP1</th>
-      <th>A-Raf_pS299_Caution</th>
-      <th>ACC_pS79</th>
-      <th>...</th>
-      <th>Tuberin_pT1462</th>
-      <th>VAV1_Caution</th>
-      <th>VEGFR2</th>
-      <th>VHL_Caution</th>
-      <th>XBP1_Caution</th>
-      <th>XRCC1_Caution</th>
-      <th>YAP_Caution</th>
-      <th>YAP_pS127_Caution</th>
-      <th>YB-1</th>
-      <th>YB-1_pS102</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>DMS53_LUNG</td>
-      <td>-0.104888</td>
-      <td>0.060414</td>
-      <td>0.309068</td>
-      <td>-0.075506</td>
-      <td>0.230359</td>
-      <td>0.198304</td>
-      <td>-0.030541</td>
-      <td>0.455889</td>
-      <td>0.090484</td>
-      <td>0.268448</td>
-      <td>...</td>
-      <td>-0.099433</td>
-      <td>-0.486715</td>
-      <td>-1.147858</td>
-      <td>0.133876</td>
-      <td>-0.075812</td>
-      <td>-0.144388</td>
-      <td>-1.090303</td>
-      <td>-2.109324</td>
-      <td>0.178104</td>
-      <td>0.246541</td>
-    </tr>
-    <tr>
-      <td>SW1116_LARGE_INTESTINE</td>
-      <td>0.358504</td>
-      <td>-0.180291</td>
-      <td>-0.041237</td>
-      <td>-0.286629</td>
-      <td>-0.877406</td>
-      <td>-1.026948</td>
-      <td>-0.462761</td>
-      <td>-0.011197</td>
-      <td>0.605330</td>
-      <td>-0.614974</td>
-      <td>...</td>
-      <td>-0.109777</td>
-      <td>0.349330</td>
-      <td>0.770148</td>
-      <td>0.984297</td>
-      <td>-0.168138</td>
-      <td>-0.004905</td>
-      <td>0.189294</td>
-      <td>-0.283593</td>
-      <td>0.255972</td>
-      <td>-0.121134</td>
-    </tr>
-    <tr>
-      <td>NCIH1694_LUNG</td>
-      <td>0.028738</td>
-      <td>0.071902</td>
-      <td>-0.094847</td>
-      <td>0.285069</td>
-      <td>1.321551</td>
-      <td>0.620703</td>
-      <td>-0.439484</td>
-      <td>0.195007</td>
-      <td>0.036221</td>
-      <td>0.767920</td>
-      <td>...</td>
-      <td>0.154344</td>
-      <td>-0.478189</td>
-      <td>-1.185530</td>
-      <td>1.273013</td>
-      <td>-0.240413</td>
-      <td>0.476633</td>
-      <td>-1.367465</td>
-      <td>-2.525695</td>
-      <td>-0.137880</td>
-      <td>-0.451282</td>
-    </tr>
-    <tr>
-      <td>P3HR1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE</td>
-      <td>0.120039</td>
-      <td>-0.066802</td>
-      <td>-0.128007</td>
-      <td>-0.552081</td>
-      <td>-0.292428</td>
-      <td>-1.415935</td>
-      <td>-0.138858</td>
-      <td>-0.066122</td>
-      <td>-0.346564</td>
-      <td>0.586421</td>
-      <td>...</td>
-      <td>0.040106</td>
-      <td>5.923830</td>
-      <td>-3.893832</td>
-      <td>-2.499188</td>
-      <td>0.632758</td>
-      <td>0.025639</td>
-      <td>-1.189180</td>
-      <td>-3.056863</td>
-      <td>0.025997</td>
-      <td>-0.465205</td>
-    </tr>
-    <tr>
-      <td>HUT78_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE</td>
-      <td>-0.268997</td>
-      <td>-0.060281</td>
-      <td>-0.137881</td>
-      <td>-0.398729</td>
-      <td>-0.095622</td>
-      <td>-0.533905</td>
-      <td>0.054245</td>
-      <td>-0.573022</td>
-      <td>-0.162968</td>
-      <td>-0.691478</td>
-      <td>...</td>
-      <td>-0.466919</td>
-      <td>5.475880</td>
-      <td>-0.561973</td>
-      <td>-0.500953</td>
-      <td>-0.261494</td>
-      <td>0.358679</td>
-      <td>-0.951686</td>
-      <td>-3.247388</td>
-      <td>-0.151424</td>
-      <td>-0.145426</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 214 columns</p>
-</div>
 </div>
 
 </div>

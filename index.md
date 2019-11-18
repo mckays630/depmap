@@ -13,8 +13,8 @@
 * Copy number variation
 * Mutations
 * Genetic dependency
-** Crispr (Achilles)
-** RNAi (DEMETER2)
+  * Crispr (Achilles)
+  * RNAi (DEMETER2)
 
 ### NCBI (via https://humanmine.org)
 * Entrez gene IDs mapped to symbol, name, descrion, uniprot
