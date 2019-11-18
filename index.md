@@ -40,7 +40,7 @@
 ## Get gene descriptions, etc.
 Use data from humanmine (http://www.humanmine.org/) to map NCBI gene IDs to name, summary, symbol, uniprot
 
-sample gene info:
+<!--sample gene info:
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -68,6 +68,7 @@ sample gene info:
     </tr>
   </tbody>
 </table>
+-->
 
 ## Aggregate CCLE cell lines by lineage
 <b>DepMap source file:</b> sample_info.csv
