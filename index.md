@@ -186,7 +186,7 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
 <img src="plots/eye_uveal_melanoma.png">
 ## Candidate target genes
 
-* All genes in this table have copy number > 2 and Achilles gene dependency < 0 for at least 80% of the cell lines in 1 cell lineage'
+* All genes in this table have copy number > 2 and Achilles gene dependency < 0 for at least 80% of the cell lines in 1 cell lineage
 * Other data for cross-validation:
   * RNAi gene dependency score
   * Whether the gene is a TCGA or COSMIC mutation hotspot
