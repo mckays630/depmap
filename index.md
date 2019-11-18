@@ -45,7 +45,8 @@
 ## Next steps
 1. Improve thresholds (cutoffs for copy number, gene dependency, expression TPMs, etc.)
 2. Integrate chemical sensitivity data
-3. Filter genes that are already known drug targets (identify truly novel targets)
+3. Use pathways, networks etc (eg: https://www.nature.com/articles/s41598-019-40780-7) to group targets
+4. Filter genes that are already known drug targets (identify truly novel targets)
 
 ## Analysis details
 Python code
