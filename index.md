@@ -89,7 +89,8 @@ RNAseq TPM gene expression data for just protein coding genes using RSEM. Log2 t
 * Translate gene names to NCBI gene IDs
 * Apply BOOLEAN mask to accept log2 tpm > 0 as positive for expression
 
-Sample expression data: <table border="1" class="dataframe">
+Sample expression data: 
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -147,7 +148,8 @@ Sample expression data: <table border="1" class="dataframe">
     </tr>
   </tbody>
 </table>
-<br>Sample masked expression: <table border="1" class="dataframe">
+<br>Sample masked expression: 
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -221,7 +223,8 @@ Gene level copy number data, log2 transformed with a pseudo count of 1. This is 
 * Transpose columns (gene names) and rows (CCLE cell line IDs)
 * Translate gene names to NCBI gene IDs
 
-Sample copy number data: <table border="1" class="dataframe">
+Sample copy number data: 
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -279,7 +282,9 @@ Sample copy number data: <table border="1" class="dataframe">
     </tr>
   </tbody>
 </table>
-Samlpe copy number data descritive stats: <table border="1" class="dataframe">
+
+Sample copy number data descritive stats: 
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
