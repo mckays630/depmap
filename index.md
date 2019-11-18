@@ -149,7 +149,7 @@ CERES data with principle components strongly related to known batch effects rem
 * For now, accept Achilles (Crispr) as canonical for gene dependency score but keep RNAi data fro cross-validation/concordance
 
 ### Sanity checking with ERBB2 (2064)
-Do my filters capture a known, valid valid target?
+Do my filters capture a known target?
 * Evaluating breast cancer lineages where at least one cell line had copy number > 2:
 * Is ERB2B in the hotspot gene set?
 * We expect ERBB2 to have high copy number in breast cancer lineages
