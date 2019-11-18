@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>01_data_intake</title>
+<title>analysis_details</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13076,26 +13076,145 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1"># Sample analysis of Cancer Dependency Map (DepMap) data </span>
+<span class="s1">## Request</span>
+<span class="s1">* Identify the most frequent genetic alterations (could be mutations or copy number variations) in the cancer cell lines</span>
+<span class="s1">* Match them with the best genetic dependencies that could be used for drug development for the cancers that carry those mutations</span>
+<span class="s1">* Take into account the lineage of cancer cell lines (certain mutations/CNVs may be restricted to a specific lineage)</span>
+
+<span class="s1">## Resources</span>
+<span class="s1">### DepMap (https://depmap.org/portal) Data </span>
+<span class="s1">* Cell line metadata</span>
+<span class="s1">* Expression</span>
+<span class="s1"> * RNAseq</span>
+<span class="s1"> * Protein</span>
+<span class="s1">* Copy number variation</span>
+<span class="s1">* Mutations</span>
+<span class="s1">* Genetic dependency</span>
+<span class="s1"> * Crispr (Achilles)</span>
+<span class="s1"> * RNAi (DEMETER2)</span>
+
+<span class="s1">### NCBI (via https://humanmine.org)</span>
+<span class="s1">* Entrez gene IDs mapped to symbol, name, descrion, uniprot</span>
+
+<span class="s1">### Reactome</span>
+<span class="s1">* Entrez gene IDs mapped to Reactome pathways</span>
+
+<span class="s1">### MFR (http://bmbl.sdstate.edu/MFR)</span>
+<span class="s1">* A Machine Learning Model for measuring relatedness between a pair of genes</span>
+
+<span class="s1">### Jupyter (https://jupyter.org/)</span>
+<span class="s1">* Python programming framework for analysis prototyping and reporting</span>
+
+<span class="s1">### GitHub (https://github.com/)</span>
+<span class="s1">* Revision control for Python code</span>
+<span class="s1">* Reporting mechanism for analysi summary and details</span>
+
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h1 id="Sample-analysis-of-Cancer-Dependency-Map-(DepMap)-data">Sample analysis of Cancer Dependency Map (DepMap) data<a class="anchor-link" href="#Sample-analysis-of-Cancer-Dependency-Map-(DepMap)-data">&#182;</a></h1><h2 id="Request">Request<a class="anchor-link" href="#Request">&#182;</a></h2><ul>
+<li>Identify the most frequent genetic alterations (could be mutations or copy number variations) in the cancer cell lines</li>
+<li>Match them with the best genetic dependencies that could be used for drug development for the cancers that carry those mutations</li>
+<li>Take into account the lineage of cancer cell lines (certain mutations/CNVs may be restricted to a specific lineage)</li>
+</ul>
+<h2 id="Resources">Resources<a class="anchor-link" href="#Resources">&#182;</a></h2><h3 id="DepMap-(https://depmap.org/portal)-Data">DepMap (<a href="https://depmap.org/portal">https://depmap.org/portal</a>) Data<a class="anchor-link" href="#DepMap-(https://depmap.org/portal)-Data">&#182;</a></h3><ul>
+<li>Cell line metadata</li>
+<li>Expression<ul>
+<li>RNAseq</li>
+<li>Protein</li>
+</ul>
+</li>
+<li>Copy number variation</li>
+<li>Mutations</li>
+<li>Genetic dependency<ul>
+<li>Crispr (Achilles)</li>
+<li>RNAi (DEMETER2)</li>
+</ul>
+</li>
+</ul>
+<h3 id="NCBI-(via-https://humanmine.org)">NCBI (via <a href="https://humanmine.org">https://humanmine.org</a>)<a class="anchor-link" href="#NCBI-(via-https://humanmine.org)">&#182;</a></h3><ul>
+<li>Entrez gene IDs mapped to symbol, name, descrion, uniprot</li>
+</ul>
+<h3 id="Reactome">Reactome<a class="anchor-link" href="#Reactome">&#182;</a></h3><ul>
+<li>Entrez gene IDs mapped to Reactome pathways</li>
+</ul>
+<h3 id="MFR-(http://bmbl.sdstate.edu/MFR)">MFR (<a href="http://bmbl.sdstate.edu/MFR">http://bmbl.sdstate.edu/MFR</a>)<a class="anchor-link" href="#MFR-(http://bmbl.sdstate.edu/MFR)">&#182;</a></h3><ul>
+<li>A Machine Learning Model for measuring relatedness between a pair of genes</li>
+</ul>
+<h3 id="Jupyter-(https://jupyter.org/)">Jupyter (<a href="https://jupyter.org/">https://jupyter.org/</a>)<a class="anchor-link" href="#Jupyter-(https://jupyter.org/)">&#182;</a></h3><ul>
+<li>Python programming framework for analysis prototyping and reporting</li>
+</ul>
+<h3 id="GitHub-(https://github.com/)">GitHub (<a href="https://github.com/">https://github.com/</a>)<a class="anchor-link" href="#GitHub-(https://github.com/)">&#182;</a></h3><ul>
+<li>Revision control for Python code</li>
+<li>Reporting mechanism for analysi summary and details</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">pickle</span><span class="o">,</span> <span class="nn">wget</span><span class="o">,</span> <span class="nn">shutil</span>
 <span class="kn">from</span> <span class="nn">intermine.webservice</span> <span class="k">import</span> <span class="n">Service</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">display</span>
 
 <span class="c1"># Load data direct from source</span>
 <span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">url</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;expression&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/16757690&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;sample_info&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/16757723&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;copy_number&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/17857886&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;mutations&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/16757702&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;achilles_crispr&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/16757666&#39;</span>
-    <span class="n">url</span><span class="p">[</span><span class="s1">&#39;achilles_rnai&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/11489669&#39;</span>
+    <span class="n">url</span><span class="p">[</span><span class="s1">&#39;d2_rnai&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/13515395&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;sensitivity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/17008628&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;mfr&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;http://bmbl.sdstate.edu/MFR/data/resource</span><span class="si">%20d</span><span class="s1">ata/tr_dv_ts.dataset.zip&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;reactome&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://reactome.org/download/current/NCBI2Reactome.txt&#39;</span>
+    <span class="n">summary</span> <span class="o">=</span> <span class="s1">&#39;README.md&#39;</span>
+    
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;echo &#39;&#39; &gt; &quot;</span><span class="o">+</span><span class="n">A</span><span class="o">.</span><span class="n">summary</span><span class="p">)</span>
+    
+<span class="k">def</span> <span class="nf">printmd</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Prints formatted markdown text&quot;&quot;&quot;</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">string</span><span class="p">))</span>
+    
+<span class="k">def</span> <span class="nf">report</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Print markdown in this notebook and saves markdown-only summary in a file&quot;&quot;&quot;</span>
+    <span class="n">printmd</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    
+    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">summary</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     
 <span class="k">def</span> <span class="nf">get_gene_descriptions</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Load gene names and descriptions from humanmine (http://www.humanmine.org),</span>
@@ -13126,34 +13245,40 @@ div#notebook {
     <span class="n">df</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="n">archive</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">df</span>
     
-
 <span class="k">def</span> <span class="nf">get_data</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Load input data.</span>
 <span class="sd">    Arguments: key for the data source (eg: expression, sample_info...)</span>
 <span class="sd">    1) If the data is cached on the filesystem, load and return the dataframe</span>
 <span class="sd">    2) Otherwise, load the data from the source URL, cache, return the dataframe</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+<span class="c1">#     if A.data.get(key) is not None:</span>
+<span class="c1">#         return A.data[key]</span>
+    
     <span class="n">data_cache</span> <span class="o">=</span> <span class="s1">&#39;data/&#39;</span><span class="o">+</span><span class="n">key</span><span class="o">+</span><span class="s1">&#39;.p&#39;</span>
     <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">data_cache</span><span class="p">):</span>
         <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="n">data_cache</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">url</span><span class="p">[</span><span class="n">key</span><span class="p">],</span><span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Downloading&quot;</span><span class="p">,</span><span class="n">key</span><span class="p">,</span><span class="s2">&quot;from source&quot;</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">url</span><span class="p">[</span><span class="n">key</span><span class="p">],</span><span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
         <span class="n">df</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="n">data_cache</span><span class="p">)</span>
+        
+    <span class="n">A</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span>    
     <span class="k">return</span> <span class="n">df</span>
 
-<span class="k">def</span> <span class="nf">ncbi_gene_ids</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">ncbi_gene_ids</span><span class="p">(</span><span class="n">genes</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Converts gene name &quot;symbol (ncbi_id)&quot;</span>
 <span class="sd">    to integer NCBI ID</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">ncbi_cols</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
-        <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;\((\d+)\)&#39;</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">genes</span><span class="p">:</span>
+        <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39; \((\d+)\)&#39;</span><span class="p">,</span><span class="n">g</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
-            <span class="n">c</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">ncbi_cols</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+            <span class="n">g</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No match&quot;</span><span class="p">,</span><span class="n">g</span><span class="p">)</span>
+        <span class="n">ncbi_cols</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">g</span><span class="p">))</span>
 
-    <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">ncbi_cols</span>
-    <span class="k">return</span> <span class="n">df</span>
+    <span class="k">return</span> <span class="n">ncbi_cols</span>
 
 <span class="k">def</span> <span class="nf">get_pathway_info</span><span class="p">():</span>
     <span class="c1"># Map NCBI IDs to reactome pathways</span>
@@ -13186,31 +13311,16 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Have pathway info for 10241 human NCBI IDs
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">## Get gene descriptions, etc</span>
+<span class="s1">Use data from humanmine (http://www.humanmine.org/) to map NCBI gene IDs to name, summary, symbol, uniprot</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13226,8 +13336,101 @@ div#notebook {
     <div class="prompt"></div>
 
 
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Get-gene-descriptions,-etc">Get gene descriptions, etc<a class="anchor-link" href="#Get-gene-descriptions,-etc">&#182;</a></h2><p>Use data from humanmine (<a href="http://www.humanmine.org/">http://www.humanmine.org/</a>) to map NCBI gene IDs to name, summary, symbol, uniprot</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gd</span> <span class="o">=</span> <span class="n">get_gene_descriptions</span><span class="p">()</span>
+<span class="n">report</span><span class="p">(</span><span class="s1">&#39;sample:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">gd</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="n">ncbi2name</span>    <span class="o">=</span> <span class="p">{}</span>
+<span class="n">ncbi2symbol</span>  <span class="o">=</span> <span class="p">{}</span>
+<span class="n">ncbi2desc</span>    <span class="o">=</span> <span class="p">{}</span>
+<span class="n">ncbi2uniprot</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">uniprot2ncbi</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">gd</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">ncbi</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">uniprot</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+    <span class="n">ncbi</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">ncbi</span><span class="p">)</span>
+    <span class="n">ncbi2name</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="n">ncbi2symbol</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span> <span class="o">=</span> <span class="n">symbol</span>
+    <span class="n">ncbi2desc</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span> <span class="o">=</span> <span class="n">description</span>
+    
+    <span class="c1"># ncbi &lt;-&gt; uniprot can be 1:many</span>
+    <span class="k">if</span> <span class="n">ncbi2uniprot</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">ncbi</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ncbi2uniprot</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="n">ncbi2uniprot</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">uniprot</span><span class="p">)</span>
+    <span class="n">uniprot2ncbi</span><span class="p">[</span><span class="n">uniprot</span><span class="p">]</span> <span class="o">=</span> <span class="n">ncbi</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done mapping gene info&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>sample:</p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>primaryIdentifier</th>
+      <th>symbol</th>
+      <th>briefDescription</th>
+      <th>description</th>
+      <th>proteins.uniprotAccession</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2632</td>
+      <td>GBE1</td>
+      <td>1,4-alpha-glucan branching enzyme 1</td>
+      <td>The protein encoded by this gene is a glycogen branching enzyme that catalyzes the transfer of alpha-1,4-linked glucosyl units from the outer end of a glycogen chain to an alpha-1,6 position on the same or a neighboring glycogen chain. Branching of the chains is essential to increase the solubility of the glycogen molecule and, consequently, in reducing the osmotic pressure within cells. Highest level of this enzyme are found in liver and muscle. Mutations in this gene are associated with glycogen storage disease IV (also known as Andersen's disease). [provided by RefSeq, Jul 2008]</td>
+      <td>Q04446</td>
+    </tr>
+    <tr>
+      <td>3248</td>
+      <td>HPGD</td>
+      <td>15-hydroxyprostaglandin dehydrogenase</td>
+      <td>This gene encodes a member of the short-chain nonmetalloenzyme alcohol dehydrogenase protein family. The encoded enzyme is responsible for the metabolism of prostaglandins, which function in a variety of physiologic and cellular processes such as inflammation. Mutations in this gene result in primary autosomal recessive hypertrophic osteoarthropathy and cranioosteoarthropathy. Multiple transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Mar 2009]</td>
+      <td>E9PBZ2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Have pathway info for 10241 human NCBI IDs
+<pre>Done mapping gene info
 </pre>
 </div>
 </div>
@@ -13236,30 +13439,69 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Aggregate-cell-lines-by-lineage">Aggregate cell lines by lineage<a class="anchor-link" href="#Aggregate-cell-lines-by-lineage">&#182;</a></h2><ul>
-<li>Group all cell lines by lineage</li>
-<li>If a lineage has &gt; 1 defined sublineages, also segregate cell lines by sublineages (eg: leukemia -&gt; AML)</li>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">## Aggregate cell lines by lineage</span>
+<span class="s1">&lt;b&gt;DepMap source file:&lt;/b&gt; sample_info.csv</span>
+<span class="s1">* Group all cell lines by main (parent) lineage</span>
+<span class="s1">* If a lineage has &gt; 1 defined sublineages, also aggregate cell lines by sublineage (eg: leukemia -&gt; AML)</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Aggregate-cell-lines-by-lineage">Aggregate cell lines by lineage<a class="anchor-link" href="#Aggregate-cell-lines-by-lineage">&#182;</a></h2><p><b>DepMap source file:</b> sample_info.csv</p>
+<ul>
+<li>Group all cell lines by main (parent) lineage</li>
+<li>If a lineage has &gt; 1 defined sublineages, also aggregate cell lines by sublineage (eg: leukemia -&gt; AML)</li>
 </ul>
 
 </div>
+
 </div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sample_info</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;sample_info&#39;</span><span class="p">)</span>
 <span class="n">lineages</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">sample_info</span><span class="o">.</span><span class="n">lineage</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
-<span class="n">lineage</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">lineage2cell</span>    <span class="o">=</span> <span class="p">{}</span>
+<span class="n">sublineage2cell</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">cell2lineage</span>    <span class="o">=</span> <span class="p">{}</span>
+<span class="n">cell2sublineage</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">has_sub</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
 <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lineages</span><span class="p">:</span>
     <span class="n">ldf</span> <span class="o">=</span> <span class="n">sample_info</span><span class="p">[</span><span class="n">sample_info</span><span class="o">.</span><span class="n">lineage</span> <span class="o">==</span> <span class="n">l</span><span class="p">]</span>
     <span class="n">subtypes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">ldf</span><span class="o">.</span><span class="n">lineage_subtype</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
+    
     <span class="c1"># cell lines for sublineage</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">subtypes</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">has_sub</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">sub</span> <span class="ow">in</span> <span class="n">subtypes</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">sub</span><span class="p">:</span>
                 <span class="n">lname</span> <span class="o">=</span> <span class="n">sub</span>
@@ -13267,13 +13509,211 @@ div#notebook {
                 <span class="n">lname</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">sub</span>
             <span class="n">lname</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">sub</span>
             <span class="n">sub_df</span> <span class="o">=</span> <span class="n">ldf</span><span class="p">[</span><span class="n">ldf</span><span class="o">.</span><span class="n">lineage_subtype</span> <span class="o">==</span> <span class="n">sub</span><span class="p">]</span>
-            <span class="n">lineage</span><span class="p">[</span><span class="n">lname</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">sub_df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 
-    <span class="c1"># all cell lines</span>
-    <span class="n">lineage</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ldf</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-        
-<span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">lineage</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
-     <span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">lineage</span><span class="p">[</span><span class="n">l</span><span class="p">]))</span>
+            <span class="c1"># map sublineage to cell lines</span>
+            <span class="n">sublineage2cell</span><span class="p">[</span><span class="n">lname</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">sub_df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+    
+            <span class="c1"># map cell lines to sub-lineage</span>
+            <span class="k">for</span> <span class="n">cell</span> <span class="ow">in</span> <span class="n">sublineage2cell</span><span class="p">[</span><span class="n">lname</span><span class="p">]:</span>
+                <span class="n">cell2sublineage</span><span class="p">[</span><span class="n">cell</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span>
+                
+    <span class="c1"># all cell lines for lineage</span>
+    <span class="n">lineage2cell</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ldf</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+    
+    <span class="c1"># parent lineage of each cell line</span>
+    <span class="k">for</span> <span class="n">cell</span> <span class="ow">in</span> <span class="n">lineage2cell</span><span class="p">[</span><span class="n">l</span><span class="p">]:</span>
+        <span class="n">cell2lineage</span><span class="p">[</span><span class="n">cell</span><span class="p">]</span> <span class="o">=</span> <span class="n">l</span>
+    
+
+<span class="n">report</span><span class="p">(</span><span class="s1">&#39;&lt;pre&gt;&#39;</span><span class="p">)</span>
+<span class="n">report</span><span class="p">(</span><span class="s2">&quot;Number of cell lines: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cell2lineage</span><span class="p">)))</span>
+<span class="n">report</span><span class="p">(</span><span class="s2">&quot;Number of lineages: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lineage2cell</span><span class="p">)))</span>
+<span class="n">report</span><span class="p">(</span><span class="s2">&quot;Number of lineages with sub-lineages: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">has_sub</span><span class="p">)))</span>
+<span class="n">report</span><span class="p">(</span><span class="s2">&quot;Number of sub-lineages &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sublineage2cell</span><span class="p">)))</span>
+<span class="n">report</span><span class="p">(</span><span class="s1">&#39;&lt;/pre&gt;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>Number of cell lines: 1429</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>Number of lineages: 33</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>Number of lineages with sub-lineages: 16</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>Number of sub-lineages 61</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>&lt;/pre&gt;</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">## Mutations </span>
+<span class="s1">&lt;b&gt;DepMap source file:&lt;/b&gt; CCLE_mutations.csv</span>
+<span class="s1">* Keep track of TCGA and COSMIC hotspot genes by lineage</span>
+<span class="s1">* Track deleterious mutations by lineage for future reference</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Mutations">Mutations<a class="anchor-link" href="#Mutations">&#182;</a></h2><p><b>DepMap source file:</b> CCLE_mutations.csv</p>
+<ul>
+<li>Keep track of TCGA and COSMIC hotspot genes by lineage</li>
+<li>Track deleterious mutations by lineage for future reference</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mutations</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;mutations&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter hotspot genes</span>
+<span class="n">hotspots</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">hotspots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mutations</span><span class="p">[</span><span class="n">mutations</span><span class="o">.</span><span class="n">isTCGAhotspot</span><span class="p">])</span>
+<span class="n">hotspots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mutations</span><span class="p">[</span><span class="n">mutations</span><span class="o">.</span><span class="n">isCOSMIChotspot</span><span class="p">])</span>
+<span class="n">hotspots</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">hotspots</span><span class="p">)</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+
+<span class="n">genes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">hotspots</span><span class="o">.</span><span class="n">Entrez_Gene_Id</span><span class="p">)</span>
+
+<span class="n">lineage_hotspots</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">sublineage_hotspots</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">genes</span><span class="p">:</span>
+    <span class="n">lineage_hotspots</span><span class="p">[</span><span class="n">g</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">sublineage_hotspots</span><span class="p">[</span><span class="n">g</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    
+    <span class="n">gdf</span> <span class="o">=</span> <span class="n">hotspots</span><span class="p">[</span><span class="n">hotspots</span><span class="o">.</span><span class="n">Entrez_Gene_Id</span> <span class="o">==</span> <span class="n">g</span><span class="p">]</span>
+    
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">gdf</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+        <span class="n">cell</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">DepMap_ID</span>
+        <span class="k">if</span> <span class="n">cell2lineage</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cell</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">lineage</span> <span class="o">=</span> <span class="n">cell2lineage</span><span class="p">[</span><span class="n">cell</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">lineage_hotspots</span><span class="p">[</span><span class="n">g</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">lineage</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">lineage_hotspots</span><span class="p">[</span><span class="n">g</span><span class="p">][</span><span class="n">lineage</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">lineage_hotspots</span><span class="p">[</span><span class="n">g</span><span class="p">][</span><span class="n">lineage</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+        <span class="k">if</span> <span class="n">cell2sublineage</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cell</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">sublineage</span> <span class="o">=</span> <span class="n">cell2sublineage</span><span class="p">[</span><span class="n">cell</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">sublineage_hotspots</span><span class="p">[</span><span class="n">g</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">sublineage</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">sublineage_hotspots</span><span class="p">[</span><span class="n">g</span><span class="p">][</span><span class="n">sublineage</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">sublineage_hotspots</span><span class="p">[</span><span class="n">g</span><span class="p">][</span><span class="n">sublineage</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done mapping hotspots&quot;</span><span class="p">)</span>
+<span class="n">cell_lineage</span><span class="p">[</span><span class="n">cell</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13290,100 +13730,87 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>adrenal_cortex 1
-bile_duct 29
-bile_duct_cholangiocarcinoma 26
-bile_duct_gallbladder 3
-bone 48
-bone_Ewing_sarcoma 28
-bone_chondrosarcoma 4
-bone_chordoma 4
-bone_osteosarcoma 12
-breast 68
-breast_ERneg 1
-breast_ERpos 12
-breast_HER2Amp 13
-breast_TNBC 29
-breast_TPBC 5
-breast_breast_immortalized 2
-central_nervous_system 91
-central_nervous_system_PNET 1
-central_nervous_system_central_nervous_system_immortalized 1
-central_nervous_system_glioma 73
-central_nervous_system_medulloblastoma 11
-central_nervous_system_meningioma 3
-cervix 18
-colorectal 73
-embryo 3
-esophagus 33
-esophagus_esophagus_adenocarcinoma 7
-esophagus_esophagus_squamous 25
-eye 7
-eye_retinoblastoma 2
-eye_uveal_melanoma 5
-fibroblast 43
-gastric 41
-gastric_gastric_adenocarcinoma 33
-gastric_gastric_adenosquamous 1
-gastric_gastric_small 2
-kidney 39
-leukemia 103
-leukemia_AML 42
-leukemia_B-cell_ALL 20
-leukemia_B-cell_lymphoma_other 1
-leukemia_CML 15
-leukemia_T-cell_ALL 20
-liver 26
-lung 218
-lung_lung_NSC 149
-lung_lung_immortalized 1
-lung_lung_small 66
-lymphoma 91
-lymphoma_ALCL 5
-lymphoma_B-cell_ALL 2
-lymphoma_B-cell_lymphoma_other 21
-lymphoma_Burkitt_lymphoma 13
-lymphoma_DLBCL 17
-lymphoma_Hodgkin_lymphoma 9
-lymphoma_T-cell_lymphoma_other 13
-lymphoma_lymphoblastic_lymphoma 1
-mesothelioma 17
-multiple_myeloma 34
-other 1
-ovary 62
-ovary_ovary_adenocarcinoma 57
-ovary_ovary_immortalized 1
-ovary_ovary_non_epithelial 2
-pancreas 55
-peripheral_nervous_system 33
-peripheral_nervous_system_PNET 1
-peripheral_nervous_system_neuroblastoma 32
-prostate 11
-rhabdoid 23
-rhabdomyosarcoma 19
-skin 80
-skin_Merkel 7
-skin_epidermoid_carcinoma 1
-skin_melanoma 69
-skin_skin_squamous 3
-small_intestine 2
-soft_tissue 22
-soft_tissue_epitheliod_sarcoma 2
-soft_tissue_fibrosarcoma 1
-soft_tissue_leiomyosarcoma 3
-soft_tissue_liposarcoma 5
-soft_tissue_pleomorphic_sarcoma 1
-soft_tissue_sarcoma_undifferentiated 2
-soft_tissue_synovial_sarcoma 8
-thyroid 18
-upper_aerodigestive 48
-upper_aerodigestive_buccal_mucosa 1
-upper_aerodigestive_upper_aerodigestive_squamous 44
-urinary_tract 37
-uterus 35
-uterus_choriocarcinoma 2
-uterus_uterine_sarcoma 1
-uterus_uterus_endometrium 32
+<pre>Done mapping hotspots
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-27-2b20bc5f38d6&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     30</span>             sublineage_hotspots<span class="ansi-blue-fg">[</span>g<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">[</span>sublineage<span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">+=</span> <span class="ansi-cyan-fg">1</span>
+<span class="ansi-green-intense-fg ansi-bold">     31</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Done mapping hotspots&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 32</span><span class="ansi-red-fg"> </span>cell_lineage<span class="ansi-blue-fg">[</span>cell<span class="ansi-blue-fg">]</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;cell_lineage&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter deleterious mutations</span>
+<span class="n">damaging</span> <span class="o">=</span> <span class="n">mutations</span><span class="p">[</span><span class="n">mutations</span><span class="o">.</span><span class="n">Variant_annotation</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;damaging&#39;</span><span class="p">,</span><span class="s1">&#39;non-conserving&#39;</span><span class="p">])]</span>
+<span class="n">damaging</span> <span class="o">=</span> <span class="n">damaging</span><span class="p">[</span><span class="n">damaging</span><span class="o">.</span><span class="n">isDeleterious</span> <span class="o">==</span> <span class="kc">True</span><span class="p">]</span>
+<span class="n">genes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">hotspots</span><span class="o">.</span><span class="n">Entrez_Gene_Id</span><span class="p">)</span>
+
+
+<span class="n">genes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">damaging</span><span class="o">.</span><span class="n">Entrez_Gene_Id</span><span class="p">)</span>
+
+<span class="n">lineage_mutations</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">sublineage_mutations</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">genes</span><span class="p">:</span>
+    <span class="n">lineage_mutations</span><span class="p">[</span><span class="n">g</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">sublineage_mutations</span><span class="p">[</span><span class="n">g</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    
+    <span class="n">gdf</span> <span class="o">=</span> <span class="n">damaging</span><span class="p">[</span><span class="n">damaging</span><span class="o">.</span><span class="n">Entrez_Gene_Id</span> <span class="o">==</span> <span class="n">g</span><span class="p">]</span>
+    
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">gdf</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+        <span class="n">cell</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">DepMap_ID</span>
+        <span class="k">if</span> <span class="n">cell2lineage</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cell</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">lineage</span> <span class="o">=</span> <span class="n">cell2lineage</span><span class="p">[</span><span class="n">cell</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">lineage_mutations</span><span class="p">[</span><span class="n">g</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">lineage</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">lineage_mutations</span><span class="p">[</span><span class="n">g</span><span class="p">][</span><span class="n">lineage</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">lineage_mutations</span><span class="p">[</span><span class="n">g</span><span class="p">][</span><span class="n">lineage</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+        <span class="k">if</span> <span class="n">cell2sublineage</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cell</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">sublineage</span> <span class="o">=</span> <span class="n">cell2sublineage</span><span class="p">[</span><span class="n">cell</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">sublineage_mutations</span><span class="p">[</span><span class="n">g</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">sublineage</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">sublineage_mutations</span><span class="p">[</span><span class="n">g</span><span class="p">][</span><span class="n">sublineage</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">sublineage_mutations</span><span class="p">[</span><span class="n">g</span><span class="p">][</span><span class="n">sublineage</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done mapping deleterious mutations&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Done mapping deleterious mutations
 </pre>
 </div>
 </div>
@@ -13394,14 +13821,85 @@ uterus_uterus_endometrium 32
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">url</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;achilles_crispr&#39;</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-<span class="n">strip_cols</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">## Ingest DEMETER2 Data v5 combines RNAi gene dependency data</span>
+<span class="s1">DEMETER2 Data v5</span>
+<span class="s1">Cancer cell line genetic dependencies estimated using the DEMETER2 model. DEMETER2 is applied to three large-scale RNAi screening datasets: the Broad Institute Project Achilles, Novartis Project DRIVE, and the Marcotte et al. breast cell line dataset. The model is also applied to generate a combined dataset of gene dependencies covering a total of 712 unique cancer cell lines.</span>
+
+<span class="s1">&lt;b&gt;DepMap source file:&lt;/b&gt; D2_combined_gene_dep_scores.csv </span>
+
+<span class="s1">&lt;b&gt;Citation:&lt;/b&gt; Jordan G. Bryan, John M. Krill-Burger, Thomas M. Green, Francisca Vazquez, Jesse S. Boehm, Todd R. Golub, William C. Hahn, David E. Root, Aviad Tsherniak. (2018). Improved estimation of cancer dependencies from large-scale RNAi screens using model-based normalization and data integration. Nature Communications 9, 1. https://doi.org/10.1038/s41467-018-06916-5&lt;/font&gt;</span>
+
+<span class="s1">* Data source uses CCLE names rather than DepMap cell line IDS</span>
+<span class="s1">* Translate the cell line names to IDS for consistency with other data sources</span>
+<span class="s1">* Also deal with rows in the table with multiple gene names (eg &#39;GTF2IP4&amp;GTF2IP1 (100093631&amp;2970)&#39;)</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Ingest-DEMETER2-Data-v5-combines-RNAi-gene-dependency-data">Ingest DEMETER2 Data v5 combines RNAi gene dependency data<a class="anchor-link" href="#Ingest-DEMETER2-Data-v5-combines-RNAi-gene-dependency-data">&#182;</a></h2><p>DEMETER2 Data v5
+Cancer cell line genetic dependencies estimated using the DEMETER2 model. DEMETER2 is applied to three large-scale RNAi screening datasets: the Broad Institute Project Achilles, Novartis Project DRIVE, and the Marcotte et al. breast cell line dataset. The model is also applied to generate a combined dataset of gene dependencies covering a total of 712 unique cancer cell lines.</p>
+<p><b>DepMap source file:</b> D2_combined_gene_dep_scores.csv</p>
+<p><b>Citation:</b> Jordan G. Bryan, John M. Krill-Burger, Thomas M. Green, Francisca Vazquez, Jesse S. Boehm, Todd R. Golub, William C. Hahn, David E. Root, Aviad Tsherniak. (2018). Improved estimation of cancer dependencies from large-scale RNAi screens using model-based normalization and data integration. Nature Communications 9, 1. <a href="https://doi.org/10.1038/s41467-018-06916-5">https://doi.org/10.1038/s41467-018-06916-5</a>&lt;/font&gt;</p>
+<ul>
+<li>Data source uses CCLE names rather than DepMap cell line IDS</li>
+<li>Translate the cell line names to IDS for consistency with other data sources</li>
+<li>Also deal with rows in the table with multiple gene names (eg 'GTF2IP4&amp;GTF2IP1 (100093631&amp;2970)')</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Ingest data</span>
+<span class="n">d2</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;d2_rnai&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Initial number of rows in dataframe:&quot;</span><span class="p">,</span><span class="n">d2</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="c1"># split rows with multuple genes</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;gene&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">d2</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Splitting multigene rows...&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">d2</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="k">if</span> <span class="s1">&#39;&amp;&#39;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+        <span class="n">symbols</span><span class="p">,</span> <span class="n">ncbi</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+        <span class="n">symbols</span> <span class="o">=</span> <span class="n">symbols</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&amp;&#39;</span><span class="p">)</span>
+        <span class="n">ncbi</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;\(|\)&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">ncbi</span><span class="p">)</span>
+        <span class="n">ncbi</span> <span class="o">=</span> <span class="n">ncbi</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&amp;&#39;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">ncbi</span><span class="p">),</span> <span class="s2">&quot;Length mismatch&quot;</span>
+        <span class="k">for</span> <span class="n">s</span><span class="p">,</span> <span class="n">symbol</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">symbols</span><span class="p">):</span>
+            <span class="n">gid</span> <span class="o">=</span> <span class="n">ncbi</span><span class="p">[</span><span class="n">s</span><span class="p">]</span>
+            <span class="n">row</span> <span class="o">=</span> <span class="p">[</span><span class="n">symbol</span><span class="o">+</span><span class="s1">&#39; (&#39;</span><span class="o">+</span><span class="n">gid</span><span class="o">+</span><span class="s1">&#39;)&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+            <span class="n">rows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">rows</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="nb">list</span><span class="p">(</span><span class="n">r</span><span class="p">))</span>
+<span class="n">d2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">rows</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="n">cols</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;gene&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Final number of rows in dataframe:&quot;</span><span class="p">,</span><span class="n">d2</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -13418,191 +13916,62 @@ uterus_uterus_endometrium 32
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>dict_keys([&#39;expression&#39;, &#39;sample_info&#39;, &#39;copy_number&#39;, &#39;mutations&#39;, &#39;achilles_crispr&#39;, &#39;achilles_rnai&#39;, &#39;sensitivity&#39;, &#39;mfr&#39;])
+<pre>Initial number of rows in dataframe: 17309
+Splitting multigene rows...
+Final number of rows in dataframe: 17731
 </pre>
 </div>
 </div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Map cell line names to IDs</span>
+<span class="n">sample_info</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;sample_info&#39;</span><span class="p">)</span>
+<span class="n">ccle_name2id</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">sample_info</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">ccle_name2id</span><span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;CCLE Name&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> 
+
+<span class="n">cell_line_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">d2</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+
+<span class="c1"># Rename columns to use CCLE IDs and rows to use NCBI gene IDs</span>
+<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">d2</span><span class="o">.</span><span class="n">index</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span><span class="nb">str</span><span class="p">):</span>
+    <span class="n">d2</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">ccle_name2id</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="ow">or</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cell_line_names</span><span class="p">]</span>
+    <span class="n">d2</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">ncbi_gene_ids</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">d2</span><span class="o">.</span><span class="n">index</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d2</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="s2">&quot;genes&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d2</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="s2">&quot;cell lines&quot;</span><span class="p">)</span>
+<span class="n">d2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
 
 <div class="output_area">
 
     <div class="prompt"></div>
 
 
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A1BG (1)</th>
-      <th>A1CF (29974)</th>
-      <th>A2M (2)</th>
-      <th>A2ML1 (144568)</th>
-      <th>A3GALT2 (127550)</th>
-      <th>A4GALT (53947)</th>
-      <th>A4GNT (51146)</th>
-      <th>AAAS (8086)</th>
-      <th>AACS (65985)</th>
-      <th>AADAC (13)</th>
-      <th>...</th>
-      <th>ZWILCH (55055)</th>
-      <th>ZWINT (11130)</th>
-      <th>ZXDA (7789)</th>
-      <th>ZXDB (158586)</th>
-      <th>ZXDC (79364)</th>
-      <th>ZYG11A (440590)</th>
-      <th>ZYG11B (79699)</th>
-      <th>ZYX (7791)</th>
-      <th>ZZEF1 (23140)</th>
-      <th>ZZZ3 (26009)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ACH-000004</td>
-      <td>0.168684</td>
-      <td>0.089128</td>
-      <td>-0.196966</td>
-      <td>-0.021260</td>
-      <td>0.038541</td>
-      <td>-0.175141</td>
-      <td>0.349346</td>
-      <td>-0.441008</td>
-      <td>0.291208</td>
-      <td>0.147993</td>
-      <td>...</td>
-      <td>-0.135665</td>
-      <td>-0.461810</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0.253495</td>
-      <td>0.233904</td>
-      <td>-0.406140</td>
-      <td>0.283878</td>
-      <td>0.230978</td>
-      <td>-0.135112</td>
-    </tr>
-    <tr>
-      <td>ACH-000005</td>
-      <td>-0.068759</td>
-      <td>0.218792</td>
-      <td>0.178252</td>
-      <td>0.158390</td>
-      <td>-0.193862</td>
-      <td>-0.324566</td>
-      <td>0.246220</td>
-      <td>-0.576495</td>
-      <td>-0.081217</td>
-      <td>0.016182</td>
-      <td>...</td>
-      <td>-0.176432</td>
-      <td>-0.391199</td>
-      <td>-0.182117</td>
-      <td>-0.108978</td>
-      <td>0.186545</td>
-      <td>-0.075884</td>
-      <td>-0.095781</td>
-      <td>0.029269</td>
-      <td>0.000945</td>
-      <td>-0.242038</td>
-    </tr>
-    <tr>
-      <td>ACH-000007</td>
-      <td>0.053893</td>
-      <td>0.081444</td>
-      <td>-0.060170</td>
-      <td>0.153435</td>
-      <td>0.087362</td>
-      <td>0.150684</td>
-      <td>0.061146</td>
-      <td>-0.470462</td>
-      <td>-0.012210</td>
-      <td>0.277616</td>
-      <td>...</td>
-      <td>-0.101852</td>
-      <td>-0.276755</td>
-      <td>-0.030821</td>
-      <td>0.121126</td>
-      <td>0.214875</td>
-      <td>-0.019300</td>
-      <td>-0.342632</td>
-      <td>0.083610</td>
-      <td>-0.392722</td>
-      <td>-0.443380</td>
-    </tr>
-    <tr>
-      <td>ACH-000009</td>
-      <td>0.059874</td>
-      <td>-0.011153</td>
-      <td>-0.054367</td>
-      <td>0.060886</td>
-      <td>0.039767</td>
-      <td>0.043527</td>
-      <td>0.011845</td>
-      <td>-0.630290</td>
-      <td>0.161797</td>
-      <td>0.033587</td>
-      <td>...</td>
-      <td>-0.355880</td>
-      <td>-0.290047</td>
-      <td>-0.031825</td>
-      <td>0.115886</td>
-      <td>0.116784</td>
-      <td>0.035294</td>
-      <td>-0.575523</td>
-      <td>0.228940</td>
-      <td>-0.114559</td>
-      <td>-0.549906</td>
-    </tr>
-    <tr>
-      <td>ACH-000011</td>
-      <td>0.277165</td>
-      <td>0.085354</td>
-      <td>0.007972</td>
-      <td>0.445843</td>
-      <td>-0.036717</td>
-      <td>-0.261409</td>
-      <td>0.111173</td>
-      <td>-0.430867</td>
-      <td>0.138193</td>
-      <td>0.120785</td>
-      <td>...</td>
-      <td>-0.418769</td>
-      <td>-0.518908</td>
-      <td>-0.128187</td>
-      <td>-0.126336</td>
-      <td>0.269698</td>
-      <td>0.148516</td>
-      <td>-0.227106</td>
-      <td>0.120656</td>
-      <td>-0.252444</td>
-      <td>-0.401821</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 18333 columns</p>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>17731 genes
+712 cell lines
+</pre>
 </div>
-</div>
-
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -13625,153 +13994,627 @@ uterus_uterus_endometrium 32
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>1</th>
-      <th>29974</th>
-      <th>2</th>
-      <th>144568</th>
-      <th>127550</th>
-      <th>53947</th>
-      <th>51146</th>
-      <th>8086</th>
-      <th>65985</th>
-      <th>13</th>
+      <th>ACH-001270</th>
+      <th>ACH-001000</th>
+      <th>ACH-001001</th>
+      <th>ACH-002319</th>
+      <th>ACH-001827</th>
+      <th>ACH-000956</th>
+      <th>ACH-000948</th>
+      <th>ACH-002320</th>
+      <th>ACH-000070</th>
+      <th>ACH-000411</th>
       <th>...</th>
-      <th>55055</th>
-      <th>11130</th>
-      <th>7789</th>
-      <th>158586</th>
-      <th>79364</th>
-      <th>440590</th>
-      <th>79699</th>
-      <th>7791</th>
-      <th>23140</th>
-      <th>26009</th>
+      <th>ACH-000899</th>
+      <th>ACH-000765</th>
+      <th>ACH-000534</th>
+      <th>ACH-000762</th>
+      <th>ACH-000630</th>
+      <th>ACH-000570</th>
+      <th>ACH-001249</th>
+      <th>ACH-000097</th>
+      <th>ACH-000828</th>
+      <th>ACH-002331</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>ACH-000004</td>
-      <td>0.168684</td>
-      <td>0.089128</td>
-      <td>-0.196966</td>
-      <td>-0.021260</td>
-      <td>0.038541</td>
-      <td>-0.175141</td>
-      <td>0.349346</td>
-      <td>-0.441008</td>
-      <td>0.291208</td>
-      <td>0.147993</td>
-      <td>...</td>
-      <td>-0.135665</td>
-      <td>-0.461810</td>
+      <td>1</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>0.253495</td>
-      <td>0.233904</td>
-      <td>-0.406140</td>
-      <td>0.283878</td>
-      <td>0.230978</td>
-      <td>-0.135112</td>
+      <td>0.146042</td>
+      <td>-0.190388</td>
+      <td>0.907063</td>
+      <td>-0.019331</td>
+      <td>-0.016734</td>
+      <td>0.091580</td>
+      <td>0.035023</td>
+      <td>-0.122046</td>
+      <td>...</td>
+      <td>-0.088267</td>
+      <td>0.002171</td>
+      <td>NaN</td>
+      <td>0.120294</td>
+      <td>0.012540</td>
+      <td>0.111530</td>
+      <td>NaN</td>
+      <td>-0.079313</td>
+      <td>-0.141559</td>
+      <td>0.214268</td>
     </tr>
     <tr>
-      <td>ACH-000005</td>
-      <td>-0.068759</td>
-      <td>0.218792</td>
-      <td>0.178252</td>
-      <td>0.158390</td>
-      <td>-0.193862</td>
-      <td>-0.324566</td>
-      <td>0.246220</td>
-      <td>-0.576495</td>
-      <td>-0.081217</td>
-      <td>0.016182</td>
+      <td>10</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.102854</td>
+      <td>0.384106</td>
+      <td>0.403192</td>
+      <td>0.001925</td>
+      <td>-0.153933</td>
+      <td>-0.317969</td>
+      <td>0.012341</td>
+      <td>-0.205077</td>
       <td>...</td>
-      <td>-0.176432</td>
-      <td>-0.391199</td>
-      <td>-0.182117</td>
-      <td>-0.108978</td>
-      <td>0.186545</td>
-      <td>-0.075884</td>
-      <td>-0.095781</td>
-      <td>0.029269</td>
-      <td>0.000945</td>
-      <td>-0.242038</td>
+      <td>-0.003747</td>
+      <td>-0.321445</td>
+      <td>NaN</td>
+      <td>-0.003256</td>
+      <td>-0.220472</td>
+      <td>0.073460</td>
+      <td>NaN</td>
+      <td>-0.130921</td>
+      <td>0.127358</td>
+      <td>-0.405974</td>
     </tr>
     <tr>
-      <td>ACH-000007</td>
-      <td>0.053893</td>
-      <td>0.081444</td>
-      <td>-0.060170</td>
-      <td>0.153435</td>
-      <td>0.087362</td>
-      <td>0.150684</td>
-      <td>0.061146</td>
-      <td>-0.470462</td>
-      <td>-0.012210</td>
-      <td>0.277616</td>
+      <td>100</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.168839</td>
+      <td>-0.120700</td>
+      <td>0.004394</td>
+      <td>-0.188700</td>
+      <td>-0.060818</td>
+      <td>-0.755058</td>
+      <td>0.129770</td>
+      <td>0.076273</td>
       <td>...</td>
-      <td>-0.101852</td>
-      <td>-0.276755</td>
-      <td>-0.030821</td>
-      <td>0.121126</td>
-      <td>0.214875</td>
-      <td>-0.019300</td>
-      <td>-0.342632</td>
-      <td>0.083610</td>
-      <td>-0.392722</td>
-      <td>-0.443380</td>
+      <td>-0.014085</td>
+      <td>0.039679</td>
+      <td>NaN</td>
+      <td>0.076521</td>
+      <td>0.106995</td>
+      <td>0.227977</td>
+      <td>NaN</td>
+      <td>-0.134479</td>
+      <td>0.083506</td>
+      <td>-0.404291</td>
     </tr>
     <tr>
-      <td>ACH-000009</td>
-      <td>0.059874</td>
-      <td>-0.011153</td>
-      <td>-0.054367</td>
-      <td>0.060886</td>
-      <td>0.039767</td>
-      <td>0.043527</td>
-      <td>0.011845</td>
-      <td>-0.630290</td>
-      <td>0.161797</td>
-      <td>0.033587</td>
+      <td>1000</td>
+      <td>-0.194962</td>
+      <td>-0.028171</td>
+      <td>0.063047</td>
+      <td>-0.237251</td>
+      <td>-0.017059</td>
+      <td>-0.103047</td>
+      <td>-0.049460</td>
+      <td>0.130107</td>
+      <td>0.146864</td>
+      <td>-0.126198</td>
       <td>...</td>
-      <td>-0.355880</td>
-      <td>-0.290047</td>
-      <td>-0.031825</td>
-      <td>0.115886</td>
-      <td>0.116784</td>
-      <td>0.035294</td>
-      <td>-0.575523</td>
-      <td>0.228940</td>
-      <td>-0.114559</td>
-      <td>-0.549906</td>
+      <td>-0.073435</td>
+      <td>-0.140041</td>
+      <td>-0.154436</td>
+      <td>-0.040308</td>
+      <td>-0.078707</td>
+      <td>0.000769</td>
+      <td>-0.139126</td>
+      <td>0.047022</td>
+      <td>-0.097644</td>
+      <td>-0.062622</td>
     </tr>
     <tr>
-      <td>ACH-000011</td>
-      <td>0.277165</td>
-      <td>0.085354</td>
-      <td>0.007972</td>
-      <td>0.445843</td>
-      <td>-0.036717</td>
-      <td>-0.261409</td>
-      <td>0.111173</td>
-      <td>-0.430867</td>
-      <td>0.138193</td>
-      <td>0.120785</td>
+      <td>10000</td>
+      <td>-0.256108</td>
+      <td>0.100751</td>
+      <td>-0.008077</td>
+      <td>0.060267</td>
+      <td>-0.094749</td>
+      <td>-0.066591</td>
+      <td>0.166029</td>
+      <td>0.149969</td>
+      <td>-0.053022</td>
+      <td>0.092426</td>
       <td>...</td>
-      <td>-0.418769</td>
-      <td>-0.518908</td>
-      <td>-0.128187</td>
-      <td>-0.126336</td>
-      <td>0.269698</td>
-      <td>0.148516</td>
-      <td>-0.227106</td>
-      <td>0.120656</td>
-      <td>-0.252444</td>
-      <td>-0.401821</td>
+      <td>0.028714</td>
+      <td>-0.054628</td>
+      <td>0.450581</td>
+      <td>0.002932</td>
+      <td>0.129679</td>
+      <td>-0.072564</td>
+      <td>0.017161</td>
+      <td>0.123615</td>
+      <td>0.046846</td>
+      <td>0.125711</td>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 18333 columns</p>
+<p>5 rows × 712 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">## Ingest Achilles Crispr gene dependency data</span>
+<span class="s1">CERES data with principle components strongly related to known batch effects removed, then shifted and scaled per cell line so the median nonessential KO effect is 0 and the median essential KO effect is -1.</span>
+
+<span class="s1">&lt;b&gt;source data:&lt;/b&gt; Achilles_gene_effect.csv </span>
+
+<span class="s1">&lt;b&gt;Citation:&lt;/b&gt; DepMap, Broad (2019): DepMap 19Q3 Public. figshare. Dataset doi:10.6084/m9.figshare.9201770.v1.</span>
+<span class="s1">&lt;br&gt;</span>
+<span class="s1">Robin M. Meyers, Jordan G. Bryan, James M. McFarland, Barbara A. Weir, ... David E. Root, William C. Hahn, Aviad Tsherniak. Computational correction of copy number effect improves specificity of CRISPR-Cas9 essentiality screens in cancer cells. Nature Genetics 2017 October 49:1779–1784. doi:10.1038/ng.3984</span>
+
+<span class="s1">* Translate gene names (column labels) to NCBI IDS</span>
+<span class="s1">* Transpose rows and columns so each cell line is a column label with vertivally stacked gene data</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Ingest-Achilles-Crispr-gene-dependency-data">Ingest Achilles Crispr gene dependency data<a class="anchor-link" href="#Ingest-Achilles-Crispr-gene-dependency-data">&#182;</a></h2><p>CERES data with principle components strongly related to known batch effects removed, then shifted and scaled per cell line so the median nonessential KO effect is 0 and the median essential KO effect is -1.</p>
+<p><b>source data:</b> Achilles_gene_effect.csv</p>
+<p><b>Citation:</b> DepMap, Broad (2019): DepMap 19Q3 Public. figshare. Dataset doi:10.6084/m9.figshare.9201770.v1.
+<br>
+Robin M. Meyers, Jordan G. Bryan, James M. McFarland, Barbara A. Weir, ... David E. Root, William C. Hahn, Aviad Tsherniak. Computational correction of copy number effect improves specificity of CRISPR-Cas9 essentiality screens in cancer cells. Nature Genetics 2017 October 49:1779–1784. doi:10.1038/ng.3984</p>
+<ul>
+<li>Translate gene names (column labels) to NCBI IDS</li>
+<li>Transpose rows and columns so each cell line is a column label with vertivally stacked gene data</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">achilles</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;achilles_crispr&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+<span class="n">genes</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">achilles</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">achilles</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">ncbi_gene_ids</span><span class="p">(</span><span class="n">genes</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">achilles</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="s2">&quot;genes&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">achilles</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="s2">&quot;cell lines&quot;</span><span class="p">)</span>
+<span class="n">achilles</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>18333 genes
+625 cell lines
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ACH-000004</th>
+      <th>ACH-000005</th>
+      <th>ACH-000007</th>
+      <th>ACH-000009</th>
+      <th>ACH-000011</th>
+      <th>ACH-000012</th>
+      <th>ACH-000013</th>
+      <th>ACH-000014</th>
+      <th>ACH-000015</th>
+      <th>ACH-000017</th>
+      <th>...</th>
+      <th>ACH-001736</th>
+      <th>ACH-001737</th>
+      <th>ACH-001740</th>
+      <th>ACH-001745</th>
+      <th>ACH-001750</th>
+      <th>ACH-001765</th>
+      <th>ACH-001814</th>
+      <th>ACH-001838</th>
+      <th>ACH-001956</th>
+      <th>ACH-001957</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0.168684</td>
+      <td>-0.068759</td>
+      <td>0.053893</td>
+      <td>0.059874</td>
+      <td>0.277165</td>
+      <td>0.008073</td>
+      <td>0.062131</td>
+      <td>0.143078</td>
+      <td>-0.090890</td>
+      <td>0.178427</td>
+      <td>...</td>
+      <td>0.154567</td>
+      <td>-0.050307</td>
+      <td>0.005125</td>
+      <td>0.208843</td>
+      <td>0.044674</td>
+      <td>0.136364</td>
+      <td>0.216507</td>
+      <td>-0.086149</td>
+      <td>-0.076893</td>
+      <td>0.055750</td>
+    </tr>
+    <tr>
+      <td>29974</td>
+      <td>0.089128</td>
+      <td>0.218792</td>
+      <td>0.081444</td>
+      <td>-0.011153</td>
+      <td>0.085354</td>
+      <td>0.167177</td>
+      <td>0.038687</td>
+      <td>-0.035837</td>
+      <td>0.007894</td>
+      <td>0.106952</td>
+      <td>...</td>
+      <td>0.019334</td>
+      <td>0.189813</td>
+      <td>0.349099</td>
+      <td>0.153637</td>
+      <td>0.126563</td>
+      <td>0.021261</td>
+      <td>-0.172366</td>
+      <td>0.082798</td>
+      <td>0.109464</td>
+      <td>0.004545</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-0.196966</td>
+      <td>0.178252</td>
+      <td>-0.060170</td>
+      <td>-0.054367</td>
+      <td>0.007972</td>
+      <td>0.088705</td>
+      <td>-0.043841</td>
+      <td>0.010997</td>
+      <td>-0.185690</td>
+      <td>-0.068145</td>
+      <td>...</td>
+      <td>-0.124875</td>
+      <td>-0.079220</td>
+      <td>-0.194522</td>
+      <td>-0.134906</td>
+      <td>-0.082100</td>
+      <td>-0.107147</td>
+      <td>-0.265359</td>
+      <td>-0.147978</td>
+      <td>0.021325</td>
+      <td>0.067990</td>
+    </tr>
+    <tr>
+      <td>144568</td>
+      <td>-0.021260</td>
+      <td>0.158390</td>
+      <td>0.153435</td>
+      <td>0.060886</td>
+      <td>0.445843</td>
+      <td>0.307599</td>
+      <td>0.200285</td>
+      <td>0.182625</td>
+      <td>0.111529</td>
+      <td>0.109807</td>
+      <td>...</td>
+      <td>0.051671</td>
+      <td>0.100741</td>
+      <td>0.217812</td>
+      <td>0.167583</td>
+      <td>0.132673</td>
+      <td>0.076223</td>
+      <td>0.045942</td>
+      <td>0.256595</td>
+      <td>0.204297</td>
+      <td>0.199098</td>
+    </tr>
+    <tr>
+      <td>127550</td>
+      <td>0.038541</td>
+      <td>-0.193862</td>
+      <td>0.087362</td>
+      <td>0.039767</td>
+      <td>-0.036717</td>
+      <td>0.015440</td>
+      <td>-0.070484</td>
+      <td>-0.034048</td>
+      <td>-0.033507</td>
+      <td>-0.195903</td>
+      <td>...</td>
+      <td>-0.196632</td>
+      <td>0.164481</td>
+      <td>-0.052438</td>
+      <td>-0.130067</td>
+      <td>-0.172350</td>
+      <td>-0.116583</td>
+      <td>0.123916</td>
+      <td>-0.054596</td>
+      <td>-0.080814</td>
+      <td>-0.042784</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 625 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="How-many-cell-lines-and-genes-are-shared-between-D2-and-Achilles-gene-dependency-data-sets?">How many cell lines and genes are shared between D2 and Achilles gene dependency data sets?<a class="anchor-link" href="#How-many-cell-lines-and-genes-are-shared-between-D2-and-Achilles-gene-dependency-data-sets?">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d2_cells</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">d2</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">d2_genes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">d2</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">ac_cells</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">achilles</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">ac_genes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">achilles</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">report</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">d2_cells</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">ac_cells</span><span class="p">)))</span><span class="o">+</span><span class="s2">&quot; cell lines are shared&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">d2_genes</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">ac_genes</span><span class="p">)))</span><span class="o">+</span><span class="s2">&quot; genes are shared&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>423 cell lines are shared</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>16052 genes are shared
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pi</span> <span class="o">=</span> <span class="n">get_pathway_info</span><span class="p">()</span>
+<span class="n">pi</span><span class="p">[</span><span class="s1">&#39;10002&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;R-HSA-383280&#39;,
+ &#39;https://reactome.org/PathwayBrowser/#/R-HSA-383280&#39;,
+ &#39;Nuclear Receptor transcription pathway&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cn</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;copy_number&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+<span class="n">gd</span> <span class="o">=</span> <span class="n">get_gene_descriptions</span><span class="p">()</span>
+<span class="n">gd</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>primaryIdentifier</th>
+      <th>symbol</th>
+      <th>briefDescription</th>
+      <th>description</th>
+      <th>proteins.uniprotAccession</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>2632</td>
+      <td>GBE1</td>
+      <td>1,4-alpha-glucan branching enzyme 1</td>
+      <td>The protein encoded by this gene is a glycogen...</td>
+      <td>Q04446</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>3248</td>
+      <td>HPGD</td>
+      <td>15-hydroxyprostaglandin dehydrogenase</td>
+      <td>This gene encodes a member of the short-chain ...</td>
+      <td>E9PBZ2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3248</td>
+      <td>HPGD</td>
+      <td>15-hydroxyprostaglandin dehydrogenase</td>
+      <td>This gene encodes a member of the short-chain ...</td>
+      <td>P15428</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>3248</td>
+      <td>HPGD</td>
+      <td>15-hydroxyprostaglandin dehydrogenase</td>
+      <td>This gene encodes a member of the short-chain ...</td>
+      <td>P15428</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>3248</td>
+      <td>HPGD</td>
+      <td>15-hydroxyprostaglandin dehydrogenase</td>
+      <td>This gene encodes a member of the short-chain ...</td>
+      <td>P15428</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 </div>
 
@@ -13786,379 +14629,6 @@ uterus_uterus_endometrium 32
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">data</span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fix-Achilles-RNAi-to-to-use-CCLE-cell-line-IDs">Fix Achilles RNAi to to use CCLE cell line IDs<a class="anchor-link" href="#Fix-Achilles-RNAi-to-to-use-CCLE-cell-line-IDs">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sample_info</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;sample_info&#39;</span><span class="p">)</span>
-<span class="n">ccle_name2id</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">sample_info</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="n">ccle_name2id</span><span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;CCLE Name&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> 
-
-<span class="n">achilles_rnai</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;achilles_rnai&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-<span class="n">achilles_index</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">achilles_rnai</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-<span class="n">achilles_rnai</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="n">ccle_name2id</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="ow">or</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">achilles_index</span><span class="p">]</span>
-<span class="n">achilles_rnai</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[45]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A1BG (1)</th>
-      <th>NAT2 (10)</th>
-      <th>ADA (100)</th>
-      <th>CDH2 (1000)</th>
-      <th>AKT3 (10000)</th>
-      <th>MED6 (10001)</th>
-      <th>NR2E3 (10002)</th>
-      <th>NAALAD2 (10003)</th>
-      <th>DUXB (100033411)</th>
-      <th>PDZK1P1 (100034743)</th>
-      <th>...</th>
-      <th>HNRNPDL (9987)</th>
-      <th>DMTF1 (9988)</th>
-      <th>PPP4R1 (9989)</th>
-      <th>CDH1 (999)</th>
-      <th>SLC12A6 (9990)</th>
-      <th>PTBP3 (9991)</th>
-      <th>KCNE2 (9992)</th>
-      <th>DGCR2 (9993)</th>
-      <th>CASP8AP2 (9994)</th>
-      <th>SCO2 (9997)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>count</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>...</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-      <td>501.000000</td>
-    </tr>
-    <tr>
-      <td>mean</td>
-      <td>-0.128559</td>
-      <td>-0.062949</td>
-      <td>0.052180</td>
-      <td>0.035571</td>
-      <td>0.073588</td>
-      <td>-0.010781</td>
-      <td>0.055337</td>
-      <td>0.072024</td>
-      <td>0.134287</td>
-      <td>0.086955</td>
-      <td>...</td>
-      <td>0.049100</td>
-      <td>0.044417</td>
-      <td>-0.161913</td>
-      <td>-0.018613</td>
-      <td>0.041153</td>
-      <td>-0.656251</td>
-      <td>-0.003405</td>
-      <td>0.050086</td>
-      <td>-0.524194</td>
-      <td>-0.076897</td>
-    </tr>
-    <tr>
-      <td>std</td>
-      <td>0.124823</td>
-      <td>0.135102</td>
-      <td>0.149959</td>
-      <td>0.134957</td>
-      <td>0.118782</td>
-      <td>0.146802</td>
-      <td>0.151149</td>
-      <td>0.114891</td>
-      <td>0.100591</td>
-      <td>0.096310</td>
-      <td>...</td>
-      <td>0.123658</td>
-      <td>0.134776</td>
-      <td>0.121253</td>
-      <td>0.144138</td>
-      <td>0.096894</td>
-      <td>0.187780</td>
-      <td>0.105688</td>
-      <td>0.150471</td>
-      <td>0.286075</td>
-      <td>0.173581</td>
-    </tr>
-    <tr>
-      <td>min</td>
-      <td>-0.591187</td>
-      <td>-0.615757</td>
-      <td>-0.404078</td>
-      <td>-0.504298</td>
-      <td>-0.713022</td>
-      <td>-0.518746</td>
-      <td>-0.406930</td>
-      <td>-0.386424</td>
-      <td>-0.195428</td>
-      <td>-0.233658</td>
-      <td>...</td>
-      <td>-0.288058</td>
-      <td>-0.334535</td>
-      <td>-0.560391</td>
-      <td>-0.371797</td>
-      <td>-0.251362</td>
-      <td>-1.150943</td>
-      <td>-0.335286</td>
-      <td>-0.556667</td>
-      <td>-1.443735</td>
-      <td>-0.639469</td>
-    </tr>
-    <tr>
-      <td>25%</td>
-      <td>-0.200764</td>
-      <td>-0.153099</td>
-      <td>-0.054149</td>
-      <td>-0.049472</td>
-      <td>0.018771</td>
-      <td>-0.099676</td>
-      <td>-0.048597</td>
-      <td>0.009815</td>
-      <td>0.076195</td>
-      <td>0.035930</td>
-      <td>...</td>
-      <td>-0.035309</td>
-      <td>-0.042693</td>
-      <td>-0.239758</td>
-      <td>-0.122440</td>
-      <td>-0.020465</td>
-      <td>-0.777290</td>
-      <td>-0.058195</td>
-      <td>-0.039912</td>
-      <td>-0.710553</td>
-      <td>-0.188873</td>
-    </tr>
-    <tr>
-      <td>50%</td>
-      <td>-0.123575</td>
-      <td>-0.069537</td>
-      <td>0.061277</td>
-      <td>0.033315</td>
-      <td>0.079908</td>
-      <td>-0.002010</td>
-      <td>0.052966</td>
-      <td>0.076944</td>
-      <td>0.137898</td>
-      <td>0.089408</td>
-      <td>...</td>
-      <td>0.047236</td>
-      <td>0.046242</td>
-      <td>-0.159157</td>
-      <td>-0.024791</td>
-      <td>0.038997</td>
-      <td>-0.660937</td>
-      <td>0.000486</td>
-      <td>0.056624</td>
-      <td>-0.461510</td>
-      <td>-0.074827</td>
-    </tr>
-    <tr>
-      <td>75%</td>
-      <td>-0.051885</td>
-      <td>0.021924</td>
-      <td>0.149807</td>
-      <td>0.116677</td>
-      <td>0.141142</td>
-      <td>0.089635</td>
-      <td>0.160081</td>
-      <td>0.142492</td>
-      <td>0.206585</td>
-      <td>0.141804</td>
-      <td>...</td>
-      <td>0.131704</td>
-      <td>0.131713</td>
-      <td>-0.082169</td>
-      <td>0.076697</td>
-      <td>0.099894</td>
-      <td>-0.525345</td>
-      <td>0.065278</td>
-      <td>0.142808</td>
-      <td>-0.315323</td>
-      <td>0.038054</td>
-    </tr>
-    <tr>
-      <td>max</td>
-      <td>0.219773</td>
-      <td>0.407250</td>
-      <td>0.583252</td>
-      <td>0.672208</td>
-      <td>0.827562</td>
-      <td>0.424368</td>
-      <td>0.547851</td>
-      <td>0.388047</td>
-      <td>0.431561</td>
-      <td>0.363576</td>
-      <td>...</td>
-      <td>0.397315</td>
-      <td>0.486055</td>
-      <td>0.280198</td>
-      <td>0.476642</td>
-      <td>0.352624</td>
-      <td>-0.186703</td>
-      <td>0.285523</td>
-      <td>0.485453</td>
-      <td>-0.030149</td>
-      <td>0.486070</td>
-    </tr>
-  </tbody>
-</table>
-<p>8 rows × 16755 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use data from human mine to map NCBI gene IDs to name, summary, symbol, uniprot</span>
-<span class="n">gd</span> <span class="o">=</span> <span class="n">get_gene_descriptions</span><span class="p">()</span>
-<span class="n">ncbi2name</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">ncbi2symbol</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">ncbi2description</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">ncbi2uniprot</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">uniprot2ncbi</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">gd</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="n">ncbi</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">uniprot</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-    <span class="n">ncbi</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">ncbi</span><span class="p">)</span>
-    <span class="n">ncbi2name</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span> <span class="o">=</span> <span class="n">name</span>
-    <span class="n">ncbi2symbol</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span> <span class="o">=</span> <span class="n">symbol</span>
-    <span class="n">ncbi2description</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span> <span class="o">=</span> <span class="n">description</span>
-    <span class="c1"># ncbi &lt;-&gt; unioprot can be 1:many</span>
-    <span class="k">if</span> <span class="n">ncbi2uniprot</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">ncbi</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">ncbi2uniprot</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
-    <span class="n">ncbi2uniprot</span><span class="p">[</span><span class="n">ncbi</span><span class="p">]</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">uniprot</span><span class="p">)</span>
-    <span class="n">uniprot2ncbi</span><span class="p">[</span><span class="n">uniprot</span><span class="p">]</span> <span class="o">=</span> <span class="n">ncbi</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done mappinmg gene info&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Done mappinmg gene info
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cn</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;copy_number&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
@@ -14166,105 +14636,10 @@ uterus_uterus_endometrium 32
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>pancreas 55 [&#39;ACH-000022&#39;, &#39;ACH-000023&#39;, &#39;ACH-000031&#39;, &#39;ACH-000042&#39;, &#39;ACH-000060&#39;, &#39;ACH-000085&#39;, &#39;ACH-000093&#39;, &#39;ACH-000094&#39;, &#39;ACH-000107&#39;, &#39;ACH-000108&#39;, &#39;ACH-000114&#39;, &#39;ACH-000118&#39;, &#39;ACH-000138&#39;, &#39;ACH-000139&#39;, &#39;ACH-000155&#39;, &#39;ACH-000164&#39;, &#39;ACH-000178&#39;, &#39;ACH-000205&#39;, &#39;ACH-000213&#39;, &#39;ACH-000222&#39;, &#39;ACH-000235&#39;, &#39;ACH-000243&#39;, &#39;ACH-000265&#39;, &#39;ACH-000266&#39;, &#39;ACH-000270&#39;, &#39;ACH-000281&#39;, &#39;ACH-000307&#39;, &#39;ACH-000320&#39;, &#39;ACH-000332&#39;, &#39;ACH-000347&#39;, &#39;ACH-000354&#39;, &#39;ACH-000417&#39;, &#39;ACH-000468&#39;, &#39;ACH-000502&#39;, &#39;ACH-000517&#39;, &#39;ACH-000535&#39;, &#39;ACH-000599&#39;, &#39;ACH-000601&#39;, &#39;ACH-000652&#39;, &#39;ACH-000685&#39;, &#39;ACH-000933&#39;, &#39;ACH-001098&#39;, &#39;ACH-001101&#39;, &#39;ACH-001107&#39;, &#39;ACH-001108&#39;, &#39;ACH-001171&#39;, &#39;ACH-001353&#39;, &#39;ACH-001375&#39;, &#39;ACH-001376&#39;, &#39;ACH-001377&#39;, &#39;ACH-001378&#39;, &#39;ACH-001379&#39;, &#39;ACH-001380&#39;, &#39;ACH-001382&#39;, &#39;ACH-001999&#39;]
-liver 26 [&#39;ACH-000217&#39;, &#39;ACH-000221&#39;, &#39;ACH-000316&#39;, &#39;ACH-000361&#39;, &#39;ACH-000393&#39;, &#39;ACH-000420&#39;, &#39;ACH-000422&#39;, &#39;ACH-000471&#39;, &#39;ACH-000475&#39;, &#39;ACH-000476&#39;, &#39;ACH-000478&#39;, &#39;ACH-000480&#39;, &#39;ACH-000483&#39;, &#39;ACH-000493&#39;, &#39;ACH-000537&#39;, &#39;ACH-000577&#39;, &#39;ACH-000620&#39;, &#39;ACH-000625&#39;, &#39;ACH-000671&#39;, &#39;ACH-000686&#39;, &#39;ACH-000734&#39;, &#39;ACH-000739&#39;, &#39;ACH-000848&#39;, &#39;ACH-001021&#39;, &#39;ACH-001089&#39;, &#39;ACH-001318&#39;]
-ovary_non_epithelial 2 [&#39;ACH-000280&#39;, &#39;ACH-001374&#39;]
-ovary_immortalized 1 [&#39;ACH-000494&#39;]
-ovary_adenocarcinoma 57 [&#39;ACH-000001&#39;, &#39;ACH-000013&#39;, &#39;ACH-000048&#39;, &#39;ACH-000091&#39;, &#39;ACH-000103&#39;, &#39;ACH-000116&#39;, &#39;ACH-000123&#39;, &#39;ACH-000132&#39;, &#39;ACH-000237&#39;, &#39;ACH-000256&#39;, &#39;ACH-000278&#39;, &#39;ACH-000291&#39;, &#39;ACH-000308&#39;, &#39;ACH-000324&#39;, &#39;ACH-000333&#39;, &#39;ACH-000409&#39;, &#39;ACH-000430&#39;, &#39;ACH-000443&#39;, &#39;ACH-000460&#39;, &#39;ACH-000520&#39;, &#39;ACH-000524&#39;, &#39;ACH-000527&#39;, &#39;ACH-000542&#39;, &#39;ACH-000574&#39;, &#39;ACH-000584&#39;, &#39;ACH-000608&#39;, &#39;ACH-000617&#39;, &#39;ACH-000635&#39;, &#39;ACH-000646&#39;, &#39;ACH-000657&#39;, &#39;ACH-000663&#39;, &#39;ACH-000688&#39;, &#39;ACH-000696&#39;, &#39;ACH-000701&#39;, &#39;ACH-000713&#39;, &#39;ACH-000719&#39;, &#39;ACH-000796&#39;, &#39;ACH-000811&#39;, &#39;ACH-000885&#39;, &#39;ACH-000906&#39;, &#39;ACH-000936&#39;, &#39;ACH-000947&#39;, &#39;ACH-000962&#39;, &#39;ACH-000966&#39;, &#39;ACH-001042&#39;, &#39;ACH-001048&#39;, &#39;ACH-001063&#39;, &#39;ACH-001144&#39;, &#39;ACH-001145&#39;, &#39;ACH-001151&#39;, &#39;ACH-001369&#39;, &#39;ACH-001373&#39;, &#39;ACH-001403&#39;, &#39;ACH-001418&#39;, &#39;ACH-001628&#39;, &#39;ACH-001630&#39;, &#39;ACH-001632&#39;]
-skin_squamous 3 [&#39;ACH-001521&#39;, &#39;ACH-001523&#39;, &#39;ACH-001524&#39;]
-skin_Merkel 7 [&#39;ACH-001122&#39;, &#39;ACH-001123&#39;, &#39;ACH-001131&#39;, &#39;ACH-001170&#39;, &#39;ACH-001550&#39;, &#39;ACH-001551&#39;, &#39;ACH-001552&#39;]
-skin_melanoma 69 [&#39;ACH-000014&#39;, &#39;ACH-000219&#39;, &#39;ACH-000274&#39;, &#39;ACH-000304&#39;, &#39;ACH-000322&#39;, &#39;ACH-000348&#39;, &#39;ACH-000401&#39;, &#39;ACH-000404&#39;, &#39;ACH-000423&#39;, &#39;ACH-000425&#39;, &#39;ACH-000441&#39;, &#39;ACH-000450&#39;, &#39;ACH-000458&#39;, &#39;ACH-000465&#39;, &#39;ACH-000477&#39;, &#39;ACH-000550&#39;, &#39;ACH-000572&#39;, &#39;ACH-000579&#39;, &#39;ACH-000580&#39;, &#39;ACH-000582&#39;, &#39;ACH-000614&#39;, &#39;ACH-000615&#39;, &#39;ACH-000632&#39;, &#39;ACH-000640&#39;, &#39;ACH-000644&#39;, &#39;ACH-000650&#39;, &#39;ACH-000661&#39;, &#39;ACH-000730&#39;, &#39;ACH-000750&#39;, &#39;ACH-000765&#39;, &#39;ACH-000788&#39;, &#39;ACH-000799&#39;, &#39;ACH-000801&#39;, &#39;ACH-000805&#39;, &#39;ACH-000810&#39;, &#39;ACH-000812&#39;, &#39;ACH-000814&#39;, &#39;ACH-000822&#39;, &#39;ACH-000827&#39;, &#39;ACH-000881&#39;, &#39;ACH-000882&#39;, &#39;ACH-000884&#39;, &#39;ACH-000899&#39;, &#39;ACH-000915&#39;, &#39;ACH-000931&#39;, &#39;ACH-000968&#39;, &#39;ACH-000987&#39;, &#39;ACH-001002&#39;, &#39;ACH-001024&#39;, &#39;ACH-001044&#39;, &#39;ACH-001072&#39;, &#39;ACH-001190&#39;, &#39;ACH-001239&#39;, &#39;ACH-001339&#39;, &#39;ACH-001522&#39;, &#39;ACH-001563&#39;, &#39;ACH-001566&#39;, &#39;ACH-001567&#39;, &#39;ACH-001568&#39;, &#39;ACH-001569&#39;, &#39;ACH-001570&#39;, &#39;ACH-001645&#39;, &#39;ACH-001704&#39;, &#39;ACH-002001&#39;, &#39;ACH-002002&#39;, &#39;ACH-002003&#39;, &#39;ACH-002004&#39;, &#39;ACH-002005&#39;, &#39;ACH-002040&#39;]
-skin_epidermoid_carcinoma 1 [&#39;ACH-001328&#39;]
-rhabdomyosarcoma 19 [&#39;ACH-000051&#39;, &#39;ACH-000100&#39;, &#39;ACH-000169&#39;, &#39;ACH-000689&#39;, &#39;ACH-000772&#39;, &#39;ACH-000833&#39;, &#39;ACH-001050&#39;, &#39;ACH-001096&#39;, &#39;ACH-001184&#39;, &#39;ACH-001189&#39;, &#39;ACH-001196&#39;, &#39;ACH-001740&#39;, &#39;ACH-001741&#39;, &#39;ACH-001743&#39;, &#39;ACH-001745&#39;, &#39;ACH-001750&#39;, &#39;ACH-001751&#39;, &#39;ACH-001765&#39;, &#39;ACH-001790&#39;]
-thyroid 18 [&#39;ACH-000037&#39;, &#39;ACH-000058&#39;, &#39;ACH-000163&#39;, &#39;ACH-000174&#39;, &#39;ACH-000191&#39;, &#39;ACH-000456&#39;, &#39;ACH-000716&#39;, &#39;ACH-000897&#39;, &#39;ACH-000903&#39;, &#39;ACH-001023&#39;, &#39;ACH-001306&#39;, &#39;ACH-001307&#39;, &#39;ACH-001321&#39;, &#39;ACH-001350&#39;, &#39;ACH-001356&#39;, &#39;ACH-001384&#39;, &#39;ACH-001443&#39;, &#39;ACH-001528&#39;]
-cervix 18 [&#39;ACH-000556&#39;, &#39;ACH-001086&#39;, &#39;ACH-001333&#39;, &#39;ACH-001334&#39;, &#39;ACH-001335&#39;, &#39;ACH-001336&#39;, &#39;ACH-001341&#39;, &#39;ACH-001359&#39;, &#39;ACH-001360&#39;, &#39;ACH-001400&#39;, &#39;ACH-001402&#39;, &#39;ACH-001442&#39;, &#39;ACH-001451&#39;, &#39;ACH-001513&#39;, &#39;ACH-001515&#39;, &#39;ACH-001525&#39;, &#39;ACH-001650&#39;, &#39;ACH-002020&#39;]
-urinary_tract 37 [&#39;ACH-000011&#39;, &#39;ACH-000018&#39;, &#39;ACH-000026&#39;, &#39;ACH-000142&#39;, &#39;ACH-000242&#39;, &#39;ACH-000384&#39;, &#39;ACH-000396&#39;, &#39;ACH-000473&#39;, &#39;ACH-000486&#39;, &#39;ACH-000522&#39;, &#39;ACH-000545&#39;, &#39;ACH-000547&#39;, &#39;ACH-000566&#39;, &#39;ACH-000593&#39;, &#39;ACH-000720&#39;, &#39;ACH-000724&#39;, &#39;ACH-000741&#39;, &#39;ACH-000753&#39;, &#39;ACH-000802&#39;, &#39;ACH-000834&#39;, &#39;ACH-000839&#39;, &#39;ACH-000862&#39;, &#39;ACH-000896&#39;, &#39;ACH-000905&#39;, &#39;ACH-000973&#39;, &#39;ACH-001011&#39;, &#39;ACH-001183&#39;, &#39;ACH-001407&#39;, &#39;ACH-001408&#39;, &#39;ACH-001409&#39;, &#39;ACH-001410&#39;, &#39;ACH-001411&#39;, &#39;ACH-001412&#39;, &#39;ACH-001413&#39;, &#39;ACH-001414&#39;, &#39;ACH-001415&#39;, &#39;ACH-001416&#39;]
-peripheral_nervous_system_neuroblastoma 32 [&#39;ACH-000078&#39;, &#39;ACH-000099&#39;, &#39;ACH-000120&#39;, &#39;ACH-000136&#39;, &#39;ACH-000149&#39;, &#39;ACH-000203&#39;, &#39;ACH-000227&#39;, &#39;ACH-000259&#39;, &#39;ACH-000260&#39;, &#39;ACH-000310&#39;, &#39;ACH-000312&#39;, &#39;ACH-000341&#39;, &#39;ACH-000345&#39;, &#39;ACH-000366&#39;, &#39;ACH-000446&#39;, &#39;ACH-000804&#39;, &#39;ACH-001188&#39;, &#39;ACH-001300&#39;, &#39;ACH-001301&#39;, &#39;ACH-001302&#39;, &#39;ACH-001303&#39;, &#39;ACH-001338&#39;, &#39;ACH-001344&#39;, &#39;ACH-001354&#39;, &#39;ACH-001355&#39;, &#39;ACH-001366&#39;, &#39;ACH-001367&#39;, &#39;ACH-001548&#39;, &#39;ACH-001603&#39;, &#39;ACH-001674&#39;, &#39;ACH-001716&#39;, &#39;ACH-002083&#39;]
-peripheral_nervous_system_PNET 1 [&#39;ACH-001670&#39;]
-small_intestine 2 [&#39;ACH-000538&#39;, &#39;ACH-001015&#39;]
-other 1 [&#39;ACH-001182&#39;]
-fibroblast 43 [&#39;ACH-000043&#39;, &#39;ACH-000063&#39;, &#39;ACH-000071&#39;, &#39;ACH-000079&#39;, &#39;ACH-000083&#39;, &#39;ACH-000088&#39;, &#39;ACH-000119&#39;, &#39;ACH-000125&#39;, &#39;ACH-000131&#39;, &#39;ACH-000133&#39;, &#39;ACH-000134&#39;, &#39;ACH-000135&#39;, &#39;ACH-000154&#39;, &#39;ACH-000165&#39;, &#39;ACH-000175&#39;, &#39;ACH-000180&#39;, &#39;ACH-000184&#39;, &#39;ACH-000185&#39;, &#39;ACH-000194&#39;, &#39;ACH-000199&#39;, &#39;ACH-000214&#39;, &#39;ACH-000224&#39;, &#39;ACH-000229&#39;, &#39;ACH-000230&#39;, &#39;ACH-000240&#39;, &#39;ACH-000275&#39;, &#39;ACH-000284&#39;, &#39;ACH-000306&#39;, &#39;ACH-000340&#39;, &#39;ACH-000413&#39;, &#39;ACH-000526&#39;, &#39;ACH-000529&#39;, &#39;ACH-000531&#39;, &#39;ACH-000539&#39;, &#39;ACH-000540&#39;, &#39;ACH-000742&#39;, &#39;ACH-000797&#39;, &#39;ACH-000850&#39;, &#39;ACH-001018&#39;, &#39;ACH-001093&#39;, &#39;ACH-001187&#39;, &#39;ACH-001207&#39;, &#39;ACH-001767&#39;]
-lymphoma_ALCL 5 [&#39;ACH-000053&#39;, &#39;ACH-000226&#39;, &#39;ACH-000338&#39;, &#39;ACH-000664&#39;, &#39;ACH-000773&#39;]
-B-cell_lymphoma_other 21 [&#39;ACH-000038&#39;, &#39;ACH-000068&#39;, &#39;ACH-000073&#39;, &#39;ACH-000106&#39;, &#39;ACH-000220&#39;, &#39;ACH-000287&#39;, &#39;ACH-000346&#39;, &#39;ACH-000357&#39;, &#39;ACH-000371&#39;, &#39;ACH-000398&#39;, &#39;ACH-000583&#39;, &#39;ACH-000687&#39;, &#39;ACH-000914&#39;, &#39;ACH-000923&#39;, &#39;ACH-001121&#39;, &#39;ACH-001617&#39;, &#39;ACH-001677&#39;, &#39;ACH-001709&#39;, &#39;ACH-002062&#39;, &#39;ACH-002214&#39;, &#39;ACH-002215&#39;]
-lymphoblastic_lymphoma 1 [&#39;ACH-001680&#39;]
-T-cell_lymphoma_other 13 [&#39;ACH-000061&#39;, &#39;ACH-000077&#39;, &#39;ACH-000206&#39;, &#39;ACH-000233&#39;, &#39;ACH-000509&#39;, &#39;ACH-000612&#39;, &#39;ACH-001057&#39;, &#39;ACH-001060&#39;, &#39;ACH-001068&#39;, &#39;ACH-001097&#39;, &#39;ACH-001111&#39;, &#39;ACH-001119&#39;, &#39;ACH-001134&#39;]
-Burkitt_lymphoma 13 [&#39;ACH-000162&#39;, &#39;ACH-000245&#39;, &#39;ACH-000402&#39;, &#39;ACH-000440&#39;, &#39;ACH-000567&#39;, &#39;ACH-000654&#39;, &#39;ACH-000707&#39;, &#39;ACH-000786&#39;, &#39;ACH-000877&#39;, &#39;ACH-000944&#39;, &#39;ACH-001064&#39;, &#39;ACH-001450&#39;, &#39;ACH-002236&#39;]
-lymphoma_DLBCL 17 [&#39;ACH-000056&#39;, &#39;ACH-000124&#39;, &#39;ACH-000140&#39;, &#39;ACH-000157&#39;, &#39;ACH-000158&#39;, &#39;ACH-000271&#39;, &#39;ACH-000285&#39;, &#39;ACH-000315&#39;, &#39;ACH-000334&#39;, &#39;ACH-000365&#39;, &#39;ACH-000388&#39;, &#39;ACH-000534&#39;, &#39;ACH-000611&#39;, &#39;ACH-000656&#39;, &#39;ACH-000660&#39;, &#39;ACH-000697&#39;, &#39;ACH-001146&#39;]
-lymphoma_B-cell_ALL 2 [&#39;ACH-001498&#39;, &#39;ACH-001703&#39;]
-Hodgkin_lymphoma 9 [&#39;ACH-000069&#39;, &#39;ACH-000190&#39;, &#39;ACH-000267&#39;, &#39;ACH-000702&#39;, &#39;ACH-000754&#39;, &#39;ACH-000806&#39;, &#39;ACH-000815&#39;, &#39;ACH-001203&#39;, &#39;ACH-002245&#39;]
-bile_duct_cholangiocarcinoma 26 [&#39;ACH-000182&#39;, &#39;ACH-000209&#39;, &#39;ACH-000268&#39;, &#39;ACH-000377&#39;, &#39;ACH-000461&#39;, &#39;ACH-000808&#39;, &#39;ACH-000976&#39;, &#39;ACH-001494&#39;, &#39;ACH-001536&#39;, &#39;ACH-001538&#39;, &#39;ACH-001673&#39;, &#39;ACH-001836&#39;, &#39;ACH-001838&#39;, &#39;ACH-001839&#39;, &#39;ACH-001841&#39;, &#39;ACH-001842&#39;, &#39;ACH-001843&#39;, &#39;ACH-001848&#39;, &#39;ACH-001849&#39;, &#39;ACH-001852&#39;, &#39;ACH-001853&#39;, &#39;ACH-001856&#39;, &#39;ACH-001857&#39;, &#39;ACH-001959&#39;, &#39;ACH-001960&#39;, &#39;ACH-001997&#39;]
-bile_duct_gallbladder 3 [&#39;ACH-000141&#39;, &#39;ACH-001607&#39;, &#39;ACH-001861&#39;]
-gastric_adenosquamous 1 [&#39;ACH-000351&#39;]
-gastric_adenocarcinoma 33 [&#39;ACH-000047&#39;, &#39;ACH-000144&#39;, &#39;ACH-000167&#39;, &#39;ACH-000239&#39;, &#39;ACH-000247&#39;, &#39;ACH-000303&#39;, &#39;ACH-000325&#39;, &#39;ACH-000344&#39;, &#39;ACH-000356&#39;, &#39;ACH-000427&#39;, &#39;ACH-000466&#39;, &#39;ACH-000485&#39;, &#39;ACH-000507&#39;, &#39;ACH-000616&#39;, &#39;ACH-000633&#39;, &#39;ACH-000674&#39;, &#39;ACH-000678&#39;, &#39;ACH-000736&#39;, &#39;ACH-000746&#39;, &#39;ACH-000758&#39;, &#39;ACH-000761&#39;, &#39;ACH-000764&#39;, &#39;ACH-000793&#39;, &#39;ACH-000880&#39;, &#39;ACH-000898&#39;, &#39;ACH-000908&#39;, &#39;ACH-000911&#39;, &#39;ACH-000919&#39;, &#39;ACH-000948&#39;, &#39;ACH-000949&#39;, &#39;ACH-001017&#39;, &#39;ACH-001653&#39;, &#39;ACH-001664&#39;]
-gastric_small 2 [&#39;ACH-000225&#39;, &#39;ACH-000560&#39;]
-embryo 3 [&#39;ACH-001578&#39;, &#39;ACH-001668&#39;, &#39;ACH-002291&#39;]
-breast_immortalized 2 [&#39;ACH-000642&#39;, &#39;ACH-001357&#39;]
-breast_TNBC 29 [&#39;ACH-000111&#39;, &#39;ACH-000148&#39;, &#39;ACH-000212&#39;, &#39;ACH-000223&#39;, &#39;ACH-000258&#39;, &#39;ACH-000276&#39;, &#39;ACH-000288&#39;, &#39;ACH-000374&#39;, &#39;ACH-000536&#39;, &#39;ACH-000573&#39;, &#39;ACH-000621&#39;, &#39;ACH-000624&#39;, &#39;ACH-000643&#39;, &#39;ACH-000668&#39;, &#39;ACH-000691&#39;, &#39;ACH-000699&#39;, &#39;ACH-000768&#39;, &#39;ACH-000849&#39;, &#39;ACH-000856&#39;, &#39;ACH-000857&#39;, &#39;ACH-000902&#39;, &#39;ACH-000910&#39;, &#39;ACH-000930&#39;, &#39;ACH-001388&#39;, &#39;ACH-001389&#39;, &#39;ACH-001390&#39;, &#39;ACH-001391&#39;, &#39;ACH-001392&#39;, &#39;ACH-001394&#39;]
-breast_ERpos 12 [&#39;ACH-000019&#39;, &#39;ACH-000028&#39;, &#39;ACH-000044&#39;, &#39;ACH-000097&#39;, &#39;ACH-000147&#39;, &#39;ACH-000330&#39;, &#39;ACH-000352&#39;, &#39;ACH-000759&#39;, &#39;ACH-000783&#39;, &#39;ACH-000876&#39;, &#39;ACH-001395&#39;, &#39;ACH-001396&#39;]
-breast_TPBC 5 [&#39;ACH-000117&#39;, &#39;ACH-000349&#39;, &#39;ACH-000818&#39;, &#39;ACH-000828&#39;, &#39;ACH-000927&#39;]
-breast_HER2Amp 13 [&#39;ACH-000017&#39;, &#39;ACH-000196&#39;, &#39;ACH-000248&#39;, &#39;ACH-000277&#39;, &#39;ACH-000554&#39;, &#39;ACH-000568&#39;, &#39;ACH-000711&#39;, &#39;ACH-000725&#39;, &#39;ACH-000755&#39;, &#39;ACH-000859&#39;, &#39;ACH-000934&#39;, &#39;ACH-001393&#39;, &#39;ACH-001397&#39;]
-breast_ERneg 1 [&#39;ACH-001065&#39;]
-rhabdoid 23 [&#39;ACH-000096&#39;, &#39;ACH-000160&#39;, &#39;ACH-000172&#39;, &#39;ACH-000201&#39;, &#39;ACH-000375&#39;, &#39;ACH-000533&#39;, &#39;ACH-000597&#39;, &#39;ACH-000607&#39;, &#39;ACH-001020&#39;, &#39;ACH-001028&#39;, &#39;ACH-001031&#39;, &#39;ACH-001059&#39;, &#39;ACH-001099&#39;, &#39;ACH-001109&#39;, &#39;ACH-001128&#39;, &#39;ACH-001200&#39;, &#39;ACH-001210&#39;, &#39;ACH-001211&#39;, &#39;ACH-001212&#39;, &#39;ACH-001278&#39;, &#39;ACH-001279&#39;, &#39;ACH-001289&#39;, &#39;ACH-001532&#39;]
-central_nervous_system_glioma 73 [&#39;ACH-000036&#39;, &#39;ACH-000040&#39;, &#39;ACH-000067&#39;, &#39;ACH-000075&#39;, &#39;ACH-000098&#39;, &#39;ACH-000102&#39;, &#39;ACH-000126&#39;, &#39;ACH-000128&#39;, &#39;ACH-000137&#39;, &#39;ACH-000152&#39;, &#39;ACH-000200&#39;, &#39;ACH-000208&#39;, &#39;ACH-000215&#39;, &#39;ACH-000231&#39;, &#39;ACH-000232&#39;, &#39;ACH-000244&#39;, &#39;ACH-000269&#39;, &#39;ACH-000273&#39;, &#39;ACH-000283&#39;, &#39;ACH-000289&#39;, &#39;ACH-000323&#39;, &#39;ACH-000328&#39;, &#39;ACH-000329&#39;, &#39;ACH-000368&#39;, &#39;ACH-000370&#39;, &#39;ACH-000376&#39;, &#39;ACH-000389&#39;, &#39;ACH-000437&#39;, &#39;ACH-000445&#39;, &#39;ACH-000455&#39;, &#39;ACH-000464&#39;, &#39;ACH-000469&#39;, &#39;ACH-000479&#39;, &#39;ACH-000504&#39;, &#39;ACH-000543&#39;, &#39;ACH-000558&#39;, &#39;ACH-000570&#39;, &#39;ACH-000571&#39;, &#39;ACH-000591&#39;, &#39;ACH-000592&#39;, &#39;ACH-000595&#39;, &#39;ACH-000609&#39;, &#39;ACH-000622&#39;, &#39;ACH-000623&#39;, &#39;ACH-000631&#39;, &#39;ACH-000634&#39;, &#39;ACH-000655&#39;, &#39;ACH-000673&#39;, &#39;ACH-000676&#39;, &#39;ACH-000738&#39;, &#39;ACH-000756&#39;, &#39;ACH-000760&#39;, &#39;ACH-000807&#39;, &#39;ACH-000819&#39;, &#39;ACH-000863&#39;, &#39;ACH-000883&#39;, &#39;ACH-000887&#39;, &#39;ACH-001000&#39;, &#39;ACH-001016&#39;, &#39;ACH-001118&#39;, &#39;ACH-001125&#39;, &#39;ACH-001126&#39;, &#39;ACH-001198&#39;, &#39;ACH-001214&#39;, &#39;ACH-001329&#39;, &#39;ACH-001605&#39;, &#39;ACH-001606&#39;, &#39;ACH-001608&#39;, &#39;ACH-001609&#39;, &#39;ACH-001610&#39;, &#39;ACH-001611&#39;, &#39;ACH-001622&#39;, &#39;ACH-001624&#39;]
-central_nervous_system_immortalized 1 [&#39;ACH-001142&#39;]
-central_nervous_system_meningioma 3 [&#39;ACH-000025&#39;, &#39;ACH-000629&#39;, &#39;ACH-001067&#39;]
-central_nervous_system_PNET 1 [&#39;ACH-001711&#39;]
-central_nervous_system_medulloblastoma 11 [&#39;ACH-000055&#39;, &#39;ACH-000095&#39;, &#39;ACH-000211&#39;, &#39;ACH-000776&#39;, &#39;ACH-001052&#39;, &#39;ACH-001053&#39;, &#39;ACH-001054&#39;, &#39;ACH-001055&#39;, &#39;ACH-001173&#39;, &#39;ACH-001201&#39;, &#39;ACH-001232&#39;]
-upper_aerodigestive_squamous 44 [&#39;ACH-000181&#39;, &#39;ACH-000188&#39;, &#39;ACH-000207&#39;, &#39;ACH-000228&#39;, &#39;ACH-000238&#39;, &#39;ACH-000254&#39;, &#39;ACH-000415&#39;, &#39;ACH-000472&#39;, &#39;ACH-000500&#39;, &#39;ACH-000503&#39;, &#39;ACH-000518&#39;, &#39;ACH-000546&#39;, &#39;ACH-000548&#39;, &#39;ACH-000549&#39;, &#39;ACH-000606&#39;, &#39;ACH-000618&#39;, &#39;ACH-000619&#39;, &#39;ACH-000630&#39;, &#39;ACH-000682&#39;, &#39;ACH-000692&#39;, &#39;ACH-000715&#39;, &#39;ACH-000723&#39;, &#39;ACH-000732&#39;, &#39;ACH-000735&#39;, &#39;ACH-000740&#39;, &#39;ACH-000762&#39;, &#39;ACH-000771&#39;, &#39;ACH-000778&#39;, &#39;ACH-000794&#39;, &#39;ACH-000832&#39;, &#39;ACH-000836&#39;, &#39;ACH-000846&#39;, &#39;ACH-000992&#39;, &#39;ACH-001090&#39;, &#39;ACH-001227&#39;, &#39;ACH-001228&#39;, &#39;ACH-001331&#39;, &#39;ACH-001332&#39;, &#39;ACH-001385&#39;, &#39;ACH-001509&#39;, &#39;ACH-001625&#39;, &#39;ACH-001626&#39;, &#39;ACH-002029&#39;, &#39;ACH-002045&#39;]
-upper_aerodigestive_buccal_mucosa 1 [&#39;ACH-001346&#39;]
-esophagus_adenocarcinoma 7 [&#39;ACH-000216&#39;, &#39;ACH-000383&#39;, &#39;ACH-001368&#39;, &#39;ACH-001496&#39;, &#39;ACH-001497&#39;, &#39;ACH-001500&#39;, &#39;ACH-001654&#39;]
-esophagus_squamous 25 [&#39;ACH-000305&#39;, &#39;ACH-000318&#39;, &#39;ACH-000353&#39;, &#39;ACH-000408&#39;, &#39;ACH-000452&#39;, &#39;ACH-000488&#39;, &#39;ACH-000544&#39;, &#39;ACH-000561&#39;, &#39;ACH-000605&#39;, &#39;ACH-000637&#39;, &#39;ACH-000647&#39;, &#39;ACH-000679&#39;, &#39;ACH-000693&#39;, &#39;ACH-000694&#39;, &#39;ACH-000717&#39;, &#39;ACH-000726&#39;, &#39;ACH-000777&#39;, &#39;ACH-000784&#39;, &#39;ACH-000809&#39;, &#39;ACH-000823&#39;, &#39;ACH-000824&#39;, &#39;ACH-000855&#39;, &#39;ACH-000865&#39;, &#39;ACH-000873&#39;, &#39;ACH-000917&#39;]
-kidney 39 [&#39;ACH-000016&#39;, &#39;ACH-000046&#39;, &#39;ACH-000049&#39;, &#39;ACH-000127&#39;, &#39;ACH-000159&#39;, &#39;ACH-000171&#39;, &#39;ACH-000189&#39;, &#39;ACH-000234&#39;, &#39;ACH-000246&#39;, &#39;ACH-000250&#39;, &#39;ACH-000262&#39;, &#39;ACH-000272&#39;, &#39;ACH-000300&#39;, &#39;ACH-000313&#39;, &#39;ACH-000317&#39;, &#39;ACH-000385&#39;, &#39;ACH-000411&#39;, &#39;ACH-000428&#39;, &#39;ACH-000429&#39;, &#39;ACH-000433&#39;, &#39;ACH-000457&#39;, &#39;ACH-000459&#39;, &#39;ACH-000484&#39;, &#39;ACH-000495&#39;, &#39;ACH-000513&#39;, &#39;ACH-000555&#39;, &#39;ACH-000600&#39;, &#39;ACH-000649&#39;, &#39;ACH-000684&#39;, &#39;ACH-000709&#39;, &#39;ACH-000792&#39;, &#39;ACH-000907&#39;, &#39;ACH-001087&#39;, &#39;ACH-001163&#39;, &#39;ACH-001175&#39;, &#39;ACH-001194&#39;, &#39;ACH-001208&#39;, &#39;ACH-001310&#39;, &#39;ACH-001398&#39;]
-uterus_endometrium 32 [&#39;ACH-000173&#39;, &#39;ACH-000192&#39;, &#39;ACH-000293&#39;, &#39;ACH-000302&#39;, &#39;ACH-000397&#39;, &#39;ACH-000407&#39;, &#39;ACH-000435&#39;, &#39;ACH-000831&#39;, &#39;ACH-000864&#39;, &#39;ACH-000879&#39;, &#39;ACH-000909&#39;, &#39;ACH-000913&#39;, &#39;ACH-000928&#39;, &#39;ACH-000940&#39;, &#39;ACH-000941&#39;, &#39;ACH-000946&#39;, &#39;ACH-000954&#39;, &#39;ACH-000961&#39;, &#39;ACH-000965&#39;, &#39;ACH-000972&#39;, &#39;ACH-000974&#39;, &#39;ACH-000978&#39;, &#39;ACH-000984&#39;, &#39;ACH-000988&#39;, &#39;ACH-000990&#39;, &#39;ACH-000993&#39;, &#39;ACH-000994&#39;, &#39;ACH-000996&#39;, &#39;ACH-001495&#39;, &#39;ACH-001517&#39;, &#39;ACH-001651&#39;, &#39;ACH-001655&#39;]
-uterus_choriocarcinoma 2 [&#39;ACH-001529&#39;, &#39;ACH-001530&#39;]
-uterus_uterine_sarcoma 1 [&#39;ACH-000449&#39;]
-prostate 11 [&#39;ACH-000090&#39;, &#39;ACH-000115&#39;, &#39;ACH-000170&#39;, &#39;ACH-000177&#39;, &#39;ACH-000952&#39;, &#39;ACH-000956&#39;, &#39;ACH-000977&#39;, &#39;ACH-000979&#39;, &#39;ACH-001383&#39;, &#39;ACH-001422&#39;, &#39;ACH-001453&#39;]
-leukemia_B-cell_lymphoma_other 1 [&#39;ACH-000405&#39;]
-leukemia_CML 15 [&#39;ACH-000072&#39;, &#39;ACH-000074&#39;, &#39;ACH-000076&#39;, &#39;ACH-000241&#39;, &#39;ACH-000295&#39;, &#39;ACH-000301&#39;, &#39;ACH-000321&#39;, &#39;ACH-000326&#39;, &#39;ACH-000432&#39;, &#39;ACH-000462&#39;, &#39;ACH-000551&#39;, &#39;ACH-000604&#39;, &#39;ACH-000920&#39;, &#39;ACH-000983&#39;, &#39;ACH-001573&#39;]
-leukemia_T-cell_ALL 20 [&#39;ACH-000101&#39;, &#39;ACH-000104&#39;, &#39;ACH-000105&#39;, &#39;ACH-000122&#39;, &#39;ACH-000197&#39;, &#39;ACH-000372&#39;, &#39;ACH-000519&#39;, &#39;ACH-000636&#39;, &#39;ACH-000795&#39;, &#39;ACH-000918&#39;, &#39;ACH-000937&#39;, &#39;ACH-000942&#39;, &#39;ACH-000953&#39;, &#39;ACH-000964&#39;, &#39;ACH-000981&#39;, &#39;ACH-000995&#39;, &#39;ACH-001127&#39;, &#39;ACH-001737&#39;, &#39;ACH-001738&#39;, &#39;ACH-002058&#39;]
-leukemia_B-cell_ALL 20 [&#39;ACH-000020&#39;, &#39;ACH-000032&#39;, &#39;ACH-000059&#39;, &#39;ACH-000070&#39;, &#39;ACH-000080&#39;, &#39;ACH-000130&#39;, &#39;ACH-000151&#39;, &#39;ACH-000156&#39;, &#39;ACH-000492&#39;, &#39;ACH-000728&#39;, &#39;ACH-000782&#39;, &#39;ACH-000874&#39;, &#39;ACH-000922&#39;, &#39;ACH-000938&#39;, &#39;ACH-000960&#39;, &#39;ACH-001106&#39;, &#39;ACH-001639&#39;, &#39;ACH-001735&#39;, &#39;ACH-001736&#39;, &#39;ACH-002059&#39;]
-leukemia_AML 42 [&#39;ACH-000002&#39;, &#39;ACH-000004&#39;, &#39;ACH-000005&#39;, &#39;ACH-000006&#39;, &#39;ACH-000034&#39;, &#39;ACH-000045&#39;, &#39;ACH-000065&#39;, &#39;ACH-000081&#39;, &#39;ACH-000084&#39;, &#39;ACH-000112&#39;, &#39;ACH-000113&#39;, &#39;ACH-000146&#39;, &#39;ACH-000166&#39;, &#39;ACH-000168&#39;, &#39;ACH-000195&#39;, &#39;ACH-000198&#39;, &#39;ACH-000218&#39;, &#39;ACH-000263&#39;, &#39;ACH-000294&#39;, &#39;ACH-000299&#39;, &#39;ACH-000336&#39;, &#39;ACH-000362&#39;, &#39;ACH-000369&#39;, &#39;ACH-000373&#39;, &#39;ACH-000386&#39;, &#39;ACH-000387&#39;, &#39;ACH-000406&#39;, &#39;ACH-000439&#39;, &#39;ACH-000487&#39;, &#39;ACH-000498&#39;, &#39;ACH-000557&#39;, &#39;ACH-000602&#39;, &#39;ACH-000641&#39;, &#39;ACH-000751&#39;, &#39;ACH-000770&#39;, &#39;ACH-001036&#39;, &#39;ACH-001037&#39;, &#39;ACH-001129&#39;, &#39;ACH-001230&#39;, &#39;ACH-001618&#39;, &#39;ACH-001647&#39;, &#39;ACH-001656&#39;]
-multiple_myeloma 34 [&#39;ACH-000024&#39;, &#39;ACH-000050&#39;, &#39;ACH-000057&#39;, &#39;ACH-000183&#39;, &#39;ACH-000193&#39;, &#39;ACH-000204&#39;, &#39;ACH-000363&#39;, &#39;ACH-000380&#39;, &#39;ACH-000419&#39;, &#39;ACH-000426&#39;, &#39;ACH-000436&#39;, &#39;ACH-000453&#39;, &#39;ACH-000512&#39;, &#39;ACH-000541&#39;, &#39;ACH-000564&#39;, &#39;ACH-000576&#39;, &#39;ACH-000588&#39;, &#39;ACH-000598&#39;, &#39;ACH-000626&#39;, &#39;ACH-000653&#39;, &#39;ACH-000658&#39;, &#39;ACH-000714&#39;, &#39;ACH-000745&#39;, &#39;ACH-000763&#39;, &#39;ACH-000817&#39;, &#39;ACH-000821&#39;, &#39;ACH-000829&#39;, &#39;ACH-000838&#39;, &#39;ACH-000854&#39;, &#39;ACH-000889&#39;, &#39;ACH-001043&#39;, &#39;ACH-001094&#39;, &#39;ACH-001162&#39;, &#39;ACH-001541&#39;]
-soft_tissue_epitheliod_sarcoma 2 [&#39;ACH-001433&#39;, &#39;ACH-001702&#39;]
-soft_tissue_fibrosarcoma 1 [&#39;ACH-000054&#39;]
-soft_tissue_sarcoma_undifferentiated 2 [&#39;ACH-001164&#39;, &#39;ACH-001425&#39;]
-soft_tissue_synovial_sarcoma 8 [&#39;ACH-001270&#39;, &#39;ACH-001272&#39;, &#39;ACH-001274&#39;, &#39;ACH-001275&#39;, &#39;ACH-001277&#39;, &#39;ACH-001280&#39;, &#39;ACH-001322&#39;, &#39;ACH-002085&#39;]
-soft_tissue_pleomorphic_sarcoma 1 [&#39;ACH-000835&#39;]
-soft_tissue_liposarcoma 5 [&#39;ACH-001540&#39;, &#39;ACH-001791&#39;, &#39;ACH-001793&#39;, &#39;ACH-001794&#39;, &#39;ACH-001796&#39;]
-soft_tissue_leiomyosarcoma 3 [&#39;ACH-000145&#39;, &#39;ACH-000505&#39;, &#39;ACH-000939&#39;]
-colorectal 73 [&#39;ACH-000003&#39;, &#39;ACH-000007&#39;, &#39;ACH-000009&#39;, &#39;ACH-000089&#39;, &#39;ACH-000202&#39;, &#39;ACH-000236&#39;, &#39;ACH-000249&#39;, &#39;ACH-000252&#39;, &#39;ACH-000253&#39;, &#39;ACH-000286&#39;, &#39;ACH-000296&#39;, &#39;ACH-000342&#39;, &#39;ACH-000350&#39;, &#39;ACH-000360&#39;, &#39;ACH-000381&#39;, &#39;ACH-000400&#39;, &#39;ACH-000403&#39;, &#39;ACH-000412&#39;, &#39;ACH-000421&#39;, &#39;ACH-000467&#39;, &#39;ACH-000470&#39;, &#39;ACH-000489&#39;, &#39;ACH-000491&#39;, &#39;ACH-000501&#39;, &#39;ACH-000532&#39;, &#39;ACH-000552&#39;, &#39;ACH-000565&#39;, &#39;ACH-000651&#39;, &#39;ACH-000680&#39;, &#39;ACH-000683&#39;, &#39;ACH-000708&#39;, &#39;ACH-000722&#39;, &#39;ACH-000798&#39;, &#39;ACH-000820&#39;, &#39;ACH-000842&#39;, &#39;ACH-000895&#39;, &#39;ACH-000926&#39;, &#39;ACH-000935&#39;, &#39;ACH-000943&#39;, &#39;ACH-000950&#39;, &#39;ACH-000955&#39;, &#39;ACH-000957&#39;, &#39;ACH-000958&#39;, &#39;ACH-000959&#39;, &#39;ACH-000963&#39;, &#39;ACH-000967&#39;, &#39;ACH-000969&#39;, &#39;ACH-000970&#39;, &#39;ACH-000971&#39;, &#39;ACH-000982&#39;, &#39;ACH-000985&#39;, &#39;ACH-000986&#39;, &#39;ACH-000989&#39;, &#39;ACH-000991&#39;, &#39;ACH-000997&#39;, &#39;ACH-000998&#39;, &#39;ACH-000999&#39;, &#39;ACH-001039&#39;, &#39;ACH-001061&#39;, &#39;ACH-001081&#39;, &#39;ACH-001084&#39;, &#39;ACH-001091&#39;, &#39;ACH-001199&#39;, &#39;ACH-001345&#39;, &#39;ACH-001399&#39;, &#39;ACH-001454&#39;, &#39;ACH-001456&#39;, &#39;ACH-001458&#39;, &#39;ACH-001459&#39;, &#39;ACH-001460&#39;, &#39;ACH-001461&#39;, &#39;ACH-001546&#39;, &#39;ACH-002345&#39;]
-adrenal_cortex 1 [&#39;ACH-001401&#39;]
-eye_retinoblastoma 2 [&#39;ACH-001295&#39;, &#39;ACH-001421&#39;]
-eye_uveal_melanoma 5 [&#39;ACH-001441&#39;, &#39;ACH-001554&#39;, &#39;ACH-002011&#39;, &#39;ACH-002015&#39;, &#39;ACH-002017&#39;]
-lung_NSC 149 [&#39;ACH-000010&#39;, &#39;ACH-000012&#39;, &#39;ACH-000015&#39;, &#39;ACH-000021&#39;, &#39;ACH-000029&#39;, &#39;ACH-000030&#39;, &#39;ACH-000033&#39;, &#39;ACH-000035&#39;, &#39;ACH-000062&#39;, &#39;ACH-000066&#39;, &#39;ACH-000109&#39;, &#39;ACH-000121&#39;, &#39;ACH-000143&#39;, &#39;ACH-000150&#39;, &#39;ACH-000161&#39;, &#39;ACH-000176&#39;, &#39;ACH-000186&#39;, &#39;ACH-000251&#39;, &#39;ACH-000261&#39;, &#39;ACH-000264&#39;, &#39;ACH-000282&#39;, &#39;ACH-000309&#39;, &#39;ACH-000311&#39;, &#39;ACH-000314&#39;, &#39;ACH-000327&#39;, &#39;ACH-000337&#39;, &#39;ACH-000339&#39;, &#39;ACH-000343&#39;, &#39;ACH-000367&#39;, &#39;ACH-000378&#39;, &#39;ACH-000379&#39;, &#39;ACH-000390&#39;, &#39;ACH-000392&#39;, &#39;ACH-000395&#39;, &#39;ACH-000414&#39;, &#39;ACH-000416&#39;, &#39;ACH-000434&#39;, &#39;ACH-000438&#39;, &#39;ACH-000442&#39;, &#39;ACH-000444&#39;, &#39;ACH-000447&#39;, &#39;ACH-000448&#39;, &#39;ACH-000451&#39;, &#39;ACH-000454&#39;, &#39;ACH-000463&#39;, &#39;ACH-000481&#39;, &#39;ACH-000482&#39;, &#39;ACH-000496&#39;, &#39;ACH-000510&#39;, &#39;ACH-000511&#39;, &#39;ACH-000521&#39;, &#39;ACH-000528&#39;, &#39;ACH-000553&#39;, &#39;ACH-000562&#39;, &#39;ACH-000563&#39;, &#39;ACH-000575&#39;, &#39;ACH-000578&#39;, &#39;ACH-000585&#39;, &#39;ACH-000587&#39;, &#39;ACH-000589&#39;, &#39;ACH-000590&#39;, &#39;ACH-000596&#39;, &#39;ACH-000603&#39;, &#39;ACH-000627&#39;, &#39;ACH-000628&#39;, &#39;ACH-000638&#39;, &#39;ACH-000662&#39;, &#39;ACH-000665&#39;, &#39;ACH-000666&#39;, &#39;ACH-000667&#39;, &#39;ACH-000669&#39;, &#39;ACH-000672&#39;, &#39;ACH-000675&#39;, &#39;ACH-000677&#39;, &#39;ACH-000681&#39;, &#39;ACH-000690&#39;, &#39;ACH-000700&#39;, &#39;ACH-000705&#39;, &#39;ACH-000706&#39;, &#39;ACH-000710&#39;, &#39;ACH-000712&#39;, &#39;ACH-000718&#39;, &#39;ACH-000731&#39;, &#39;ACH-000733&#39;, &#39;ACH-000737&#39;, &#39;ACH-000744&#39;, &#39;ACH-000747&#39;, &#39;ACH-000757&#39;, &#39;ACH-000766&#39;, &#39;ACH-000769&#39;, &#39;ACH-000774&#39;, &#39;ACH-000775&#39;, &#39;ACH-000779&#39;, &#39;ACH-000781&#39;, &#39;ACH-000785&#39;, &#39;ACH-000787&#39;, &#39;ACH-000789&#39;, &#39;ACH-000791&#39;, &#39;ACH-000813&#39;, &#39;ACH-000825&#39;, &#39;ACH-000826&#39;, &#39;ACH-000837&#39;, &#39;ACH-000840&#39;, &#39;ACH-000841&#39;, &#39;ACH-000843&#39;, &#39;ACH-000845&#39;, &#39;ACH-000851&#39;, &#39;ACH-000852&#39;, &#39;ACH-000853&#39;, &#39;ACH-000858&#39;, &#39;ACH-000860&#39;, &#39;ACH-000861&#39;, &#39;ACH-000867&#39;, &#39;ACH-000868&#39;, &#39;ACH-000869&#39;, &#39;ACH-000872&#39;, &#39;ACH-000875&#39;, &#39;ACH-000878&#39;, &#39;ACH-000886&#39;, &#39;ACH-000888&#39;, &#39;ACH-000891&#39;, &#39;ACH-000892&#39;, &#39;ACH-000893&#39;, &#39;ACH-000894&#39;, &#39;ACH-000900&#39;, &#39;ACH-000901&#39;, &#39;ACH-000904&#39;, &#39;ACH-000916&#39;, &#39;ACH-000924&#39;, &#39;ACH-000925&#39;, &#39;ACH-000929&#39;, &#39;ACH-000945&#39;, &#39;ACH-000951&#39;, &#39;ACH-000975&#39;, &#39;ACH-000980&#39;, &#39;ACH-001041&#39;, &#39;ACH-001071&#39;, &#39;ACH-001075&#39;, &#39;ACH-001078&#39;, &#39;ACH-001079&#39;, &#39;ACH-001088&#39;, &#39;ACH-001113&#39;, &#39;ACH-001137&#39;, &#39;ACH-001140&#39;, &#39;ACH-001233&#39;, &#39;ACH-001234&#39;, &#39;ACH-001362&#39;, &#39;ACH-001363&#39;, &#39;ACH-001489&#39;]
-lung_immortalized 1 [&#39;ACH-000064&#39;]
-lung_small 66 [&#39;ACH-000129&#39;, &#39;ACH-000179&#39;, &#39;ACH-000187&#39;, &#39;ACH-000257&#39;, &#39;ACH-000290&#39;, &#39;ACH-000292&#39;, &#39;ACH-000297&#39;, &#39;ACH-000298&#39;, &#39;ACH-000355&#39;, &#39;ACH-000358&#39;, &#39;ACH-000382&#39;, &#39;ACH-000394&#39;, &#39;ACH-000399&#39;, &#39;ACH-000431&#39;, &#39;ACH-000506&#39;, &#39;ACH-000508&#39;, &#39;ACH-000514&#39;, &#39;ACH-000515&#39;, &#39;ACH-000523&#39;, &#39;ACH-000525&#39;, &#39;ACH-000530&#39;, &#39;ACH-000559&#39;, &#39;ACH-000586&#39;, &#39;ACH-000594&#39;, &#39;ACH-000610&#39;, &#39;ACH-000639&#39;, &#39;ACH-000659&#39;, &#39;ACH-000670&#39;, &#39;ACH-000695&#39;, &#39;ACH-000698&#39;, &#39;ACH-000703&#39;, &#39;ACH-000727&#39;, &#39;ACH-000729&#39;, &#39;ACH-000743&#39;, &#39;ACH-000749&#39;, &#39;ACH-000752&#39;, &#39;ACH-000767&#39;, &#39;ACH-000780&#39;, &#39;ACH-000790&#39;, &#39;ACH-000800&#39;, &#39;ACH-000803&#39;, &#39;ACH-000816&#39;, &#39;ACH-000830&#39;, &#39;ACH-000844&#39;, &#39;ACH-000866&#39;, &#39;ACH-000870&#39;, &#39;ACH-000871&#39;, &#39;ACH-000890&#39;, &#39;ACH-000912&#39;, &#39;ACH-000921&#39;, &#39;ACH-001047&#39;, &#39;ACH-001049&#39;, &#39;ACH-001136&#39;, &#39;ACH-001138&#39;, &#39;ACH-001364&#39;, &#39;ACH-001365&#39;, &#39;ACH-001386&#39;, &#39;ACH-001549&#39;, &#39;ACH-001591&#39;, &#39;ACH-001599&#39;, &#39;ACH-001958&#39;, &#39;ACH-002051&#39;, &#39;ACH-002052&#39;, &#39;ACH-002077&#39;, &#39;ACH-002170&#39;, &#39;ACH-002175&#39;]
-bone_chordoma 4 [&#39;ACH-001956&#39;, &#39;ACH-001957&#39;, &#39;ACH-002204&#39;, &#39;ACH-002335&#39;]
-bone_osteosarcoma 12 [&#39;ACH-000082&#39;, &#39;ACH-000359&#39;, &#39;ACH-000364&#39;, &#39;ACH-000410&#39;, &#39;ACH-000613&#39;, &#39;ACH-000748&#39;, &#39;ACH-001001&#39;, &#39;ACH-001526&#39;, &#39;ACH-001715&#39;, &#39;ACH-001814&#39;, &#39;ACH-001818&#39;, &#39;ACH-002067&#39;]
-bone_chondrosarcoma 4 [&#39;ACH-000418&#39;, &#39;ACH-000516&#39;, &#39;ACH-001150&#39;, &#39;ACH-001519&#39;]
-bone_Ewing_sarcoma 28 [&#39;ACH-000039&#39;, &#39;ACH-000041&#39;, &#39;ACH-000052&#39;, &#39;ACH-000087&#39;, &#39;ACH-000210&#39;, &#39;ACH-000279&#39;, &#39;ACH-000391&#39;, &#39;ACH-000424&#39;, &#39;ACH-000499&#39;, &#39;ACH-001007&#39;, &#39;ACH-001008&#39;, &#39;ACH-001009&#39;, &#39;ACH-001010&#39;, &#39;ACH-001022&#39;, &#39;ACH-001029&#39;, &#39;ACH-001030&#39;, &#39;ACH-001032&#39;, &#39;ACH-001033&#39;, &#39;ACH-001034&#39;, &#39;ACH-001035&#39;, &#39;ACH-001038&#39;, &#39;ACH-001192&#39;, &#39;ACH-001193&#39;, &#39;ACH-001205&#39;, &#39;ACH-001282&#39;, &#39;ACH-001283&#39;, &#39;ACH-001430&#39;, &#39;ACH-001431&#39;]
-mesothelioma 17 [&#39;ACH-000086&#39;, &#39;ACH-000092&#39;, &#39;ACH-000153&#39;, &#39;ACH-000319&#39;, &#39;ACH-000331&#39;, &#39;ACH-000335&#39;, &#39;ACH-000569&#39;, &#39;ACH-000645&#39;, &#39;ACH-000648&#39;, &#39;ACH-001555&#39;, &#39;ACH-001556&#39;, &#39;ACH-001557&#39;, &#39;ACH-001558&#39;, &#39;ACH-001559&#39;, &#39;ACH-001560&#39;, &#39;ACH-001561&#39;, &#39;ACH-001562&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;mfr&#39;</span><span class="p">)</span>
@@ -14289,7 +14664,7 @@ mesothelioma 17 [&#39;ACH-000086&#39;, &#39;ACH-000092&#39;, &#39;ACH-000153&#39
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
