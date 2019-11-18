@@ -36,7 +36,7 @@
 3. Map cell lines to cancer lineages and sublineages
 4. Capture low-hanging fruit genes with high copy number and (Achilles Crispr) gene dependency scores < 0
 5. Sanity check filters using ERBB2
-6. Compare RNAi and Crispr data fo gene dependency
+6. Compare RNAi and Crispr gene dependency data
 7. Plot copy number vs. gene dependency by lineage
 8. Generate list of candidate genes as a sortable table
 9. Add cross-validation filtering data for RNAi, expression, TGCA/COSMIC mutation hotspots
