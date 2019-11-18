@@ -1,5 +1,3 @@
-
-
 # Sample analysis of Cancer Dependency Map (DepMap) data 
 ## Request
 * Identify the most frequent genetic alterations (could be mutations or copy number variations) in the cancer cell lines
@@ -545,6 +543,8 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
 <img src="plots/soft_tissue_fibrosarcoma.png" style="float:left">
 <img src="plots/skin_squamous.png" style="float:left">
 <img src="plots/soft_tissue_sarcoma_undifferentiated.png" style="float:left">
+
+
 ## Candidate target genes
 
 * All genes in this table have copy number > 2 and Achilles gene dependency < 0 for at least 80% of the cell lines in 1 cell lineage'
