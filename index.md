@@ -43,7 +43,7 @@
 10. target gene info pages
 
 ## Next steps
-1. Improve thresholds (cutoffs for copy number, gene dependency, expression TPMs, etc.
+1. Improve thresholds (cutoffs for copy number, gene dependency, expression TPMs, etc.)
 2. Integrate chemical sensitivity data
 3. Filter genes that are already known drug targets (identify truly novel targets)
 
