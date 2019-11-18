@@ -47,8 +47,9 @@
 2. Integrate chemical sensitivity data
 3. Filter genes that are already known drug targets (identify truly novel targets)
 
+## Analysis details
+Python code
 <a href="analysis/analysis_details.html" target="_BLANK">Details...</a>
-
 
 
 ## Aggregate CCLE cell lines by lineage
