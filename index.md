@@ -554,7 +554,7 @@ ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
   * Whether the gene is a TCGA or COSMIC mutation hotspot
   * Whether the gene has > 0 TPM RNASeq expression
 
-<table id="candidates" border="1" class="dataframe">
+<table style="width:95%" id="candidates" border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th>DepMap_ID</th>
