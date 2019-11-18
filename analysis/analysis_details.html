@@ -13265,7 +13265,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">## Get gene descriptions, etc</span>
+<span class="s1">## Get gene descriptions, etc.</span>
 <span class="s1">Use data from humanmine (http://www.humanmine.org/) to map NCBI gene IDs to name, summary, symbol, uniprot</span>
 <span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
@@ -13301,7 +13301,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gd</span> <span class="o">=</span> <span class="n">get_gene_descriptions</span><span class="p">()</span>
-<span class="n">report</span><span class="p">(</span><span class="s1">&#39;sample:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">gd</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span><span class="n">silent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">report</span><span class="p">(</span><span class="s1">&#39;sample gene info:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">gd</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span><span class="n">silent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">ncbi2name</span>    <span class="o">=</span> <span class="p">{}</span>
 <span class="n">ncbi2symbol</span>  <span class="o">=</span> <span class="p">{}</span>
 <span class="n">ncbi2desc</span>    <span class="o">=</span> <span class="p">{}</span>
@@ -13355,7 +13355,7 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
 <span class="s1">## Aggregate cell lines by lineage</span>
 <span class="s1">&lt;b&gt;DepMap source file:&lt;/b&gt; sample_info.csv</span>
-<span class="s1">* Group all cell lines by main (parent) lineage</span>
+<span class="s1">* Group all cell lines (CCLE cell line IDs) by main (parent) lineage</span>
 <span class="s1">* If a lineage has &gt; 1 defined sublineages, also aggregate cell lines by sublineage (eg: leukemia -&gt; AML)</span>
 <span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
@@ -14100,7 +14100,7 @@ Robin M. Meyers, Jordan G. Bryan, James M. McFarland, Barbara A. Weir, ... David
 <span class="n">achilles</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">ncbi_gene_ids</span><span class="p">(</span><span class="n">genes</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">achilles</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="s2">&quot;genes&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">achilles</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="s2">&quot;cell lines&quot;</span><span class="p">)</span>
-<span class="n">report</span><span class="p">(</span><span class="s1">&#39;Sample Achilles data:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">achilles</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">2</span><span class="p">,:</span><span class="mi">15</span><span class="p">]</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">report</span><span class="p">(</span><span class="s1">&#39;Sample Achilles data:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">achilles</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">2</span><span class="p">,:</span><span class="mi">15</span><span class="p">]</span><span class="o">.</span><span class="n">to_html</span><span class="p">(),</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">achilles</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
