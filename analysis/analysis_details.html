@@ -13076,7 +13076,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
@@ -13090,6 +13090,7 @@ div#notebook {
     <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">url</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;expression&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/16757690&#39;</span>
+    <span class="n">url</span><span class="p">[</span><span class="s1">&#39;protein&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://depmap.org/portal/download/api/download/external?file_name=ccle</span><span class="si">%2F</span><span class="s1">ccle_2019</span><span class="si">%2F</span><span class="s1">CCLE_RPPA_20181003.csv&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;sample_info&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/16757723&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;copy_number&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/17857886&#39;</span>
     <span class="n">url</span><span class="p">[</span><span class="s1">&#39;mutations&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://ndownloader.figshare.com/files/16757702&#39;</span>
@@ -13297,11 +13298,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gd</span> <span class="o">=</span> <span class="n">get_gene_descriptions</span><span class="p">()</span>
-<span class="n">report</span><span class="p">(</span><span class="s1">&#39;sample gene info:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">gd</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span><span class="n">silent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="n">gd</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;The protein.+&lt;/&#39;</span><span class="p">,</span><span class="s1">&#39;The protein encoded by this gene...&lt;/&#39;</span><span class="p">,</span><span class="n">sample</span><span class="p">)</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;This gene encodes.+&lt;/&#39;</span><span class="p">,</span><span class="s1">&#39;This gene encodes...&lt;/&#39;</span><span class="p">,</span><span class="n">sample</span><span class="p">)</span>
+<span class="n">report</span><span class="p">(</span><span class="s1">&#39;sample gene info:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">sample</span><span class="p">,</span><span class="n">silent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">ncbi2name</span>    <span class="o">=</span> <span class="p">{}</span>
 <span class="n">ncbi2symbol</span>  <span class="o">=</span> <span class="p">{}</span>
 <span class="n">ncbi2desc</span>    <span class="o">=</span> <span class="p">{}</span>
@@ -13936,7 +13940,7 @@ Splitting multigene rows...
 <span class="n">achilles</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">ncbi_gene_ids</span><span class="p">(</span><span class="n">genes</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">achilles</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="s2">&quot;genes&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">achilles</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="s2">&quot;cell lines&quot;</span><span class="p">)</span>
-<span class="n">report</span><span class="p">(</span><span class="s1">&#39;Sample Achilles data:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">achilles</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">2</span><span class="p">,:</span><span class="mi">15</span><span class="p">]</span><span class="o">.</span><span class="n">to_html</span><span class="p">(),</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">report</span><span class="p">(</span><span class="s1">&#39;Sample Achilles data:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">achilles</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">2</span><span class="p">,:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">to_html</span><span class="p">(),</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">achilles</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
@@ -14003,51 +14007,516 @@ Splitting multigene rows...
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cn</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;copy_number&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cn</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;copy_number&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
 <span class="n">cn</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-<span class="c1"># gd = get_gene_descriptions()</span>
-<span class="c1"># gd.head()</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">ncbi_gene_ids</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">cn</span><span class="o">.</span><span class="n">index</span><span class="p">))</span>
+<span class="n">report</span><span class="p">(</span><span class="s1">&#39;Sample copy number data: &#39;</span><span class="o">+</span><span class="n">cn</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">3</span><span class="p">,:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">to_html</span><span class="p">())</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>Sample copy number data: <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ACH-001793</th>
+      <th>ACH-002176</th>
+      <th>ACH-000652</th>
+      <th>ACH-001295</th>
+      <th>ACH-000798</th>
+      <th>ACH-001399</th>
+      <th>ACH-000111</th>
+      <th>ACH-002358</th>
+      <th>ACH-000367</th>
+      <th>ACH-000584</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>1.086422</td>
+      <td>1.526188</td>
+      <td>0.776609</td>
+      <td>0.964857</td>
+      <td>0.986651</td>
+      <td>1.097441</td>
+      <td>1.577719</td>
+      <td>0.990491</td>
+      <td>0.972714</td>
+      <td>1.232228</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1.103066</td>
+      <td>1.044267</td>
+      <td>0.520576</td>
+      <td>1.001427</td>
+      <td>0.974178</td>
+      <td>0.775405</td>
+      <td>1.209647</td>
+      <td>1.001602</td>
+      <td>0.564791</td>
+      <td>0.379099</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>0.910926</td>
+      <td>1.089161</td>
+      <td>1.555780</td>
+      <td>1.010086</td>
+      <td>0.987801</td>
+      <td>1.877675</td>
+      <td>0.826138</td>
+      <td>0.999580</td>
+      <td>1.128533</td>
+      <td>1.254932</td>
+    </tr>
+  </tbody>
+</table></p>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">## Expression Data (RNASeq)</span>
+<span class="s1">RNAseq TPM gene expression data for just protein coding genes using RSEM. Log2 transformed, using a pseudo-count of 1.</span>
+
+<span class="s1">&lt;b&gt;DepMap source file:&lt;/b&gt; CCLE_expression.csv</span>
+<span class="s1">* Transpose columns (gene names) and rows (CCLE cell line IDs)</span>
+<span class="s1">* Translate gene names to NCBI gene IDs</span>
+<span class="s1">* Apply BOOLEAN mask to accept log2 tpm &gt; 0 as positive for expression</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Expression-Data-(RNASeq)">Expression Data (RNASeq)<a class="anchor-link" href="#Expression-Data-(RNASeq)">&#182;</a></h2><p>RNAseq TPM gene expression data for just protein coding genes using RSEM. Log2 transformed, using a pseudo-count of 1.</p>
+<p><b>DepMap source file:</b> CCLE_expression.csv</p>
+<ul>
+<li>Transpose columns (gene names) and rows (CCLE cell line IDs)</li>
+<li>Translate gene names to NCBI gene IDs</li>
+<li>Apply BOOLEAN mask to accept log2 tpm &gt; 0 as positive for expression</li>
+</ul>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;mfr&#39;</span><span class="p">)</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-<span class="n">genes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;gene.pair&#39;</span><span class="p">]:</span>
-    <span class="n">my_genes</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">my_genes</span><span class="p">:</span>
-        <span class="n">genes</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">genes</span><span class="p">)</span>
-    
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">exp</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;expression&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+<span class="n">exp</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">ncbi_gene_ids</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">exp</span><span class="o">.</span><span class="n">index</span><span class="p">))</span>
+<span class="n">report</span><span class="p">(</span><span class="s1">&#39;Sample expression data: &#39;</span><span class="o">+</span><span class="n">exp</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">3</span><span class="p">,:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">to_html</span><span class="p">())</span>
+<span class="n">exp</span> <span class="o">=</span> <span class="n">exp</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<span class="n">report</span><span class="p">(</span><span class="s1">&#39;&lt;br&gt;Sample masked expression: &#39;</span><span class="o">+</span><span class="n">exp</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">3</span><span class="p">,:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">to_html</span><span class="p">())</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p>Sample expression data: <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ACH-001097</th>
+      <th>ACH-001485</th>
+      <th>ACH-001396</th>
+      <th>ACH-000534</th>
+      <th>ACH-000742</th>
+      <th>ACH-001818</th>
+      <th>ACH-000545</th>
+      <th>ACH-000836</th>
+      <th>ACH-001959</th>
+      <th>ACH-000470</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>7105</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>2.883621</td>
+      <td>0.839960</td>
+      <td>3.722466</td>
+      <td>4.032982</td>
+      <td>4.251719</td>
+      <td>4.632268</td>
+      <td>3.321928</td>
+      <td>3.681449</td>
+    </tr>
+    <tr>
+      <th>64102</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>8813</th>
+      <td>4.667324</td>
+      <td>5.755689</td>
+      <td>4.471838</td>
+      <td>5.376082</td>
+      <td>6.029674</td>
+      <td>5.933100</td>
+      <td>5.651052</td>
+      <td>6.704180</td>
+      <td>7.357288</td>
+      <td>7.294896</td>
+    </tr>
+  </tbody>
+</table></p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><br>Sample masked expression: <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ACH-001097</th>
+      <th>ACH-001485</th>
+      <th>ACH-001396</th>
+      <th>ACH-000534</th>
+      <th>ACH-000742</th>
+      <th>ACH-001818</th>
+      <th>ACH-000545</th>
+      <th>ACH-000836</th>
+      <th>ACH-001959</th>
+      <th>ACH-000470</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>7105</th>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>64102</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>8813</th>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Protein-expression-data">Protein expression data<a class="anchor-link" href="#Protein-expression-data">&#182;</a></h2><p>CCLE Reverse Phase Protein Array (RPPA) data</p>
+<p><b>DepMap source file:</b> CCLE_RPPA_20181003.csv</p>
+<ul>
+<li>Transpose columns (gene names) and rows (CCLE cell line IDs)</li>
+<li>Translate gene names to NCBI gene IDs</li>
+<li>Apply BOOLEAN mask to accept log2 tpm &gt; 0 as positive for expression</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">prot</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;protein&#39;</span><span class="p">)</span>
+<span class="n">prot</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[36]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>14-3-3_beta</th>
+      <th>14-3-3_epsilon_Caution</th>
+      <th>14-3-3_zeta</th>
+      <th>4E-BP1</th>
+      <th>4E-BP1_pS65</th>
+      <th>4E-BP1_pT37_T46</th>
+      <th>4E-BP1_pT70</th>
+      <th>53BP1</th>
+      <th>A-Raf_pS299_Caution</th>
+      <th>ACC_pS79</th>
+      <th>...</th>
+      <th>Tuberin_pT1462</th>
+      <th>VAV1_Caution</th>
+      <th>VEGFR2</th>
+      <th>VHL_Caution</th>
+      <th>XBP1_Caution</th>
+      <th>XRCC1_Caution</th>
+      <th>YAP_Caution</th>
+      <th>YAP_pS127_Caution</th>
+      <th>YB-1</th>
+      <th>YB-1_pS102</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DMS53_LUNG</td>
+      <td>-0.104888</td>
+      <td>0.060414</td>
+      <td>0.309068</td>
+      <td>-0.075506</td>
+      <td>0.230359</td>
+      <td>0.198304</td>
+      <td>-0.030541</td>
+      <td>0.455889</td>
+      <td>0.090484</td>
+      <td>0.268448</td>
+      <td>...</td>
+      <td>-0.099433</td>
+      <td>-0.486715</td>
+      <td>-1.147858</td>
+      <td>0.133876</td>
+      <td>-0.075812</td>
+      <td>-0.144388</td>
+      <td>-1.090303</td>
+      <td>-2.109324</td>
+      <td>0.178104</td>
+      <td>0.246541</td>
+    </tr>
+    <tr>
+      <td>SW1116_LARGE_INTESTINE</td>
+      <td>0.358504</td>
+      <td>-0.180291</td>
+      <td>-0.041237</td>
+      <td>-0.286629</td>
+      <td>-0.877406</td>
+      <td>-1.026948</td>
+      <td>-0.462761</td>
+      <td>-0.011197</td>
+      <td>0.605330</td>
+      <td>-0.614974</td>
+      <td>...</td>
+      <td>-0.109777</td>
+      <td>0.349330</td>
+      <td>0.770148</td>
+      <td>0.984297</td>
+      <td>-0.168138</td>
+      <td>-0.004905</td>
+      <td>0.189294</td>
+      <td>-0.283593</td>
+      <td>0.255972</td>
+      <td>-0.121134</td>
+    </tr>
+    <tr>
+      <td>NCIH1694_LUNG</td>
+      <td>0.028738</td>
+      <td>0.071902</td>
+      <td>-0.094847</td>
+      <td>0.285069</td>
+      <td>1.321551</td>
+      <td>0.620703</td>
+      <td>-0.439484</td>
+      <td>0.195007</td>
+      <td>0.036221</td>
+      <td>0.767920</td>
+      <td>...</td>
+      <td>0.154344</td>
+      <td>-0.478189</td>
+      <td>-1.185530</td>
+      <td>1.273013</td>
+      <td>-0.240413</td>
+      <td>0.476633</td>
+      <td>-1.367465</td>
+      <td>-2.525695</td>
+      <td>-0.137880</td>
+      <td>-0.451282</td>
+    </tr>
+    <tr>
+      <td>P3HR1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE</td>
+      <td>0.120039</td>
+      <td>-0.066802</td>
+      <td>-0.128007</td>
+      <td>-0.552081</td>
+      <td>-0.292428</td>
+      <td>-1.415935</td>
+      <td>-0.138858</td>
+      <td>-0.066122</td>
+      <td>-0.346564</td>
+      <td>0.586421</td>
+      <td>...</td>
+      <td>0.040106</td>
+      <td>5.923830</td>
+      <td>-3.893832</td>
+      <td>-2.499188</td>
+      <td>0.632758</td>
+      <td>0.025639</td>
+      <td>-1.189180</td>
+      <td>-3.056863</td>
+      <td>0.025997</td>
+      <td>-0.465205</td>
+    </tr>
+    <tr>
+      <td>HUT78_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE</td>
+      <td>-0.268997</td>
+      <td>-0.060281</td>
+      <td>-0.137881</td>
+      <td>-0.398729</td>
+      <td>-0.095622</td>
+      <td>-0.533905</td>
+      <td>0.054245</td>
+      <td>-0.573022</td>
+      <td>-0.162968</td>
+      <td>-0.691478</td>
+      <td>...</td>
+      <td>-0.466919</td>
+      <td>5.475880</td>
+      <td>-0.561973</td>
+      <td>-0.500953</td>
+      <td>-0.261494</td>
+      <td>0.358679</td>
+      <td>-0.951686</td>
+      <td>-3.247388</td>
+      <td>-0.151424</td>
+      <td>-0.145426</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 214 columns</p>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
