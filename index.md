@@ -141,12 +141,15 @@ CERES data with principle components strongly related to known batch effects rem
 423 cell lines are shared
 16052 genes are shared
 </pre>
+
+### How well do VCrispr and RNAi compare
 <img src="plots/gene_dependency.png">
 * significant p-value means reject H0 that slope == 0
-* We will use the Achilles (Crispr) gene dependency score and check for positive agreement with RNAi later
+* For now, accept Achilles (Crispr) as canonical for gene dependency score but keep RNAi data fro cross-validation/concordance
 
 ### Sanity checking with ERBB2 (2064)
-Evaluating breast cancer lineages where at least one cell line had copy number > 2:
+Do my filters capture a known, valid valid target?
+* Evaluating breast cancer lineages where at least one cell line had copy number > 2:
 * Is ERB2B in the hotspot gene set?
 * We expect ERBB2 to have high copy number in breast cancer lineages
   ** What is the mean ERB2B copy number in breast cancers?
