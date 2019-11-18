@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-73621">Pyrimidine catabolism</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-73621" target="_BLANK">Pyrimidine catabolism</a>
 
 
 

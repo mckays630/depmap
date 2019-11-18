@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-381340">Transcriptional regulation of white adipocyte differentiation</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-381340" target="_BLANK">Transcriptional regulation of white adipocyte differentiation</a>
 
 
 

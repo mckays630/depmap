@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-163765">ChREBP activates metabolic gene expression</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-163765" target="_BLANK">ChREBP activates metabolic gene expression</a>
 
 
 

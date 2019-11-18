@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8951664">Neddylation</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8951664" target="_BLANK">Neddylation</a>
 
 
 

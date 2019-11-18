@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-163560">Triglyceride catabolism</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-163560" target="_BLANK">Triglyceride catabolism</a>
 
 
 

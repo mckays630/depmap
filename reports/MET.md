@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9022699">MECP2 regulates neuronal receptors and channels</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9022699" target="_BLANK">MECP2 regulates neuronal receptors and channels</a>
 
 
 

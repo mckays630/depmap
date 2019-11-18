@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6784531">tRNA processing in the nucleus</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6784531" target="_BLANK">tRNA processing in the nucleus</a>
 
 
 

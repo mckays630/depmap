@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-197264">Nicotinamide salvaging</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-197264" target="_BLANK">Nicotinamide salvaging</a>
 
 
 

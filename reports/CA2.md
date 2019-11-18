@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1475029">Reversible hydration of carbon dioxide</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1475029" target="_BLANK">Reversible hydration of carbon dioxide</a>
 
 
 

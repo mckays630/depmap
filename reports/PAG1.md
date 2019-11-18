@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-202427">Phosphorylation of CD3 and TCR zeta chains</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-202427" target="_BLANK">Phosphorylation of CD3 and TCR zeta chains</a>
 
 
 

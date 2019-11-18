@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8951671">RUNX3 regulates YAP1-mediated transcription</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8951671" target="_BLANK">RUNX3 regulates YAP1-mediated transcription</a>
 
 
 

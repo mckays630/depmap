@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2142850">Hyaluronan biosynthesis and export</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2142850" target="_BLANK">Hyaluronan biosynthesis and export</a>
 
 
 

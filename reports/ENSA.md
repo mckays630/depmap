@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2465910">MASTL Facilitates Mitotic Progression</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2465910" target="_BLANK">MASTL Facilitates Mitotic Progression</a>
 
 
 

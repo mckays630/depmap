@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5693565">Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5693565" target="_BLANK">Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-350562">Regulation of ornithine decarboxylase (ODC)</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-350562" target="_BLANK">Regulation of ornithine decarboxylase (ODC)</a>
 
 
 

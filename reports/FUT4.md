@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9037629">Lewis blood group biosynthesis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9037629" target="_BLANK">Lewis blood group biosynthesis</a>
 
 
 

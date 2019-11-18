@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8866911">TFAP2 (AP-2) family regulates transcription of cell cycle factors</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8866911" target="_BLANK">TFAP2 (AP-2) family regulates transcription of cell cycle factors</a>
 
 
 

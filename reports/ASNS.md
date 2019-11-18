@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8963693">Aspartate and asparagine metabolism</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8963693" target="_BLANK">Aspartate and asparagine metabolism</a>
 
 
 

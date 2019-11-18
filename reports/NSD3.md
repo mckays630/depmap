@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-3214841">PKMTs methylate histone lysines</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-3214841" target="_BLANK">PKMTs methylate histone lysines</a>
 
 
 

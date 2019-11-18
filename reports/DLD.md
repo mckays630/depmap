@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-71403">Citric acid cycle (TCA cycle)</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-71403" target="_BLANK">Citric acid cycle (TCA cycle)</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8853659">RET signaling</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8853659" target="_BLANK">RET signaling</a>
 
 
 

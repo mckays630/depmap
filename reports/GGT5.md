@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5423646">Aflatoxin activation and detoxification</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5423646" target="_BLANK">Aflatoxin activation and detoxification</a>
 
 
 

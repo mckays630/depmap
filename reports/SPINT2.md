@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8852405">Signaling by MST1</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8852405" target="_BLANK">Signaling by MST1</a>
 
 
 

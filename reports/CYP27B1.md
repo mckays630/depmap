@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5579014">Defective CYP27B1 causes Rickets vitamin D-dependent 1A (VDDR1A)</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5579014" target="_BLANK">Defective CYP27B1 causes Rickets vitamin D-dependent 1A (VDDR1A)</a>
 
 
 

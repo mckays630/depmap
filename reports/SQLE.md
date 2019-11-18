@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2426168">Activation of gene expression by SREBF (SREBP)</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2426168" target="_BLANK">Activation of gene expression by SREBF (SREBP)</a>
 
 
 

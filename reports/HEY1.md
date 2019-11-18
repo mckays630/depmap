@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9013695">NOTCH4 Intracellular Domain Regulates Transcription</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9013695" target="_BLANK">NOTCH4 Intracellular Domain Regulates Transcription</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5625740">RHO GTPases activate PKNs</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5625740" target="_BLANK">RHO GTPases activate PKNs</a>
 
 
 

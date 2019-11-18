@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-194840">Rho GTPase cycle</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-194840" target="_BLANK">Rho GTPase cycle</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-422085">Synthesis, secretion, and deacylation of Ghrelin</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-422085" target="_BLANK">Synthesis, secretion, and deacylation of Ghrelin</a>
 
 
 

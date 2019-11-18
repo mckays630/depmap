@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5628897">TP53 Regulates Metabolic Genes</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5628897" target="_BLANK">TP53 Regulates Metabolic Genes</a>
 
 
 

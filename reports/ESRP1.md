@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6803529">FGFR2 alternative splicing</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6803529" target="_BLANK">FGFR2 alternative splicing</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1592389">Activation of Matrix Metalloproteinases</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1592389" target="_BLANK">Activation of Matrix Metalloproteinases</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-390522">Striated Muscle Contraction</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-390522" target="_BLANK">Striated Muscle Contraction</a>
 
 
 

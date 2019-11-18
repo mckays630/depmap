@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-77288">mitochondrial fatty acid beta-oxidation of unsaturated fatty acids</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-77288" target="_BLANK">mitochondrial fatty acid beta-oxidation of unsaturated fatty acids</a>
 
 
 

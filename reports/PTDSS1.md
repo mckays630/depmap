@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1483101">Synthesis of PS</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1483101" target="_BLANK">Synthesis of PS</a>
 
 
 

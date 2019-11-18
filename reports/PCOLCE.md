@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2243919">Crosslinking of collagen fibrils</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2243919" target="_BLANK">Crosslinking of collagen fibrils</a>
 
 
 

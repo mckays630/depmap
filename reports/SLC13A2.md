@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-433137">Sodium-coupled sulphate, di- and tri-carboxylate transporters</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-433137" target="_BLANK">Sodium-coupled sulphate, di- and tri-carboxylate transporters</a>
 
 
 

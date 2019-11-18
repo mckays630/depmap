@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-426117">Cation-coupled Chloride cotransporters</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-426117" target="_BLANK">Cation-coupled Chloride cotransporters</a>
 
 
 

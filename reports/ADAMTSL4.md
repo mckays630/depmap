@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5173214">O-glycosylation of TSR domain-containing proteins</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5173214" target="_BLANK">O-glycosylation of TSR domain-containing proteins</a>
 
 
 

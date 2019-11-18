@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-198933">Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-198933" target="_BLANK">Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell</a>
 
 
 

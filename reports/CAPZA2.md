@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-983231">Factors involved in megakaryocyte development and platelet production</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-983231" target="_BLANK">Factors involved in megakaryocyte development and platelet production</a>
 
 
 

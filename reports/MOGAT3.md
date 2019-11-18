@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-75109">Triglyceride biosynthesis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-75109" target="_BLANK">Triglyceride biosynthesis</a>
 
 
 

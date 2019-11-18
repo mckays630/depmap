@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1650814">Collagen biosynthesis and modifying enzymes</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1650814" target="_BLANK">Collagen biosynthesis and modifying enzymes</a>
 
 
 

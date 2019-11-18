@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6811440">Retrograde transport at the Trans-Golgi-Network</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6811440" target="_BLANK">Retrograde transport at the Trans-Golgi-Network</a>
 
 
 

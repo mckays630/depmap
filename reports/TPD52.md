@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-432722">Golgi Associated Vesicle Biogenesis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-432722" target="_BLANK">Golgi Associated Vesicle Biogenesis</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2162123">Synthesis of Prostaglandins (PG) and Thromboxanes (TX)</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2162123" target="_BLANK">Synthesis of Prostaglandins (PG) and Thromboxanes (TX)</a>
 
 
 

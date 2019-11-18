@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-416700">Other semaphorin interactions</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-416700" target="_BLANK">Other semaphorin interactions</a>
 
 
 

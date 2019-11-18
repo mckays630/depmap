@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2466712">Biosynthesis of A2E, implicated in retinal degradation</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2466712" target="_BLANK">Biosynthesis of A2E, implicated in retinal degradation</a>
 
 
 

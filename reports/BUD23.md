@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6791226">Major pathway of rRNA processing in the nucleolus and cytosol</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6791226" target="_BLANK">Major pathway of rRNA processing in the nucleolus and cytosol</a>
 
 
 

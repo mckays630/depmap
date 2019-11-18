@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-75205">Dissolution of Fibrin Clot</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-75205" target="_BLANK">Dissolution of Fibrin Clot</a>
 
 
 

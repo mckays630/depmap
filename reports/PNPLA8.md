@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1482839">Acyl chain remodelling of PE</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1482839" target="_BLANK">Acyl chain remodelling of PE</a>
 
 
 

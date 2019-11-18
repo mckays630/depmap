@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5659729">Defective SLC6A18 may confer susceptibility to iminoglycinuria and/or hyperglycinuria</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5659729" target="_BLANK">Defective SLC6A18 may confer susceptibility to iminoglycinuria and/or hyperglycinuria</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8943724">Regulation of PTEN gene transcription</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8943724" target="_BLANK">Regulation of PTEN gene transcription</a>
 
 
 

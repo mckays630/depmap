@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-212436">Generic Transcription Pathway</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-212436" target="_BLANK">Generic Transcription Pathway</a>
 
 
 

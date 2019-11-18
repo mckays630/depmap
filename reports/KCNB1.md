@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-381676">Glucagon-like Peptide-1 (GLP1) regulates insulin secretion</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-381676" target="_BLANK">Glucagon-like Peptide-1 (GLP1) regulates insulin secretion</a>
 
 
 

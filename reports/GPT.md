@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8964540">Alanine metabolism</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8964540" target="_BLANK">Alanine metabolism</a>
 
 
 

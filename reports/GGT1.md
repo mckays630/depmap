@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9035968">Defective GGT1 causes Glutathionuria (GLUTH)</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9035968" target="_BLANK">Defective GGT1 causes Glutathionuria (GLUTH)</a>
 
 
 

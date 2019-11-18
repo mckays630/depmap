@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8937144">Aryl hydrocarbon receptor signalling</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8937144" target="_BLANK">Aryl hydrocarbon receptor signalling</a>
 
 
 

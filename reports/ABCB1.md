@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-382556">ABC-family proteins mediated transport</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-382556" target="_BLANK">ABC-family proteins mediated transport</a>
 
 
 

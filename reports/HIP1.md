@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8856828">Clathrin-mediated endocytosis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8856828" target="_BLANK">Clathrin-mediated endocytosis</a>
 
 
 

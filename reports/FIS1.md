@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9603798">Class I peroxisomal membrane protein import</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9603798" target="_BLANK">Class I peroxisomal membrane protein import</a>
 
 
 

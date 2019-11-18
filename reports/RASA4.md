@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5658442">Regulation of RAS by GAPs</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5658442" target="_BLANK">Regulation of RAS by GAPs</a>
 
 
 

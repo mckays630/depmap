@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2534343">Interaction With Cumulus Cells And The Zona Pellucida</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2534343" target="_BLANK">Interaction With Cumulus Cells And The Zona Pellucida</a>
 
 
 

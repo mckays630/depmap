@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8957275">Post-translational protein phosphorylation</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8957275" target="_BLANK">Post-translational protein phosphorylation</a>
 
 
 

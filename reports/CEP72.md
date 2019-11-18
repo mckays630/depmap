@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8854518">AURKA Activation by TPX2</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8854518" target="_BLANK">AURKA Activation by TPX2</a>
 
 
 

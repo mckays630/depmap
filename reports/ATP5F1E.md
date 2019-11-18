@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8949613">Cristae formation</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8949613" target="_BLANK">Cristae formation</a>
 
 
 

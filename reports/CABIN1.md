@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2559584">Formation of Senescence-Associated Heterochromatin Foci (SAHF)</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2559584" target="_BLANK">Formation of Senescence-Associated Heterochromatin Foci (SAHF)</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-196108">Pregnenolone biosynthesis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-196108" target="_BLANK">Pregnenolone biosynthesis</a>
 
 
 

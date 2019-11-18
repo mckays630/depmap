@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8866376">Reelin signalling pathway</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8866376" target="_BLANK">Reelin signalling pathway</a>
 
 
 

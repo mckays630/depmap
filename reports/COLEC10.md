@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-166663">Initial triggering of complement</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-166663" target="_BLANK">Initial triggering of complement</a>
 
 
 

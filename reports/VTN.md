@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-977606">Regulation of Complement cascade</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-977606" target="_BLANK">Regulation of Complement cascade</a>
 
 
 

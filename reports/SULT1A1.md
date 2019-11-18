@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-156584">Cytosolic sulfonation of small molecules</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-156584" target="_BLANK">Cytosolic sulfonation of small molecules</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-3371571">HSF1-dependent transactivation</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-3371571" target="_BLANK">HSF1-dependent transactivation</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5655302">Signaling by FGFR1 in disease</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5655302" target="_BLANK">Signaling by FGFR1 in disease</a>
 
 
 

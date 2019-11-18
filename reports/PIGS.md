@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-162791">Attachment of GPI anchor to uPAR</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-162791" target="_BLANK">Attachment of GPI anchor to uPAR</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-983189">Kinesins</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-983189" target="_BLANK">Kinesins</a>
 
 
 

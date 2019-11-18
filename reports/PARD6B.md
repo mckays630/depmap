@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-420029">Tight junction interactions</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-420029" target="_BLANK">Tight junction interactions</a>
 
 
 

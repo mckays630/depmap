@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5620916">VxPx cargo-targeting to cilium</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5620916" target="_BLANK">VxPx cargo-targeting to cilium</a>
 
 
 

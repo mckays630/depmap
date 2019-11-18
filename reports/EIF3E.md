@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-72706">GTP hydrolysis and joining of the 60S ribosomal subunit</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-72706" target="_BLANK">GTP hydrolysis and joining of the 60S ribosomal subunit</a>
 
 
 

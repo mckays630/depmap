@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-983712">Ion channel transport</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-983712" target="_BLANK">Ion channel transport</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6785807">Interleukin-4 and Interleukin-13 signaling</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6785807" target="_BLANK">Interleukin-4 and Interleukin-13 signaling</a>
 
 
 

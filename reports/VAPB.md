@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1660661">Sphingolipid de novo biosynthesis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1660661" target="_BLANK">Sphingolipid de novo biosynthesis</a>
 
 
 

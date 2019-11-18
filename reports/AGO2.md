@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9029569">NR1H3 & NR1H2 regulate gene expression linked to cholesterol transport and efflux</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9029569" target="_BLANK">NR1H3 & NR1H2 regulate gene expression linked to cholesterol transport and efflux</a>
 
 
 

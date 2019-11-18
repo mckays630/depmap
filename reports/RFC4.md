@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-69473">G2/M DNA damage checkpoint</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-69473" target="_BLANK">G2/M DNA damage checkpoint</a>
 
 
 

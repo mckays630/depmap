@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5619089">Defective SLC6A5 causes hyperekplexia 3 (HKPX3)</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5619089" target="_BLANK">Defective SLC6A5 causes hyperekplexia 3 (HKPX3)</a>
 
 
 

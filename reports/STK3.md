@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2028269">Signaling by Hippo</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2028269" target="_BLANK">Signaling by Hippo</a>
 
 
 

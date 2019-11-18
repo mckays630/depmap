@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6811558">PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6811558" target="_BLANK">PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling</a>
 
 
 

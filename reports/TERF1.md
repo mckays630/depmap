@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2559586">DNA Damage/Telomere Stress Induced Senescence</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2559586" target="_BLANK">DNA Damage/Telomere Stress Induced Senescence</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-114608">Platelet degranulation </a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-114608" target="_BLANK">Platelet degranulation </a>
 
 
 

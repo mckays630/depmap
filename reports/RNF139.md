@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-901032">ER Quality Control Compartment (ERQC)</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-901032" target="_BLANK">ER Quality Control Compartment (ERQC)</a>
 
 
 

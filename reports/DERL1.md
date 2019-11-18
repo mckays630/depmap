@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8866654">E3 ubiquitin ligases ubiquitinate target proteins</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8866654" target="_BLANK">E3 ubiquitin ligases ubiquitinate target proteins</a>
 
 
 

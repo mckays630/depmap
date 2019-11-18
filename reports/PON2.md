@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2142688">Synthesis of 5-eicosatetraenoic acids</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2142688" target="_BLANK">Synthesis of 5-eicosatetraenoic acids</a>
 
 
 

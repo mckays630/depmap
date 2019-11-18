@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6811434">COPI-dependent Golgi-to-ER retrograde traffic</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6811434" target="_BLANK">COPI-dependent Golgi-to-ER retrograde traffic</a>
 
 
 

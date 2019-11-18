@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-435368">Zinc efflux and compartmentalization by the SLC30 family</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-435368" target="_BLANK">Zinc efflux and compartmentalization by the SLC30 family</a>
 
 
 

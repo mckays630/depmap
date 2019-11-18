@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8950505">Gene and protein expression by JAK-STAT signaling after Interleukin-12 stimulation</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8950505" target="_BLANK">Gene and protein expression by JAK-STAT signaling after Interleukin-12 stimulation</a>
 
 
 

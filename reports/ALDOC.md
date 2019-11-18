@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-70263">Gluconeogenesis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-70263" target="_BLANK">Gluconeogenesis</a>
 
 
 

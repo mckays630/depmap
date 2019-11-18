@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2672351">Stimuli-sensing channels</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2672351" target="_BLANK">Stimuli-sensing channels</a>
 
 
 

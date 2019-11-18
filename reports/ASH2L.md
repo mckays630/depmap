@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8936459">RUNX1 regulates genes involved in megakaryocyte differentiation and platelet function</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8936459" target="_BLANK">RUNX1 regulates genes involved in megakaryocyte differentiation and platelet function</a>
 
 
 

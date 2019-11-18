@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6799198">Complex I biogenesis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6799198" target="_BLANK">Complex I biogenesis</a>
 
 
 

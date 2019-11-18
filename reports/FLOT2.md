@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8849932">Synaptic adhesion-like molecules</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8849932" target="_BLANK">Synaptic adhesion-like molecules</a>
 
 
 

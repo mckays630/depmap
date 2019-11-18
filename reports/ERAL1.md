@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5419276">Mitochondrial translation termination</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5419276" target="_BLANK">Mitochondrial translation termination</a>
 
 
 

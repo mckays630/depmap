@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6804756">Regulation of TP53 Activity through Phosphorylation</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6804756" target="_BLANK">Regulation of TP53 Activity through Phosphorylation</a>
 
 
 

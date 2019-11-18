@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5683826">Surfactant metabolism</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5683826" target="_BLANK">Surfactant metabolism</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-381038">XBP1(S) activates chaperone genes</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-381038" target="_BLANK">XBP1(S) activates chaperone genes</a>
 
 
 

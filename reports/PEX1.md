@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9033241">Peroxisomal protein import</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9033241" target="_BLANK">Peroxisomal protein import</a>
 
 
 

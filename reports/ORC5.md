@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-68962">Activation of the pre-replicative complex</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-68962" target="_BLANK">Activation of the pre-replicative complex</a>
 
 
 

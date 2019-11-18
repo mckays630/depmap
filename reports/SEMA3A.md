@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-399956">CRMPs in Sema3A signaling</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-399956" target="_BLANK">CRMPs in Sema3A signaling</a>
 
 
 

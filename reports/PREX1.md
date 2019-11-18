@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-416482">G alpha (12/13) signalling events</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-416482" target="_BLANK">G alpha (12/13) signalling events</a>
 
 
 

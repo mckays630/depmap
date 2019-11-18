@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-69563">p53-Dependent G1 DNA Damage Response</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-69563" target="_BLANK">p53-Dependent G1 DNA Damage Response</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-168276">NS1 Mediated Effects on Host Pathways</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-168276" target="_BLANK">NS1 Mediated Effects on Host Pathways</a>
 
 
 

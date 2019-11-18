@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8854521">Interaction between PHLDA1 and AURKA</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8854521" target="_BLANK">Interaction between PHLDA1 and AURKA</a>
 
 
 

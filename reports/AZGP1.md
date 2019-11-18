@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5223345">Miscellaneous transport and binding events</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5223345" target="_BLANK">Miscellaneous transport and binding events</a>
 
 
 

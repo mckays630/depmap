@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-947581">Molybdenum cofactor biosynthesis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-947581" target="_BLANK">Molybdenum cofactor biosynthesis</a>
 
 
 

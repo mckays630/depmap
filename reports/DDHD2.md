@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1483166">Synthesis of PA</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1483166" target="_BLANK">Synthesis of PA</a>
 
 
 

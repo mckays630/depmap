@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5576886">Phase 4 - resting membrane potential</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5576886" target="_BLANK">Phase 4 - resting membrane potential</a>
 
 
 

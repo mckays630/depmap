@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5619085">Defective SLC26A3 causes congenital secretory chloride diarrhea 1 (DIAR1)</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5619085" target="_BLANK">Defective SLC26A3 causes congenital secretory chloride diarrhea 1 (DIAR1)</a>
 
 
 

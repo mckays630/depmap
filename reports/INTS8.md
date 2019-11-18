@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6807505">RNA polymerase II transcribes snRNA genes</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6807505" target="_BLANK">RNA polymerase II transcribes snRNA genes</a>
 
 
 

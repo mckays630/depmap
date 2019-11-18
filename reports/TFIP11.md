@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-72163">mRNA Splicing - Major Pathway</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-72163" target="_BLANK">mRNA Splicing - Major Pathway</a>
 
 
 

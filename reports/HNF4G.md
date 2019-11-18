@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-383280">Nuclear Receptor transcription pathway</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-383280" target="_BLANK">Nuclear Receptor transcription pathway</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-936837">Ion transport by P-type ATPases</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-936837" target="_BLANK">Ion transport by P-type ATPases</a>
 
 
 

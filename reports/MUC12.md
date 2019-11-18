@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-977068">Termination of O-glycan biosynthesis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-977068" target="_BLANK">Termination of O-glycan biosynthesis</a>
 
 
 

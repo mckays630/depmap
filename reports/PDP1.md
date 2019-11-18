@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-204174">Regulation of pyruvate dehydrogenase (PDH) complex</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-204174" target="_BLANK">Regulation of pyruvate dehydrogenase (PDH) complex</a>
 
 
 

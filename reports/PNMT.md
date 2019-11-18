@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-209905">Catecholamine biosynthesis</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-209905" target="_BLANK">Catecholamine biosynthesis</a>
 
 
 

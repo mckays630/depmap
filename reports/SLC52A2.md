@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-196843">Vitamin B2 (riboflavin) metabolism</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-196843" target="_BLANK">Vitamin B2 (riboflavin) metabolism</a>
 
 
 

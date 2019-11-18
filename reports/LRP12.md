@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-975634">Retinoid metabolism and transport</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-975634" target="_BLANK">Retinoid metabolism and transport</a>
 
 
 

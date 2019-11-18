@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-199220">Vitamin B5 (pantothenate) metabolism</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-199220" target="_BLANK">Vitamin B5 (pantothenate) metabolism</a>
 
 
 

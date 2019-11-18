@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-180024">DARPP-32 events</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-180024" target="_BLANK">DARPP-32 events</a>
 
 
 

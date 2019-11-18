@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-997272">Inhibition  of voltage gated Ca2+ channels via Gbeta/gamma subunits</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-997272" target="_BLANK">Inhibition  of voltage gated Ca2+ channels via Gbeta/gamma subunits</a>
 
 
 

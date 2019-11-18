@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-77595">Processing of Intronless Pre-mRNAs</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-77595" target="_BLANK">Processing of Intronless Pre-mRNAs</a>
 
 
 

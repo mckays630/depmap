@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-75955">RNA Polymerase II Transcription Elongation</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-75955" target="_BLANK">RNA Polymerase II Transcription Elongation</a>
 
 
 

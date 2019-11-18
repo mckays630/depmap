@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8948216">Collagen chain trimerization</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8948216" target="_BLANK">Collagen chain trimerization</a>
 
 
 

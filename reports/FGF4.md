@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8853338">Signaling by FGFR3 point mutants in cancer</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8853338" target="_BLANK">Signaling by FGFR3 point mutants in cancer</a>
 
 
 

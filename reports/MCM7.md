@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-69052">Switching of origins to a post-replicative state</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-69052" target="_BLANK">Switching of origins to a post-replicative state</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-3238698">WNT ligand biogenesis and trafficking</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-3238698" target="_BLANK">WNT ligand biogenesis and trafficking</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-975577">N-Glycan antennae elongation</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-975577" target="_BLANK">N-Glycan antennae elongation</a>
 
 
 

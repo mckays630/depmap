@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-982772">Growth hormone receptor signaling</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-982772" target="_BLANK">Growth hormone receptor signaling</a>
 
 
 

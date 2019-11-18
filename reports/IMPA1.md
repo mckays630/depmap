@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1855183">Synthesis of IP2, IP, and Ins in the cytosol</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1855183" target="_BLANK">Synthesis of IP2, IP, and Ins in the cytosol</a>
 
 
 

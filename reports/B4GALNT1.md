@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1660662">Glycosphingolipid metabolism</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-1660662" target="_BLANK">Glycosphingolipid metabolism</a>
 
 
 

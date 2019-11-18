@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-211981">Xenobiotics</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-211981" target="_BLANK">Xenobiotics</a>
 
 
 

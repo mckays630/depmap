@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6782315">tRNA modification in the nucleus and cytosol</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6782315" target="_BLANK">tRNA modification in the nucleus and cytosol</a>
 
 
 

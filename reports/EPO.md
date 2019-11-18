@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9027284">Erythropoietin activates RAS</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-9027284" target="_BLANK">Erythropoietin activates RAS</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5620924">Intraflagellar transport</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5620924" target="_BLANK">Intraflagellar transport</a>
 
 
 

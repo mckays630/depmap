@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-201722">Formation of the beta-catenin:TCF transactivating complex</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-201722" target="_BLANK">Formation of the beta-catenin:TCF transactivating complex</a>
 
 
 

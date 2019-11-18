@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5689880">Ub-specific processing proteases</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-5689880" target="_BLANK">Ub-specific processing proteases</a>
 
 
 

@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8949664">Processing of SMDT1</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8949664" target="_BLANK">Processing of SMDT1</a>
 
 
 

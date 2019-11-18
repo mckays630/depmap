@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6807878">COPI-mediated anterograde transport</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6807878" target="_BLANK">COPI-mediated anterograde transport</a>
 
 
 

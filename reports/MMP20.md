@@ -21,7 +21,7 @@
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2022090">Assembly of collagen fibrils and other multimeric structures</a>
+<a href="https://reactome.org/PathwayBrowser/#/R-HSA-2022090" target="_BLANK">Assembly of collagen fibrils and other multimeric structures</a>
 
 
 
