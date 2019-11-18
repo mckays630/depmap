@@ -39,7 +39,7 @@
 6. Compare RNAi and Crispr gene dependency data
 7. Plot copy number vs. gene dependency by lineage
 8. Generate list of candidate genes as a sortable table
-9. Add cross-validation filtering data for RNAi, expression, TGCA/COSMIC mutation hotspots
+9. Add cross-validation/filtering data for RNAi, expression, TGCA/COSMIC mutation hotspots
 10. target gene info pages
 
 ## Next steps
