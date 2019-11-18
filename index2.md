@@ -505,3 +505,41 @@ Sample Achilles data:
 423 cell lines are shared
 16052 genes are shared
 </pre>
+<img src="plots/gene_dependency.png" style="float:left">
+* significant p-value means reject H0 that slope == 0
+* We will use the Achilles (Crispr) gene dependency score and check for positive agreement with RNAi later
+
+### Sanity checking with ERBB2 (2064)
+Evaluating breast cancer lineages where at least one cell line had copy number > 2:
+* Is ERB2B in the hotspot gene set?
+* We expect ERBB2 to have high copy number in breast cancer lineages
+  ** What is the mean ERB2B copy number in breast cancers?
+* The gene dependency score should be < 0
+  ** What is the mean gene dependency score in breast cancers?
+
+ERBB2 is in hotspot gene set? <b>TRUE</b>
+<pre>
+ERBB2 mean copy number for breast_TPBC (5 cell lines): 9.59
+ERBB2 mean copy number for breast_TNBC (27 cell lines): 1.89
+ERBB2 mean copy number for breast_HER2Amp (11 cell lines): 14.84
+ERBB2 mean gene dependency for breast_HER2Amp (6 cell lines): -0.83
+ERBB2 mean gene dependency for breast_ERpos (7 cell lines): -0.27
+ERBB2 mean gene dependency for breast_TNBC (15 cell lines): -0.28
+</pre>
+
+## Lineages with observed high copy number genes
+
+* Go through the list of lineages with high copy number genes
+* Plot gene dependency vs. copy number
+* Highlight genes/cell-lines with copy number > 2 and gene dependency < 0 for specific lineages
+
+### Copy number vs gene dependency
+
+<img src="plots/breast_HER2Amp.png" style="float:left">
+<img src="plots/skin_epidermoid_carcinoma.png" style="float:left">
+<img src="plots/eye_uveal_melanoma.png" style="float:left">
+<img src="plots/esophagus_adenocarcinoma.png" style="float:left">
+<img src="plots/soft_tissue_fibrosarcoma.png" style="float:left">
+<img src="plots/upper_aerodigestive_buccal_mucosa.png" style="float:left">
+<img src="plots/skin_squamous.png" style="float:left">
+<img src="plots/soft_tissue_epitheliod_sarcoma.png" style="float:left">
