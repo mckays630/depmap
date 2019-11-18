@@ -1,7 +1,10 @@
-<h1>ERBB2</h1>
+<h1>TAF2</h1>
 
 <h2>Gene information</h2>
-<iframe src="https://depmap.org/portal/gene/TAF2?tab=about" style="border:none;width:100%;height:800px"></iframe>
+<details>
+  <summary>Click to view the depmap.org information for TAF2</summary>
+  <iframe src="https://depmap.org/portal/gene/TAF2?tab=about" style="border:none;width:100%;height:800px"></iframe>
+</details>
 
 <h2>Depmap overview</h2>
 <details>
