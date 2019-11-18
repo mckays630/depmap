@@ -47,7 +47,7 @@
 2. Integrate chemical sensitivity data
 3. Filter genes that are already known drug targets (identify truly novel targets)
 
-<a href="analysis/anaysis_details.html">Details...</a>
+<a href="analysis/analysis_details.html">Details...</a>
 
 
 
