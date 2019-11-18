@@ -24,7 +24,7 @@ $(document).ready(function() {
     $('#candidates thead tr').clone(true).appendTo( '#candidates thead' );
     $('#candidates thead tr:eq(1) th').each( function (i) {
         var title = $(this).text();
-        $(this).html( '<input type="text" placeholder="'+title+'" />' );
+        $(this).html( '<input type="text" placeholder=" " size=12/>' );
  
         $( 'input', this ).on( 'keyup change', function () {
             if ( table.column(i).search() !== this.value ) {
