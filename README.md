@@ -178,3 +178,7 @@ Gene level copy number data, log2 transformed with a pseudo count of 1. This is 
 * Transpose columns (gene names) and rows (CCLE cell line IDs)
 * Translate gene names to NCBI gene IDs
 
+<pre>
+423 cell lines are shared
+16052 genes are shared
+</pre>

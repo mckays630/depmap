@@ -78,15 +78,3 @@ Number of sub-lineages 61
 * Keep track of TCGA and COSMIC hotspot genes by lineage
 * Track deleterious mutations by lineage for future reference
 
-
-## DEMETER2 RNAi gene dependency data
-Cancer cell line genetic dependencies estimated using the DEMETER2 model. DEMETER2 is applied to three large-scale RNAi screening datasets: the Broad Institute Project Achilles, Novartis Project DRIVE, and the Marcotte et al. breast cell line dataset. The model is also applied to generate a combined dataset of gene dependencies covering a total of 712 unique cancer cell lines.
-
-<b>DepMap source file:</b> D2_combined_gene_dep_scores.csv 
-
-<b>Citation:</b> Jordan G. Bryan, John M. Krill-Burger, Thomas M. Green, Francisca Vazquez, Jesse S. Boehm, Todd R. Golub, William C. Hahn, David E. Root, Aviad Tsherniak. (2018). Improved estimation of cancer dependencies from large-scale RNAi screens using model-based normalization and data integration. Nature Communications 9, 1. https://doi.org/10.1038/s41467-018-06916-5</font>
-
-* Data source uses CCLE names rather than DepMap cell line IDS
-* Translate the cell line names to IDS for consistency with other data sources
-* Also deal with rows in the table with multiple gene names (eg 'GTF2IP4&GTF2IP1 (100093631&2970)')
-
