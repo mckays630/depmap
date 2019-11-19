@@ -3,21 +3,18 @@
 <h2>Gene information</h2>
 <details>
   <summary>Click to view the depmap.org information for DLL4</summary>
-  <p><a href="https://depmap.org/portal/gene/DLL4?tab=about" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/DLL4?tab=about" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
 <h2>Depmap overview</h2>
 <details>
   <summary>Click to view the depmap.org summary for DLL4</summary>
-  <p><a href="https://depmap.org/portal/gene/DLL4?tab=overview" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/DLL4?tab=overview" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
-<h2>Expression</h2>
+<h2>Depmap expression</h2>
 <details>
   <summary>Click to view the depmap.org expression data for DLL4</summary>
-  <p><a href="https://depmap.org/portal/gene/DLL4?tab=characterization" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/DLL4?tab=characterization" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
@@ -25,10 +22,9 @@
 
 <h2>Reactome Pathway diagram</h2>
 <details>
-  <summary>Click to view the Reactome pathway for DLL4</summary>
-  <p><a href="https://reactome.org/PathwayBrowser/#/R-HSA-9013507" target="_BLANK">Open page in a new tab...</a></p>
+  <summary>Click to view Reactome pathway for DLL4</summary>
   <p>NOTCH3 Activation and Transmission of Signal to the Nucleus</p>
-<iframe src="https://reactome.org/PathwayBrowser/#/R-HSA-9013507" style="border:none;width:100%;height:800px"></iframe>
+  <iframe src="https://reactome.org/PathwayBrowser/#/R-HSA-9013507" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
 

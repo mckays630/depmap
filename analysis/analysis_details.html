@@ -15448,7 +15448,7 @@ Final number of rows in dataframe: 17731
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">genes</span> <span class="o">=</span> <span class="n">candidates</span><span class="p">[[</span><span class="s1">&#39;HUGO_symbol&#39;</span><span class="p">,</span><span class="s1">&#39;Entrez_ID&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
@@ -15462,10 +15462,10 @@ Final number of rows in dataframe: 17731
     <span class="n">pathway</span> <span class="o">=</span> <span class="n">pathway_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">gene</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">pathway</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">pid</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">pathway</span>
-        <span class="n">iframe</span> <span class="o">=</span> <span class="s1">&#39;&lt;iframe src=&quot;&#39;</span><span class="o">+</span><span class="n">url</span><span class="o">+</span><span class="s1">&#39;&quot; style=&quot;border:none;width:100%;height:800px&quot;&gt;&lt;/iframe&gt;&#39;</span>
+        <span class="n">iframe</span> <span class="o">=</span> <span class="s1">&#39;  &lt;iframe src=&quot;&#39;</span><span class="o">+</span><span class="n">url</span><span class="o">+</span><span class="s1">&#39;&quot; style=&quot;border:none;width:100%;height:800px&quot;&gt;&lt;/iframe&gt;&#39;</span>
         <span class="n">pname</span> <span class="o">=</span> <span class="s1">&#39;&lt;p&gt;&#39;</span><span class="o">+</span><span class="n">name</span><span class="o">+</span><span class="s1">&#39;&lt;/p&gt;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">iframe</span>
         <span class="n">html</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;PNAME&#39;</span><span class="p">,</span><span class="n">pname</span><span class="p">)</span>
-        <span class="n">html</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">PURL</span><span class="p">,</span><span class="n">url</span><span class="p">)</span>
+        <span class="n">html</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;PURL&#39;</span><span class="p">,</span><span class="n">url</span><span class="p">)</span>
         <span class="n">html</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;START_HIDE&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
         <span class="n">html</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;END_HIDE&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -15481,33 +15481,6 @@ Final number of rows in dataframe: 17731
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-55-c6e04c646b91&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     13</span>         pname <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#39;&lt;p&gt;&#39;</span><span class="ansi-blue-fg">+</span>name<span class="ansi-blue-fg">+</span><span class="ansi-blue-fg">&#39;&lt;/p&gt;\n&#39;</span><span class="ansi-blue-fg">+</span>iframe
-<span class="ansi-green-intense-fg ansi-bold">     14</span>         html <span class="ansi-blue-fg">=</span> html<span class="ansi-blue-fg">.</span>replace<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;PNAME&#39;</span><span class="ansi-blue-fg">,</span>pname<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">---&gt; 15</span><span class="ansi-red-fg">         </span>html <span class="ansi-blue-fg">=</span> html<span class="ansi-blue-fg">.</span>replace<span class="ansi-blue-fg">(</span>PURL<span class="ansi-blue-fg">,</span>url<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     16</span>         html <span class="ansi-blue-fg">=</span> html<span class="ansi-blue-fg">.</span>replace<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;START_HIDE&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;&#39;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     17</span>         html <span class="ansi-blue-fg">=</span> html<span class="ansi-blue-fg">.</span>replace<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;END_HIDE&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;&#39;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;PURL&#39; is not defined</pre>
-</div>
-</div>
-
 </div>
 </div>
 

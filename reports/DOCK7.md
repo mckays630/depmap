@@ -3,21 +3,18 @@
 <h2>Gene information</h2>
 <details>
   <summary>Click to view the depmap.org information for DOCK7</summary>
-  <p><a href="https://depmap.org/portal/gene/DOCK7?tab=about" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/DOCK7?tab=about" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
 <h2>Depmap overview</h2>
 <details>
   <summary>Click to view the depmap.org summary for DOCK7</summary>
-  <p><a href="https://depmap.org/portal/gene/DOCK7?tab=overview" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/DOCK7?tab=overview" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
-<h2>Expression</h2>
+<h2>Depmap expression</h2>
 <details>
   <summary>Click to view the depmap.org expression data for DOCK7</summary>
-  <p><a href="https://depmap.org/portal/gene/DOCK7?tab=characterization" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/DOCK7?tab=characterization" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
@@ -25,10 +22,9 @@
 
 <h2>Reactome Pathway diagram</h2>
 <details>
-  <summary>Click to view the Reactome pathway for DOCK7</summary>
-  <p><a href="https://reactome.org/PathwayBrowser/#/R-HSA-983231" target="_BLANK">Open page in a new tab...</a></p>
+  <summary>Click to view Reactome pathway for DOCK7</summary>
   <p>Factors involved in megakaryocyte development and platelet production</p>
-<iframe src="https://reactome.org/PathwayBrowser/#/R-HSA-983231" style="border:none;width:100%;height:800px"></iframe>
+  <iframe src="https://reactome.org/PathwayBrowser/#/R-HSA-983231" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
 
