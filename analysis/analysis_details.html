@@ -15349,7 +15349,7 @@ Final number of rows in dataframe: 17731
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Save the table of candidates to an HTML file</span>
@@ -15359,7 +15359,7 @@ Final number of rows in dataframe: 17731
 <span class="n">cols</span> <span class="o">=</span> <span class="n">candidates</span><span class="o">.</span><span class="n">columns</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">candidates</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
     <span class="n">sym</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">HUGO_symbol</span>
-    <span class="n">sym</span> <span class="o">=</span> <span class="s1">&#39;&lt;a href=&quot;reports/&#39;</span><span class="o">+</span><span class="n">sym</span><span class="o">+</span><span class="s1">&#39;.html&quot;&gt;&#39;</span><span class="o">+</span><span class="n">sym</span><span class="o">+</span><span class="s1">&#39;&lt;/a&gt;&#39;</span>
+    <span class="n">sym</span> <span class="o">=</span> <span class="s1">&#39;&lt;a href=&quot;reports/&#39;</span><span class="o">+</span><span class="n">sym</span><span class="o">+</span><span class="s1">&#39;.html&quot; target=&quot;gene_info&quot;&gt;&#39;</span><span class="o">+</span><span class="n">sym</span><span class="o">+</span><span class="s1">&#39;&lt;/a&gt;&#39;</span>
     <span class="n">r</span><span class="o">.</span><span class="n">HUGO_symbol</span> <span class="o">=</span> <span class="n">sym</span>
     <span class="n">rows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
 <span class="n">report</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">rows</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="n">cols</span><span class="p">)</span>
