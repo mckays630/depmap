@@ -3,25 +3,33 @@
 <h2>Gene information</h2>
 <details>
   <summary>Click to view the depmap.org information for RICTOR</summary>
+  <p><a href="https://depmap.org/portal/gene/RICTOR?tab=about" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/RICTOR?tab=about" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
 <h2>Depmap overview</h2>
 <details>
   <summary>Click to view the depmap.org summary for RICTOR</summary>
+  <p><a href="https://depmap.org/portal/gene/RICTOR?tab=overview" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/RICTOR?tab=overview" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
-<h2>Depmap expression</h2>
+<h2>Expression</h2>
 <details>
   <summary>Click to view the depmap.org expression data for RICTOR</summary>
+  <p><a href="https://depmap.org/portal/gene/RICTOR?tab=characterization" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/RICTOR?tab=characterization" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-6804757" target="_BLANK">Regulation of TP53 Degradation</a>
+<details>
+  <summary>Click to view the Reactome pathway for RICTOR</summary>
+  <p><a href="https://reactome.org/PathwayBrowser/#/R-HSA-6804757" target="_BLANK">Open page in a new tab...</a></p>
+  <p>Regulation of TP53 Degradation</p>
+<iframe src="https://reactome.org/PathwayBrowser/#/R-HSA-6804757" style="border:none;width:100%;height:800px"></iframe>
+</details>
 
 
 

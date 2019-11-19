@@ -3,25 +3,33 @@
 <h2>Gene information</h2>
 <details>
   <summary>Click to view the depmap.org information for PANK3</summary>
+  <p><a href="https://depmap.org/portal/gene/PANK3?tab=about" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/PANK3?tab=about" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
 <h2>Depmap overview</h2>
 <details>
   <summary>Click to view the depmap.org summary for PANK3</summary>
+  <p><a href="https://depmap.org/portal/gene/PANK3?tab=overview" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/PANK3?tab=overview" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
-<h2>Depmap expression</h2>
+<h2>Expression</h2>
 <details>
   <summary>Click to view the depmap.org expression data for PANK3</summary>
+  <p><a href="https://depmap.org/portal/gene/PANK3?tab=characterization" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/PANK3?tab=characterization" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-196783" target="_BLANK">Coenzyme A biosynthesis</a>
+<details>
+  <summary>Click to view the Reactome pathway for PANK3</summary>
+  <p><a href="https://reactome.org/PathwayBrowser/#/R-HSA-196783" target="_BLANK">Open page in a new tab...</a></p>
+  <p>Coenzyme A biosynthesis</p>
+<iframe src="https://reactome.org/PathwayBrowser/#/R-HSA-196783" style="border:none;width:100%;height:800px"></iframe>
+</details>
 
 
 

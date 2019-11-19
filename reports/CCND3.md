@@ -3,25 +3,33 @@
 <h2>Gene information</h2>
 <details>
   <summary>Click to view the depmap.org information for CCND3</summary>
+  <p><a href="https://depmap.org/portal/gene/CCND3?tab=about" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/CCND3?tab=about" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
 <h2>Depmap overview</h2>
 <details>
   <summary>Click to view the depmap.org summary for CCND3</summary>
+  <p><a href="https://depmap.org/portal/gene/CCND3?tab=overview" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/CCND3?tab=overview" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
-<h2>Depmap expression</h2>
+<h2>Expression</h2>
 <details>
   <summary>Click to view the depmap.org expression data for CCND3</summary>
+  <p><a href="https://depmap.org/portal/gene/CCND3?tab=characterization" target="_BLANK">Open page in a new tab...</a></p>
   <iframe src="https://depmap.org/portal/gene/CCND3?tab=characterization" style="border:none;width:100%;height:800px"></iframe>
 </details>
 
 
 
 <h2>Reactome Pathway diagram</h2>
-<a href="https://reactome.org/PathwayBrowser/#/R-HSA-8934593" target="_BLANK">Regulation of RUNX1 Expression and Activity</a>
+<details>
+  <summary>Click to view the Reactome pathway for CCND3</summary>
+  <p><a href="https://reactome.org/PathwayBrowser/#/R-HSA-8934593" target="_BLANK">Open page in a new tab...</a></p>
+  <p>Regulation of RUNX1 Expression and Activity</p>
+<iframe src="https://reactome.org/PathwayBrowser/#/R-HSA-8934593" style="border:none;width:100%;height:800px"></iframe>
+</details>
 
 
 
